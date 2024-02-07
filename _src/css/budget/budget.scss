@@ -1,0 +1,204 @@
+@import "../shared/variables";
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "All Round Gothic";
+    src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype");
+}
+
+#selected {
+    font-weight: bold;
+}
+
+a,
+body,
+button,
+label,
+input,
+textarea {
+    color: $cinzaElegante;
+}
+
+body {
+    background-color: $begeDelicado;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: $standardFontSize;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: clamp(20rem, 100dvw, 30rem);
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-content: center;
+        padding: 0 0 5rem;
+
+        li a {
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    padding: 0 4.5rem;
+
+    .page-hero {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        h1 {
+            color: $vermelhoRecife;
+            font-family: "All Round Gothic", sans-serif;
+            font-size: $standardTitleSize;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: lowercase;
+        }
+
+        p {
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            font-weight: bold;
+            font-size: 1.8rem;
+
+            div {
+                small {
+                    font-weight: normal;
+                    padding-left: 0.5rem;
+                }
+            }
+
+            .contact-form_input {
+                background-color: $begeDelicado;
+                border: none;
+                border-bottom: 1px solid $cinzaElegante;
+                font-family: "Source Sans 3", sans-serif;
+                font-size: 1.4rem;
+                padding: 1rem;
+            }
+
+            textarea {
+                background-color: $begeDelicado;
+                border: none;
+                border-bottom: 1px solid $cinzaElegante;
+                font-family: "Source Sans 3", sans-serif;
+                resize: none;
+                font-size: 1.4rem;
+                padding: 1rem;
+            }
+
+            .send-files {
+                font-family: "Source Sans 3", sans-serif;
+                font-size: 1.4rem;
+            }
+
+            .extra-info {
+                font-size: 1.4rem;
+                font-weight: normal;
+                margin-top: 1rem;
+            }
+
+        }
+
+        .form-selection-wrapper {
+            p {
+                font-weight: bold;
+                font-size: 1.8rem;
+                padding-bottom: 1rem;
+            }
+
+            div {
+                display: flex;
+                gap: 1rem;
+
+                label {
+                    font-size: $standardFontSize;
+                    font-weight: normal;
+                }
+            }
+        }
+
+        button {
+            background-color: $vermelhoRecife;
+            border: none;
+            border-radius: 2rem;
+            color: white;
+            display: inline;
+            font-family: "Source Sans 3", sans-serif;
+            font-size: $standardFontSize;
+            font-weight: bold;
+            margin: 4rem auto;
+            padding: 1.5rem 2rem;
+        }
+    }
+}
+
+footer {
+    border-top: 1px solid $cinzaElegante;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem;
+
+    #social-links {
+        ul {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            list-style: none;
+
+            li {
+                a {
+                    i {
+                        border: 1px solid $cinzaElegante;
+                        border-radius: 0.5rem;
+                        color: $cinzaElegante;
+                        padding: 0.4rem 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #copyright-info {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}
+
+// @media only screen and (max-width: 76.8rem) {
+//     body {
+//         padding: 0 4.5rem;
+//     }
+// }

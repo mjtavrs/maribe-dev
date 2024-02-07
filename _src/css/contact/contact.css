@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "All Round Gothic";
+  src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype");
+}
+#selected {
+  font-weight: bold;
+}
+
+a,
+body,
+button,
+label,
+input,
+textarea {
+  color: #3C3C3B;
+}
+
+body {
+  background-color: #FCFCFA;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+nav img {
+  width: clamp(20rem, 100dvw, 30rem);
+}
+nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  justify-content: center;
+  padding: 0 0 5rem;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+main {
+  padding: 0 4.5rem;
+}
+main .page-hero h1 {
+  color: #C56E51;
+  font-family: "All Round Gothic", sans-serif;
+  font-size: clamp(4.5rem, 100dvw, 5.5rem);
+  font-weight: bolder;
+  padding-bottom: 3rem;
+  text-align: center;
+  text-transform: lowercase;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main form label {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  font-weight: bold;
+  font-size: 1.8rem;
+}
+main form label div small {
+  font-weight: normal;
+  padding-left: 0.5rem;
+}
+main form label input {
+  background-color: #FCFCFA;
+  border: none;
+  border-bottom: 1px solid #3C3C3B;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+main form label textarea {
+  background-color: #FCFCFA;
+  border: none;
+  border-bottom: 1px solid #3C3C3B;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+  resize: none;
+}
+main form button {
+  background-color: #C56E51;
+  border: none;
+  border-radius: 2rem;
+  color: white;
+  display: inline;
+  font-family: "Source Sans 3", sans-serif;
+  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-weight: bold;
+  margin: 4rem auto;
+  padding: 1.5rem 2rem;
+}
+
+footer {
+  border-top: 1px solid #3C3C3B;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 3rem;
+}
+footer #social-links ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+}
+footer #social-links ul li a i {
+  border: 1px solid #3C3C3B;
+  border-radius: 0.5rem;
+  color: #3C3C3B;
+  padding: 0.4rem 0.6rem;
+}
+footer #copyright-info {
+  display: flex;
+  flex-direction: column;
+}
+footer #copyright-info p {
+  font-size: 1.4rem;
+  text-align: center;
+}/*# sourceMappingURL=contact.css.map */

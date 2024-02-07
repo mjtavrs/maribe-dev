@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="Marcos Tavares">
+    <meta name="description"
+        content="Maribe Arquitetura é um escritório de arquitetura e urbanismo baseado em Recife, Pernambuco, com foco em arquitetura residencial, comercial e consultorias.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>maribe | orçamento</title>
+
+    <link rel="stylesheet" href="_src/css/shared/reset.css">
+    <link rel="stylesheet" href="_src/css/budget/budget.css">
+
+    <script src="_src/js/app.js" defer></script>
+    <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-menu">
+            <img src="_assets/image/logo/logo_menu.png" alt="Logo da Maribe Arquitetura">
+            <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+                <li><a href="orcamento.html" id="selected">orçamento</a></li>
+                <li><a href="contato.html">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <h1>Vamos começar o seu projeto juntos!</h1>
+            <p><b>bem-vindo(a) ao nosso mundo de possibilidades!</b><br />
+                estamos ansiosos para criarmos juntos o seu projeto dos sonhos. cada detalhe será pensado de acordo com
+                sua
+                personalidade e memórias afetivas, <b>transformando casas em lares únicos</b>, cheios de significado e
+                com muito
+                aconchego. para que isso seja possível precisamos de algumas informações para entender melhor suas
+                necessidades, você
+                pode preencher essas informações no formulário a seguir. esperamos que você ame a jornada na nossa
+                empresa.</p>
+        </section>
+        <form class="contact-form" action="https://formsubmit.co/mjtdes.md@gmail.com" method="post">
+            <label for="name">
+                nome completo
+                <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
+                    required>
+            </label>
+            <label for="email">
+                e-mail
+                <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" class="contact-form_input"
+                    required>
+            </label>
+            <label for="phone">
+                <div>
+                    telefone / whatsapp
+                    <small>apenas números, tá? lembre do seu ddd!</small>
+                </div>
+                <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
+                    required>
+            </label>
+            <div class="form-selection-wrapper">
+                <p>como chegou até nós?</p>
+                <div>
+                    <input type="radio" name="de-onde-veio" id="instagram" value="instagram" required>
+                    <label for="instagram">instagram</label>
+                </div>
+                <div>
+                    <input type="radio" name="de-onde-veio" id="indicacao" value="indicacao">
+                    <label for="indicacao">indicação de conhecidos</label>
+                </div>
+                <div>
+                    <input type="radio" name="de-onde-veio" id="visita-a-projetado" value="visita-a-projetado">
+                    <label for="visita-a-projetado">visitei um espaço projetado por vocês</label>
+                </div>
+            </div>
+            <div class="form-selection-wrapper">
+                <p>o que estaremos projetando?</p>
+                <div>
+                    <input type="radio" name="o-que-projetar" id="interior-residencial-completo"
+                        value="interior-residencial-completo" required>
+                    <label for="interior-residencial-completo">projeto de interiores residencial completo</label>
+                </div>
+                <div>
+                    <input type="radio" name="o-que-projetar" id="interior-alguns-ambientes"
+                        value="interior-alguns-ambientes">
+                    <label for="interior-alguns-ambientes">projeto de interiores para alguns ambientes</label>
+                </div>
+                <div>
+                    <input type="radio" name="o-que-projetar" id="interior-comercial-completo"
+                        value="interior-comercial-completo">
+                    <label for="interior-comercial-completo">projeto de interiores comercial completo</label>
+                </div>
+                <div>
+                    <input type="radio" name="o-que-projetar" id="projeto-arquitetura" value="projeto-arquitetura">
+                    <label for="projeto-arquitetura">projeto de arquitetura</label>
+                </div>
+            </div>
+            <div class="form-selection-wrapper">
+                <p>quando você prevê iniciar o projeto?</p>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="escolhendo-lar" value="escolhendo-lar"
+                        required>
+                    <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
+                </div>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="esperando-chaves" value="esperando-chaves">
+                    <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
+                </div>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="sem-pressa" value="sem-pressa">
+                    <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
+                </div>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="com-pressa" value="com-pressa">
+                    <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
+                </div>
+            </div>
+            <label for="arquivos-projeto">
+                fique a vontade para compartilhar planta baixa, fotos e vídeos do espaço a ser projetado:
+                <input type="file" name="arquivos-projeto" id="arquivos" class="file-sender" multiple
+                    accept=".jpg, .jpeg, .png, .pdf, .dwg, video/*">
+                <span class="extra-info">extensões de arquivos suportados: .jpg, .jpeg, .png, .pdf, .dwg ou
+                    vídeos</span>
+            </label>
+            <label for="objective">
+                qual é o seu objetivo com este projeto? como podemos te ajudar?
+                <textarea name="objective" cols="30" rows="5" id="objetivo" placeholder="digite as informações aqui..."
+                    class="contact-form_input" required></textarea>
+                <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja construir
+                    e o nível de intervenção necessário, caso haja reformas</span>
+            </label>
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://maribe.arq.br/orcamento.html">
+            <button id="submit-form">enviar mensagem</button>
+        </form>
+    </main>
+    <footer>
+        <div id="social-links">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyright-info">
+            <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
+            <p>feito com ❤️ por <b>marcos tavares</b></p>
+        </div>
+    </footer>
+</body>
+
+</html>

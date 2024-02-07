@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta name="author" content="Marcos Tavares">
+    <meta name="description"
+        content="Maribe Arquitetura é um escritório de arquitetura e urbanismo baseado em Recife, Pernambuco, com foco em arquitetura residencial, comercial e consultorias.">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>maribe | contato</title>
+
+    <link rel="stylesheet" href="_src/css/shared/reset.css">
+    <link rel="stylesheet" href="_src/css/contact/contact.css">
+
+    <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
+    <script src="_src/js/app.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <nav id="nav-menu">
+            <img src="_assets/image/logo/logo_menu.png" alt="Logo da Maribe Arquitetura">
+            <ul>
+                <li><a href="index.html">início</a></li>
+                <li><a href="sobre.html">sobre</a></li>
+                <li><a href="projetos.html">projetos</a></li>
+                <li><a href="orcamento.html">orçamento</a></li>
+                <li><a href="contato.html" id="selected">contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="page-hero">
+            <h1>Contato</h1>
+        </section>
+        <form class="contact-form" method="post">
+            <label for="name">
+                nome completo
+                <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
+                    required>
+            </label>
+            <label for="email">
+                e-mail
+                <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" class="contact-form_input"
+                    required>
+            </label>
+            <label for="phone">
+                <div>
+                    telefone / whatsapp
+                    <small>apenas números, tá? lembre do seu ddd!</small>
+                </div>
+                <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
+                    required>
+            </label>
+            <label for="subject">
+                assunto
+                <input type="text" name="subject" id="assunto" placeholder="sobre o que vamos falar?"
+                    class="contact-form_input" required>
+            </label>
+            <div class="form-selection-wrapper">
+                <p>quando você prevê iniciar o projeto?</p>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="escolhendo-lar" value="escolhendo-lar"
+                        required>
+                    <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
+                </div>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="esperando-chaves" value="esperando-chaves">
+                    <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
+                </div>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="sem-pressa" value="sem-pressa">
+                    <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
+                </div>
+                <div>
+                    <input type="radio" name="quando-começar-projeto" id="com-pressa" value="com-pressa">
+                    <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
+                </div>
+            </div>
+            <label for="message">
+                mensagem
+                <textarea name="message" cols="30" rows="5" id="mensagem" placeholder="digite sua mensagem aqui..."
+                    class="contact-form_input" required></textarea>
+            </label>
+            <button id="submit-form">enviar mensagem</button>
+        </form>
+    </main>
+    <footer>
+        <div id="social-links">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+            </ul>
+        </div>
+        <div id="copyright-info">
+            <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
+            <p>feito com ❤️ por <b>marcos tavares</b></p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+@import "../shared/variables";
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: "Source Sans 3";
+    font-size: $standardFontSize;
+}

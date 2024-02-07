@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+body {
+  font-family: "Source Sans 3";
+  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+}/*# sourceMappingURL=home.css.map */
