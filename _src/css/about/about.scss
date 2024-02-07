@@ -1,0 +1,160 @@
+@import "../shared/variables";
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "All Round Gothic";
+    src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype");
+}
+
+#selected {
+    font-weight: bold;
+}
+
+a,
+body,
+button,
+label,
+input,
+textarea {
+    color: $cinzaElegante;
+}
+
+body {
+    background-color: $begeDelicado;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: $standardFontSize;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: clamp(20rem, 100dvw, 30rem);
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-content: center;
+        padding: 0 0 5rem;
+
+        li a {
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    padding: 0 4.5rem;
+
+    .page-hero {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        h1 {
+            color: $vermelhoRecife;
+            font-family: "All Round Gothic", sans-serif;
+            font-size: $standardTitleSize;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: lowercase;
+        }
+
+        p {
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+    }
+
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h2 {
+            color: $vermelhoRecife;
+            font-size: 2.4rem;
+        }
+
+        div {
+            p {
+                font-size: $standardFontSize;
+            }
+        }
+
+        #test-div {
+            position: relative;
+
+            #test-box {
+                border-radius: 1rem;
+                position: absolute;
+                height: 25rem;
+                width: 100%;
+                bottom: 5.6rem;
+                background-color: $vermelhoRecife;
+                z-index: 0;
+            }
+
+            img {
+                width: clamp(35rem, 100dvw, 35rem);
+                padding-bottom: 5rem;
+                position: relative;
+                z-index: 1;
+            }
+        }
+
+    }
+}
+
+footer {
+    border-top: 1px solid $cinzaElegante;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem;
+
+    #social-links {
+        ul {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            list-style: none;
+
+            li {
+                a {
+                    i {
+                        border: 1px solid $cinzaElegante;
+                        border-radius: 0.5rem;
+                        color: $cinzaElegante;
+                        padding: 0.4rem 0.6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    #copyright-info {
+        display: flex;
+        flex-direction: column;
+
+        p {
+            font-size: 1.4rem;
+            text-align: center;
+        }
+    }
+}
+
+// @media only screen and (max-width: 76.8rem) {
+//     body {
+//         padding: 0 4.5rem;
+//     }
+// }
