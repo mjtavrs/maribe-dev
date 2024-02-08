@@ -2,7 +2,44 @@
   font-family: "Source Sans 3";
   src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
 }
+@keyframes slow-show {
+  0% {
+    transform: translateZ(-1400px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+.slow-show {
+  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
 body {
+  background-color: #FCFCFA;
   font-family: "Source Sans 3";
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+nav img {
+  width: clamp(20rem, 100dvw, 30rem);
+}
+nav ul {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  font-size: clamp(1.8rem, 100dvw, 2.2rem);
+  gap: 2rem;
+  list-style: none;
+  padding: 0 0 5rem;
+}
+nav ul li a {
+  color: #C56E51;
+  text-decoration: none;
 }/*# sourceMappingURL=home.css.map */

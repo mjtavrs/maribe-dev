@@ -5,7 +5,70 @@
     src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
 }
 
+@-webkit-keyframes slow-show {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slow-show {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 body {
+    background-color: $begeDelicado;
     font-family: "Source Sans 3";
     font-size: $standardFontSize;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: clamp(20rem, 100dvw, 30rem);
+    }
+
+    ul {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        font-size: $standardSubTitleSize;
+        gap: 2rem;
+        list-style: none;
+        padding: 0 0 5rem;
+
+        li a {
+            color: $vermelhoRecife;
+            text-decoration: none;
+        }
+
+        // a:hover {
+        //     color: red;
+        // }
+    }
 }

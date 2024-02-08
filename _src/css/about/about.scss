@@ -10,6 +10,39 @@
     src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype");
 }
 
+@-webkit-keyframes slow-show {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slow-show {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 #selected {
     font-weight: bold;
 }
@@ -120,7 +153,12 @@ main {
             display: flex;
             flex-direction: column;
             gap: 2rem;
+
+            video {
+                padding: 2rem 0 4rem;
+            }
         }
+
     }
 }
 
