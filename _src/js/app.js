@@ -1,3 +1,3 @@
-document.getElementById("submit-form").addEventListener("click", () => {
-    alert("Formulário enviado");
-})
+// document.getElementById("submit-form").addEventListener("click", () => {
+//     alert("Formulário enviado");
+// })
