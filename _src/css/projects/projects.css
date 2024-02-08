@@ -88,9 +88,9 @@ main .page-hero p {
   text-align: center;
 }
 main #projects article {
-  height: 51.5rem;
-  position: relative;
+  height: 34rem;
   margin-bottom: 4rem;
+  position: relative;
 }
 main #projects article a span {
   background-color: #232324;
@@ -114,8 +114,11 @@ main #projects article a span h4 {
   padding: 1rem 0;
 }
 main #projects article a img {
-  position: absolute;
   border-radius: 1rem;
+  height: 34rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
   transition: 300ms;
   width: 100%;
   z-index: 1;
@@ -155,10 +158,4 @@ footer #copyright-info {
 footer #copyright-info p {
   font-size: 1.4rem;
   text-align: center;
-}
-
-@media only screen and (max-width: 76.8rem) {
-  main #projects article {
-    height: 34rem;
-  }
 }/*# sourceMappingURL=projects.css.map */
