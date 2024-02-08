@@ -75,7 +75,8 @@ main {
         }
     }
 
-    .about-info {
+    .about-us,
+    .about-logo {
         display: flex;
         flex-direction: column;
         gap: 2rem;
@@ -112,6 +113,14 @@ main {
             }
         }
 
+    }
+
+    .about-logo {
+        div {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
     }
 }
 

@@ -65,22 +65,27 @@ main .page-hero p {
   padding-bottom: 4rem;
   text-align: center;
 }
-main .about-info {
+main .about-us,
+main .about-logo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-main .about-info h2 {
+main .about-us h2,
+main .about-logo h2 {
   color: #C56E51;
   font-size: 2.4rem;
 }
-main .about-info div p {
+main .about-us div p,
+main .about-logo div p {
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
 }
-main .about-info #test-div {
+main .about-us #test-div,
+main .about-logo #test-div {
   position: relative;
 }
-main .about-info #test-div #test-box {
+main .about-us #test-div #test-box,
+main .about-logo #test-div #test-box {
   border-radius: 1rem;
   position: absolute;
   height: 25rem;
@@ -89,11 +94,17 @@ main .about-info #test-div #test-box {
   background-color: #C56E51;
   z-index: 0;
 }
-main .about-info #test-div img {
+main .about-us #test-div img,
+main .about-logo #test-div img {
   width: clamp(35rem, 100dvw, 35rem);
   padding-bottom: 5rem;
   position: relative;
   z-index: 1;
+}
+main .about-logo div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 footer {
