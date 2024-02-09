@@ -107,7 +107,7 @@ main {
         }
 
         p {
-            padding-bottom: 4rem;
+            padding: 0 20rem 4rem;
             text-align: center;
         }
     }
@@ -241,6 +241,12 @@ footer {
         main {
             padding: 0 6rem;
 
+            .page-hero {
+                p {
+                    padding: 0 0 4rem;
+                }
+            }
+
             form {
                 button {
                     font-size: 1.8rem;
@@ -268,6 +274,67 @@ footer {
             #copyright-info {
                 p {
                     text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        main {
+            padding: 0 15rem;
+
+            form {
+                button {
+                    font-size: $standardFontSize;
+                }
+            }
+        }
+
+        footer {
+            padding: 2rem 4rem;
+
+            #social-links {
+                ul {
+                    gap: 1rem;
+
+                    li {
+                        a {
+                            font-size: 1.4rem;
+
+                            i {
+                                padding: 0.6rem 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #copyright-info {
+                p {
+                    font-size: 1.4rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        main {
+            padding: 0 30rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    body {
+        main {
+            .page-hero {
+                p {
+                    padding: 0 25rem 6rem;
                 }
             }
         }

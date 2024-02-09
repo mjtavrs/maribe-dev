@@ -80,7 +80,7 @@ main .page-hero h1 {
   text-transform: lowercase;
 }
 main .page-hero p {
-  padding-bottom: 4rem;
+  padding: 0 20rem 4rem;
   text-align: center;
 }
 main form {
@@ -185,6 +185,9 @@ footer #copyright-info p {
   body main {
     padding: 0 6rem;
   }
+  body main .page-hero p {
+    padding: 0 0 4rem;
+  }
   body main form button {
     font-size: 1.8rem;
   }
@@ -201,5 +204,39 @@ footer #copyright-info p {
   }
   body footer #copyright-info p {
     text-align: right;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body main {
+    padding: 0 15rem;
+  }
+  body main form button {
+    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  }
+  body footer {
+    padding: 2rem 4rem;
+  }
+  body footer #social-links ul {
+    gap: 1rem;
+  }
+  body footer #social-links ul li a {
+    font-size: 1.4rem;
+  }
+  body footer #social-links ul li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    font-size: 1.4rem;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body main {
+    padding: 0 30rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  body main .page-hero p {
+    padding: 0 25rem 6rem;
   }
 }/*# sourceMappingURL=budget.css.map */

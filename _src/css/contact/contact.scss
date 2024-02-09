@@ -97,7 +97,7 @@ main {
             font-family: "All Round Gothic", sans-serif;
             font-size: $standardTitleSize;
             font-weight: bolder;
-            padding-bottom: 3rem;
+            padding-bottom: 5rem;
             text-align: center;
             text-transform: lowercase;
         }
@@ -267,10 +267,18 @@ footer {
 
             #copyright-info {
                 p {
-                    font-size: 1.2rem;
+                    font-size: 1.4rem;
                     text-align: right;
                 }
             }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        main {
+            padding: 0 30rem;
         }
     }
 }
