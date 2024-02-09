@@ -230,8 +230,40 @@ footer {
     }
 }
 
-// @media only screen and (max-width: 76.8rem) {
-//     body {
-//         padding: 0 4.5rem;
-//     }
-// }
+@media only screen and (max-width: 76.8rem) {
+    body {
+        main {
+            padding: 0 6rem;
+
+            form {
+                button {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        footer {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 6rem;
+
+            #social-links {
+                li {
+                    a {
+                        font-size: 1.8rem;
+
+                        i {
+                            padding: 0.6rem 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            #copyright-info {
+                p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

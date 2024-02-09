@@ -93,7 +93,7 @@ main #projects article {
   position: relative;
 }
 main #projects article a span {
-  background-color: #232324;
+  background-color: #3C3C3B;
   border-radius: 1rem;
   color: #FCFCFA;
   filter: opacity(0.9);
@@ -110,7 +110,7 @@ main #projects article a span {
 main #projects article a span h4 {
   border-top: 1px solid #FCFCFA;
   border-bottom: 1px solid #FCFCFA;
-  font-weight: lighter !important;
+  font-weight: normal;
   padding: 1rem 0;
 }
 main #projects article a img {

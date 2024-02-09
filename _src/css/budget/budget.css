@@ -173,4 +173,27 @@ footer #copyright-info {
 footer #copyright-info p {
   font-size: 1.4rem;
   text-align: center;
+}
+
+@media only screen and (max-width: 76.8rem) {
+  body main {
+    padding: 0 6rem;
+  }
+  body main form button {
+    font-size: 1.8rem;
+  }
+  body footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  body footer #social-links li a {
+    font-size: 1.8rem;
+  }
+  body footer #social-links li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    text-align: right;
+  }
 }/*# sourceMappingURL=budget.css.map */
