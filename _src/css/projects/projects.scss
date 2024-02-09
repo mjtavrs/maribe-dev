@@ -125,7 +125,7 @@ main {
 
             a {
                 span {
-                    background-color: #232324;
+                    background-color: $cinzaElegante;
                     border-radius: 1rem;
                     color: $begeDelicado;
                     filter: opacity(0.90);
@@ -142,7 +142,7 @@ main {
                     h4 {
                         border-top: 1px solid $begeDelicado;
                         border-bottom: 1px solid $begeDelicado;
-                        font-weight: lighter !important;
+                        font-weight: normal;
                         padding: 1rem 0;
                     }
                 }
