@@ -159,7 +159,7 @@ main {
 
                 img:hover,
                 img:active {
-                    filter: brightness(0.75);
+                    filter: brightness(0.5);
                 }
 
                 img:hover+.visibilityOff,
@@ -209,12 +209,46 @@ footer {
     }
 }
 
-// @media only screen and (max-width: 76.8rem) {
-//     main {
-//         #projects {
-//             article {
-//                 height: 34rem;
-//             }
-//         }
-//     }
-// }
+@media only screen and (min-width: 768px) {
+    body {
+        main {
+            padding: 0 6rem;
+
+            #projects {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                width: 100%;
+
+                article {
+                    min-width: 48%;
+                    max-width: 44rem;
+                }
+            }
+        }
+
+        footer {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 6rem;
+
+            #social-links {
+                li {
+                    a {
+                        font-size: 1.8rem;
+
+                        i {
+                            padding: 0.6rem 0.8rem;
+                        }
+                    }
+                }
+            }
+
+            #copyright-info {
+                p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}

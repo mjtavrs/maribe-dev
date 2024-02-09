@@ -100,17 +100,17 @@ main .about-logo #test-div {
 }
 main .about-us #test-div #test-box,
 main .about-logo #test-div #test-box {
-  border-radius: 1rem;
-  position: absolute;
-  height: 25rem;
-  width: 100%;
-  bottom: 5.6rem;
   background-color: #C56E51;
+  border-radius: 1rem;
+  bottom: 5.6rem;
+  height: 25rem;
+  position: absolute;
+  width: 100%;
   z-index: 0;
 }
 main .about-us #test-div img,
 main .about-logo #test-div img {
-  width: clamp(35rem, 100dvw, 35rem);
+  width: 35rem;
   padding-bottom: 5rem;
   position: relative;
   z-index: 1;
@@ -152,9 +152,32 @@ footer #copyright-info p {
   text-align: center;
 }
 
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (min-width: 768px) {
   body main {
     padding: 0 6rem;
+  }
+  body main .about-us #test-div,
+  body main .about-logo #test-div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  body main .about-us #test-div #test-box,
+  body main .about-logo #test-div #test-box {
+    bottom: 5rem;
+    height: 30rem;
+    left: 50%;
+    translate: -50%;
+    width: 70%;
+  }
+  body main .about-us #test-div img,
+  body main .about-logo #test-div img {
+    width: 40rem;
+  }
+  body main .about-us .video,
+  body main .about-logo .video {
+    margin: 0 auto;
+    width: 70%;
   }
   body footer {
     flex-direction: row;

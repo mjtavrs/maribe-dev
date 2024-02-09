@@ -125,7 +125,7 @@ main #projects article a img {
 }
 main #projects article a img:hover,
 main #projects article a img:active {
-  filter: brightness(0.75);
+  filter: brightness(0.5);
 }
 main #projects article a img:hover + .visibilityOff,
 main #projects article a img:active + .visibilityOff {
@@ -158,4 +158,34 @@ footer #copyright-info {
 footer #copyright-info p {
   font-size: 1.4rem;
   text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body main {
+    padding: 0 6rem;
+  }
+  body main #projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+  body main #projects article {
+    min-width: 48%;
+    max-width: 44rem;
+  }
+  body footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  body footer #social-links li a {
+    font-size: 1.8rem;
+  }
+  body footer #social-links li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    text-align: right;
+  }
 }/*# sourceMappingURL=projects.css.map */

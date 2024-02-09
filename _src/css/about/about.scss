@@ -129,17 +129,17 @@ main {
             position: relative;
 
             #test-box {
-                border-radius: 1rem;
-                position: absolute;
-                height: 25rem;
-                width: 100%;
-                bottom: 5.6rem;
                 background-color: $vermelhoRecife;
+                border-radius: 1rem;
+                bottom: 5.6rem;
+                height: 25rem;
+                position: absolute;
+                width: 100%;
                 z-index: 0;
             }
 
             img {
-                width: clamp(35rem, 100dvw, 35rem);
+                width: 35rem;
                 padding-bottom: 5rem;
                 position: relative;
                 z-index: 1;
@@ -200,10 +200,36 @@ footer {
     }
 }
 
-@media only screen and (max-width: 76.8rem) {
+@media only screen and (min-width: 768px) {
     body {
         main {
             padding: 0 6rem;
+
+            .about-us,
+            .about-logo {
+                #test-div {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    #test-box {
+                        bottom: 5rem;
+                        height: 30rem;
+                        left: 50%;
+                        translate: (-50%);
+                        width: 70%;
+                    }
+
+                    img {
+                        width: 40rem;
+                    }
+                }
+
+                .video {
+                    margin: 0 auto;
+                    width: 70%;
+                }
+            }
         }
 
         footer {
