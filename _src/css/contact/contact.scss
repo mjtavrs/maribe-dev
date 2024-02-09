@@ -58,8 +58,11 @@ textarea {
 
 body {
     background-color: $begeDelicado;
+    display: flex;
+    flex-direction: column;
     font-family: "Source Sans 3", sans-serif;
     font-size: $standardFontSize;
+    min-height: 100dvh;
 }
 
 nav {
@@ -85,6 +88,7 @@ nav {
 }
 
 main {
+    flex: 1 0 auto;
     padding: 0 4.5rem;
 
     .page-hero {
@@ -157,6 +161,7 @@ footer {
     border-top: 1px solid $cinzaElegante;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
     gap: 2rem;
     padding: 2rem 3rem;
 
@@ -222,6 +227,47 @@ footer {
 
             #copyright-info {
                 p {
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        main {
+            padding: 0 15rem;
+
+            form {
+                button {
+                    font-size: $standardFontSize;
+                }
+            }
+        }
+
+        footer {
+            padding: 2rem 4rem;
+
+            #social-links {
+                ul {
+                    gap: 1rem;
+
+                    li {
+                        a {
+                            font-size: 1.4rem;
+
+                            i {
+                                padding: 0.6rem 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #copyright-info {
+                p {
+                    font-size: 1.2rem;
                     text-align: right;
                 }
             }

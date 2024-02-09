@@ -35,8 +35,11 @@ textarea {
 
 body {
   background-color: #FCFCFA;
+  display: flex;
+  flex-direction: column;
   font-family: "Source Sans 3", sans-serif;
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  min-height: 100dvh;
 }
 
 nav {
@@ -59,6 +62,7 @@ nav ul li a {
 }
 
 main {
+  flex: 1 0 auto;
   padding: 0 4.5rem;
 }
 main .page-hero {
@@ -128,6 +132,7 @@ footer {
   border-top: 1px solid #3C3C3B;
   display: flex;
   flex-direction: column;
+  flex-shrink: 0;
   gap: 2rem;
   padding: 2rem 3rem;
 }
