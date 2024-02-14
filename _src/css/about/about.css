@@ -100,24 +100,24 @@ main .about-logo div p {
 }
 main .about-us #test-div,
 main .about-logo #test-div {
-  position: relative;
+  padding: 10rem 0 3rem;
 }
 main .about-us #test-div #test-box,
 main .about-logo #test-div #test-box {
   background-color: #C56E51;
   border-radius: 1rem;
-  bottom: 5.6rem;
   height: 25rem;
-  position: absolute;
+  position: relative;
   width: 100%;
-  z-index: 0;
 }
 main .about-us #test-div img,
 main .about-logo #test-div img {
+  left: 50%;
+  padding-bottom: 10rem;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 35rem;
-  padding-bottom: 5rem;
-  position: relative;
-  z-index: 1;
 }
 main .about-logo div {
   display: flex;
@@ -161,23 +161,10 @@ footer #copyright-info p {
   body main {
     padding: 0 6rem;
   }
-  body main .about-us #test-div,
-  body main .about-logo #test-div {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
-  body main .about-us #test-div #test-box,
-  body main .about-logo #test-div #test-box {
-    bottom: 5rem;
-    height: 30rem;
-    left: 50%;
-    translate: -50%;
-    width: 70%;
-  }
-  body main .about-us #test-div img,
-  body main .about-logo #test-div img {
-    width: 40rem;
+  body main .about-us #test-box,
+  body main .about-logo #test-box {
+    margin: 0 auto;
+    max-width: 60%;
   }
   body main .about-us .video,
   body main .about-logo .video {
@@ -197,5 +184,57 @@ footer #copyright-info p {
   }
   body footer #copyright-info p {
     text-align: right;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body main {
+    padding: 0 15rem;
+  }
+  body footer {
+    padding: 2rem 4rem;
+  }
+  body footer #social-links ul {
+    gap: 1rem;
+  }
+  body footer #social-links ul li a {
+    font-size: 1.4rem;
+  }
+  body footer #social-links ul li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    font-size: 1.4rem;
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body main {
+    padding: 0 30rem;
+  }
+  body .about-logo video {
+    margin: 0 auto;
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  body main .about-us #test-div,
+  body main .about-logo #test-div {
+    padding: 15rem 0 5rem;
+  }
+  body main .about-us #test-div #test-box,
+  body main .about-logo #test-div #test-box {
+    margin: 0 auto;
+    min-height: 30rem;
+    min-width: 65%;
+  }
+  body main .about-us #test-div #test-box img,
+  body main .about-logo #test-div #test-box img {
+    padding-bottom: 15rem;
+    min-width: 45rem;
+  }
+  body main .about-us .video,
+  body main .about-logo .video {
+    margin: 0 auto;
+    width: 70%;
   }
 }/*# sourceMappingURL=about.css.map */

@@ -21,7 +21,9 @@
 <body class="slow-show">
     <header>
         <nav id="nav-menu">
-            <img src="_assets/image/logo/logo_menu.png" alt="Logo da Maribe Arquitetura">
+            <a href="index.html">
+                <img src="_assets/image/logo/logo_menu.png" alt="Logo da Maribe Arquitetura">
+            </a>
             <ul>
                 <li><a href="index.html">início</a></li>
                 <li><a href="sobre.html">sobre</a></li>
@@ -39,12 +41,12 @@
             <label for="nome">
                 nome completo
                 <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
-                    required>
+                    autocomplete="on" required aria-required="true">
             </label>
             <label for="email">
                 e-mail
                 <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" class="contact-form_input"
-                    required>
+                    autocomplete="on" required aria-required="true">
             </label>
             <label for="telefone">
                 <div>
@@ -52,17 +54,17 @@
                     <small>apenas números, tá? lembre do seu ddd!</small>
                 </div>
                 <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
-                    required>
+                    autocomplete="on" required aria-required="true">
             </label>
             <label for="assunto">
                 assunto
                 <input type="text" name="subject" id="assunto" placeholder="sobre o que vamos falar?"
-                    class="contact-form_input" required>
+                    class="contact-form_input" required aria-required="true">
             </label>
             <label for="mensagem">
                 mensagem
                 <textarea name="message" cols="30" rows="5" id="mensagem" placeholder="digite sua mensagem aqui..."
-                    class="contact-form_input" required></textarea>
+                    class="contact-form_input" required aria-required="true"></textarea>
             </label>
             <button id="submit-form">enviar mensagem</button>
         </form>

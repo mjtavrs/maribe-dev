@@ -107,7 +107,7 @@ main {
         }
 
         p {
-            padding: 0 20rem 4rem;
+            padding: 0 2rem 4rem;
             text-align: center;
         }
     }
@@ -116,6 +116,12 @@ main {
         display: flex;
         flex-direction: column;
         gap: 3rem;
+
+        .two-col-selector {
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+        }
 
         label {
             display: flex;
@@ -163,8 +169,10 @@ main {
 
         }
 
-        .form-selection-wrapper {
-            p {
+        fieldset {
+            border: none;
+
+            legend {
                 font-weight: bold;
                 font-size: 1.8rem;
                 padding-bottom: 1rem;
@@ -335,6 +343,18 @@ footer {
             .page-hero {
                 p {
                     padding: 0 25rem 6rem;
+                }
+            }
+
+            form {
+                .two-col-selector {
+                    flex-direction: row;
+                    gap: 5rem;
+
+                    fieldset,
+                    label {
+                        flex: 1;
+                    }
                 }
             }
         }

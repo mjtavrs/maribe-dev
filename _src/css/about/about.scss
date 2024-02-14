@@ -130,23 +130,23 @@ main {
         }
 
         #test-div {
-            position: relative;
+            padding: 10rem 0 3rem;
 
             #test-box {
                 background-color: $vermelhoRecife;
                 border-radius: 1rem;
-                bottom: 5.6rem;
                 height: 25rem;
-                position: absolute;
+                position: relative;
                 width: 100%;
-                z-index: 0;
             }
 
             img {
+                left: 50%;
+                padding-bottom: 10rem;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
                 width: 35rem;
-                padding-bottom: 5rem;
-                position: relative;
-                z-index: 1;
             }
         }
 
@@ -212,22 +212,9 @@ footer {
 
             .about-us,
             .about-logo {
-                #test-div {
-                    align-items: center;
-                    display: flex;
-                    flex-direction: column;
-
-                    #test-box {
-                        bottom: 5rem;
-                        height: 30rem;
-                        left: 50%;
-                        translate: (-50%);
-                        width: 70%;
-                    }
-
-                    img {
-                        width: 40rem;
-                    }
+                #test-box {
+                    margin: 0 auto;
+                    max-width: 60%;
                 }
 
                 .video {
@@ -257,6 +244,86 @@ footer {
             #copyright-info {
                 p {
                     text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        main {
+            padding: 0 15rem;
+        }
+
+        footer {
+            padding: 2rem 4rem;
+
+            #social-links {
+                ul {
+                    gap: 1rem;
+
+                    li {
+                        a {
+                            font-size: 1.4rem;
+
+                            i {
+                                padding: 0.6rem 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #copyright-info {
+                p {
+                    font-size: 1.4rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        main {
+            padding: 0 30rem;
+        }
+
+        .about-logo {
+            video {
+                margin: 0 auto;
+                width: 80%;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    body {
+        main {
+
+            .about-us,
+            .about-logo {
+                #test-div {
+                    padding: 15rem 0 5rem;
+
+                    #test-box {
+                        margin: 0 auto;
+                        min-height: 30rem;
+                        min-width: 65%;
+
+                        img {
+                            padding-bottom: 15rem;
+                            min-width: 45rem;
+                        }
+                    }
+                }
+
+                .video {
+                    margin: 0 auto;
+                    width: 70%;
                 }
             }
         }

@@ -21,7 +21,9 @@
 <body class="slow-show">
     <header>
         <nav id="nav-menu">
-            <img src="_assets/image/logo/logo_menu.png" alt="Logo da Maribe Arquitetura">
+            <a href="index.html">
+                <img src="_assets/image/logo/logo_menu.png" alt="Logo da Maribe Arquitetura">
+            </a>
             <ul>
                 <li><a href="index.html">início</a></li>
                 <li><a href="sobre.html">sobre</a></li>
@@ -34,10 +36,11 @@
     <main>
         <section class="page-hero">
             <h1>Vamos começar o seu projeto juntos!</h1>
-            <p><b>bem-vindo(a) ao nosso mundo de possibilidades!</b><br />
+            <p><strong>bem-vindo(a) ao nosso mundo de possibilidades!</strong><br />
                 estamos ansiosos para criarmos juntos o seu projeto dos sonhos. cada detalhe será pensado de acordo com
                 sua
-                personalidade e memórias afetivas, <b>transformando casas em lares únicos</b>, cheios de significado e
+                personalidade e memórias afetivas, <strong>transformando casas em lares únicos</strong>, cheios de
+                significado e
                 com muito
                 aconchego. para que isso seja possível precisamos de algumas informações para entender melhor suas
                 necessidades, você
@@ -45,92 +48,97 @@
                 empresa.</p>
         </section>
         <form class="contact-form" action="https://formsubmit.co/mjtdes.md@gmail.com" method="post">
-            <label for="name">
+            <label for="nome">
                 nome completo
                 <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
-                    required>
+                    autocomplete="on" required aria-required="true">
             </label>
             <label for="email">
                 e-mail
                 <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" class="contact-form_input"
-                    required>
+                    autocomplete="on" required aria-required="true">
             </label>
-            <label for="phone">
+            <label for="telefone">
                 <div>
                     telefone / whatsapp
                     <small>apenas números, tá? lembre do seu ddd!</small>
                 </div>
                 <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
-                    required>
+                    autocomplete="on" required aria-required="true">
             </label>
-            <div class="form-selection-wrapper">
-                <p>como chegou até nós?</p>
-                <div>
-                    <input type="radio" name="de-onde-veio" id="instagram" value="instagram" required>
-                    <label for="instagram">instagram</label>
-                </div>
-                <div>
-                    <input type="radio" name="de-onde-veio" id="indicacao" value="indicacao">
-                    <label for="indicacao">indicação de conhecidos</label>
-                </div>
-                <div>
-                    <input type="radio" name="de-onde-veio" id="visita-a-projetado" value="visita-a-projetado">
-                    <label for="visita-a-projetado">visitei um espaço projetado por vocês</label>
-                </div>
+            <div class="two-col-selector">
+                <fieldset>
+                    <legend>como chegou até nós?</legend>
+                    <div>
+                        <input type="radio" name="de-onde-veio" id="instagram" value="instagram" required>
+                        <label for="instagram">instagram</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="de-onde-veio" id="indicacao" value="indicacao">
+                        <label for="indicacao">indicação de conhecidos</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="de-onde-veio" id="visita-a-projetado" value="visita-a-projetado">
+                        <label for="visita-a-projetado">visitei um espaço projetado por vocês</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>o que estaremos projetando?</legend>
+                    <div>
+                        <input type="radio" name="o-que-projetar" id="interior-residencial-completo"
+                            value="interior-residencial-completo" required aria-required="true">
+                        <label for="interior-residencial-completo">projeto de interiores residencial completo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="o-que-projetar" id="interior-alguns-ambientes"
+                            value="interior-alguns-ambientes">
+                        <label for="interior-alguns-ambientes">projeto de interiores para alguns ambientes</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="o-que-projetar" id="interior-comercial-completo"
+                            value="interior-comercial-completo">
+                        <label for="interior-comercial-completo">projeto de interiores comercial completo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="o-que-projetar" id="projeto-arquitetura" value="projeto-arquitetura">
+                        <label for="projeto-arquitetura">projeto de arquitetura</label>
+                    </div>
+                </fieldset>
             </div>
-            <div class="form-selection-wrapper">
-                <p>o que estaremos projetando?</p>
-                <div>
-                    <input type="radio" name="o-que-projetar" id="interior-residencial-completo"
-                        value="interior-residencial-completo" required>
-                    <label for="interior-residencial-completo">projeto de interiores residencial completo</label>
-                </div>
-                <div>
-                    <input type="radio" name="o-que-projetar" id="interior-alguns-ambientes"
-                        value="interior-alguns-ambientes">
-                    <label for="interior-alguns-ambientes">projeto de interiores para alguns ambientes</label>
-                </div>
-                <div>
-                    <input type="radio" name="o-que-projetar" id="interior-comercial-completo"
-                        value="interior-comercial-completo">
-                    <label for="interior-comercial-completo">projeto de interiores comercial completo</label>
-                </div>
-                <div>
-                    <input type="radio" name="o-que-projetar" id="projeto-arquitetura" value="projeto-arquitetura">
-                    <label for="projeto-arquitetura">projeto de arquitetura</label>
-                </div>
+            <div class="two-col-selector">
+                <fieldset>
+                    <legend>quando você prevê iniciar o projeto?</legend>
+                    <div>
+                        <input type="radio" name="quando-começar-projeto" id="escolhendo-lar" value="escolhendo-lar"
+                            required aria-required="true">
+                        <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="quando-começar-projeto" id="esperando-chaves"
+                            value="esperando-chaves">
+                        <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="quando-começar-projeto" id="sem-pressa" value="sem-pressa">
+                        <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="quando-começar-projeto" id="com-pressa" value="com-pressa">
+                        <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
+                    </div>
+                </fieldset>
+                <label for="arquivos">
+                    fique a vontade para compartilhar planta baixa, fotos e vídeos do espaço a ser projetado:
+                    <input type="file" name="arquivos-projeto" id="arquivos" class="file-sender" multiple
+                        accept=".jpg, .jpeg, .png, .pdf, .dwg, video/*">
+                    <span class="extra-info">extensões de arquivos suportados: .jpg, .jpeg, .png, .pdf, .dwg ou
+                        vídeos</span>
+                </label>
             </div>
-            <div class="form-selection-wrapper">
-                <p>quando você prevê iniciar o projeto?</p>
-                <div>
-                    <input type="radio" name="quando-começar-projeto" id="escolhendo-lar" value="escolhendo-lar"
-                        required>
-                    <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
-                </div>
-                <div>
-                    <input type="radio" name="quando-começar-projeto" id="esperando-chaves" value="esperando-chaves">
-                    <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
-                </div>
-                <div>
-                    <input type="radio" name="quando-começar-projeto" id="sem-pressa" value="sem-pressa">
-                    <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
-                </div>
-                <div>
-                    <input type="radio" name="quando-começar-projeto" id="com-pressa" value="com-pressa">
-                    <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
-                </div>
-            </div>
-            <label for="arquivos-projeto">
-                fique a vontade para compartilhar planta baixa, fotos e vídeos do espaço a ser projetado:
-                <input type="file" name="arquivos-projeto" id="arquivos" class="file-sender" multiple
-                    accept=".jpg, .jpeg, .png, .pdf, .dwg, video/*">
-                <span class="extra-info">extensões de arquivos suportados: .jpg, .jpeg, .png, .pdf, .dwg ou
-                    vídeos</span>
-            </label>
-            <label for="objective">
+            <label for="objetivo">
                 qual é o seu objetivo com este projeto? como podemos te ajudar?
                 <textarea name="objective" cols="30" rows="5" id="objetivo" placeholder="digite as informações aqui..."
-                    class="contact-form_input" required></textarea>
+                    class="contact-form_input" required aria-required="true"></textarea>
                 <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja construir
                     e o nível de intervenção necessário, caso haja reformas</span>
             </label>
@@ -142,10 +150,14 @@
     <footer>
         <div id="social-links">
             <ul>
-                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-tiktok"></i></a></li>
-                <li><a href="#"><i class="fa-brands fa-pinterest-p"></i></a></li>
+                <li><a href="https://www.instagram.com/maribe.arquitetura" target="_blank"><i
+                            class="fa-brands fa-instagram" role="img" aria-hidden="true"></i></a></li>
+                <li><a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank"><i
+                            class="fa-brands fa-facebook-f" role="img" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank"><i class="fa-brands fa-tiktok"
+                            role="img" aria-hidden="true"></i></a></li>
+                <li><a href="https://br.pinterest.com/maribearquitetura/" target="_blank"><i
+                            class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <div id="copyright-info">
