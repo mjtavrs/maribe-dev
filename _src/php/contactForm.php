@@ -1,10 +1,10 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $nome = $_POST["nome"];
+    $nome = $_POST["name"];
     $email = $_POST["email"];
-    $telefone = $_POST["telefone"];
-    $assunto = $_POST["assunto"];
-    $mensagem = $_POST["mensagem"];
+    $telefone = $_POST["phone"];
+    $assunto = $_POST["subject"];
+    $mensagem = $_POST["message"];
 
     $to = "mjtdes.md@gmail.com";
     $assunto = "Teste de contato";
