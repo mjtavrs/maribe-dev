@@ -1,8 +1,7 @@
-// document.addEventListener("DOMContentLoaded", () => {
-//     if (document.readyState === "complete") {
-//         if (window.location.pathname === "/404.html") {
-//             document.documentElement.style.display = "none";
-//             window.location.href = "/";
-//         }
-//     }
-// })
+document.addEventListener("DOMContentLoaded", () => {
+    window.addEventListener("error", (e) => {
+        if (e && e.target && e.target.tagName === "img") {
+            window.location.href = "404.html";
+        }
+    })
+})
