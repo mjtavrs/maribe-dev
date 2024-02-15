@@ -1,0 +1,237 @@
+@import "../shared/variables";
+
+@font-face {
+    font-family: "Source Sans 3";
+    src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Kantumruy Pro";
+    src: url("../../../public/font/subtitle/KantumruyPro-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "All Round Gothic";
+    src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype");
+}
+
+@-webkit-keyframes slow-show {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slow-show {
+    0% {
+        -webkit-transform: translateZ(-1400px);
+        transform: translateZ(-1400px);
+        opacity: 0;
+    }
+
+    100% {
+        -webkit-transform: translateZ(0);
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.visibilityOff {
+    visibility: hidden;
+}
+
+#selected {
+    font-weight: bold;
+}
+
+a,
+body,
+button,
+label,
+input,
+textarea {
+    color: $cinzaElegante;
+}
+
+body {
+    background-color: $begeDelicado;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: $standardFontSize;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    img {
+        width: clamp(20rem, 100dvw, 30rem);
+    }
+
+    ul {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+        justify-content: center;
+        padding: 0 0 5rem;
+
+        li a {
+            text-decoration: none;
+        }
+    }
+}
+
+main {
+    padding: 0 4.5rem;
+
+    .page-hero {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+
+        h1 {
+            color: $vermelhoRecife;
+            font-family: "All Round Gothic", sans-serif;
+            font-size: $standardTitleSize;
+            font-weight: bolder;
+            text-align: center;
+            text-transform: lowercase;
+        }
+
+        p {
+            padding-bottom: 4rem;
+            text-align: center;
+        }
+    }
+
+    #projects {
+        padding-bottom: 3rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        article {
+            height: 34rem;
+            position: relative;
+
+            a {
+                span {
+                    background-color: $cinzaElegante;
+                    border-radius: 1rem;
+                    color: $begeDelicado;
+                    filter: opacity(0.90);
+                    font-family: "All Round Gothic", sans-serif;
+                    left: 50%;
+                    margin: 0;
+                    padding: 4rem 3rem;
+                    position: absolute;
+                    text-transform: lowercase;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    z-index: 2;
+
+                    h4 {
+                        border-top: 1px solid $begeDelicado;
+                        border-bottom: 1px solid $begeDelicado;
+                        font-weight: normal;
+                        padding: 1rem 0;
+                        text-align: center;
+                    }
+                }
+
+                img {
+                    border-radius: 1rem;
+                    height: 34rem;
+                    object-fit: cover;
+                    position: absolute;
+                    transition: 300ms;
+                    width: 100%;
+                    z-index: 1;
+                }
+
+                img:hover,
+                img:active {
+                    filter: brightness(0.5);
+                }
+
+                img:hover+.visibilityOff,
+                img:active+.visibilityOff {
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+footer {}
+
+// @media only screen and (min-width: 768px) {
+//     body {
+//         main {
+//             padding: 0 6rem;
+
+//             #projects {
+//                 flex-direction: row;
+//                 flex-wrap: wrap;
+//                 justify-content: space-around;
+//                 width: 100%;
+
+//                 article {
+//                     min-width: 48%;
+//                 }
+//             }
+//         }
+
+//         footer {
+//             flex-direction: row;
+//             justify-content: space-between;
+//             padding: 2rem 6rem;
+
+//             #social-links {
+//                 li {
+//                     a {
+//                         font-size: 1.8rem;
+
+//                         i {
+//                             padding: 0.6rem 0.8rem;
+//                         }
+//                     }
+//                 }
+//             }
+
+//             #copyright-info {
+//                 p {
+//                     text-align: right;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+// @media only screen and (min-width: 1440px) {
+//     body {
+//         main {
+//             padding: 0 20rem;
+
+//             #projects {
+
+//                 article {
+//                     min-width: 30%;
+//                 }
+//             }
+//         }
+//     }
+// }
