@@ -172,7 +172,6 @@ footer #copyright-info p {
   }
   body main #projects article {
     min-width: 48%;
-    max-width: 44rem;
   }
   body footer {
     flex-direction: row;
@@ -187,5 +186,13 @@ footer #copyright-info p {
   }
   body footer #copyright-info p {
     text-align: right;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body main {
+    padding: 0 20rem;
+  }
+  body main #projects article {
+    min-width: 32%;
   }
 }/*# sourceMappingURL=projects.css.map */

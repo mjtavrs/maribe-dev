@@ -222,7 +222,6 @@ footer {
 
                 article {
                     min-width: 48%;
-                    max-width: 44rem;
                 }
             }
         }
@@ -247,6 +246,20 @@ footer {
             #copyright-info {
                 p {
                     text-align: right;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        main {
+            padding: 0 20rem;
+
+            #projects {
+                article {
+                    min-width: 32%;
                 }
             }
         }
