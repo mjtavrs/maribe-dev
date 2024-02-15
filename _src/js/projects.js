@@ -6,11 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
     projetos.forEach(projeto => {
         const article = document.createElement("article");
         const link = document.createElement("a");
-        link.href = "#"
+        link.href = `projeto.html?id=${projeto.id}`;
 
         const img = document.createElement("img");
         img.src = projeto.url;
-        img.alt = "Testando";
+        img.alt = "Projeto da Maribe Arquitetura";
 
         const span = document.createElement("span");
         span.classList.add("visibilityOff");

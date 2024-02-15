@@ -4,8 +4,21 @@ const projetos = [
         url: "_assets/image/projetos/projeto-marias/projeto-marias-cover.jpg",
         titulo: "projeto marias",
         descricao: "O projeto Marias é um restaurante com comidas típicas do Nordeste, onde tivemos toda liberdade de criar um espaço temático com referências regionais que dialogam com a apresentação dos pratos.Abusamos de cores e texturas trazendo elementos típicos danossa região, como a corda sisal com nó de carrasco, chitas, panelas de barro, e bastante quadros em xilogravuras.Com tons terrosos, e estampas coloridas, transformamos uma garagem em um aconchegante restaurante.",
-        ano: "",
-        cidade: "Recife"
+        ano: "2022",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/projeto-marias/images/1.jpg",
+            "_assets/image/projetos/projeto-marias/images/2.jpg",
+            "_assets/image/projetos/projeto-marias/images/3.jpg",
+            "_assets/image/projetos/projeto-marias/images/4.jpg",
+            "_assets/image/projetos/projeto-marias/images/5.jpg",
+            "_assets/image/projetos/projeto-marias/images/6.jpg",
+            "_assets/image/projetos/projeto-marias/images/7.jpg",
+            "_assets/image/projetos/projeto-marias/images/8.jpg",
+            "_assets/image/projetos/projeto-marias/images/9.jpg",
+            "_assets/image/projetos/projeto-marias/images/10.jpg",
+            "_assets/image/projetos/projeto-marias/images/11.jpg"
+        ]
     },
     {
         id: 2,
