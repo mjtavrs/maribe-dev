@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const projetoId = parseInt(params.get("id"));
 
     const projeto = projetos.find(projeto => projeto.id === projetoId);
+    document.title = `${projeto.titulo} | maribe arquitetura`;
     const projectContainer = document.getElementById("project-info");
     projectContainer.innerHTML = `
         <h1>${projeto.titulo}</h1>
