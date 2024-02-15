@@ -3,7 +3,7 @@ const projetos = [
         id: 1,
         url: "_assets/image/projetos/projeto-marias/projeto-marias-cover.jpg",
         titulo: "projeto marias",
-        descricao: "O projeto Marias é um restaurante com comidas típicas do Nordeste, onde tivemos toda liberdade de criar um espaço temático com referências regionais que dialogam com a apresentação dos pratos.Abusamos de cores e texturas trazendo elementos típicos danossa região, como a corda sisal com nó de carrasco, chitas, panelas de barro, e bastante quadros em xilogravuras.Com tons terrosos, e estampas coloridas, transformamos uma garagem em um aconchegante restaurante.",
+        descricao: "O projeto Marias é um restaurante com comidas típicas do Nordeste, onde tivemos toda liberdade de criar um espaço temático com referências regionais que dialogam com a apresentação dos pratos. Abusamos de cores e texturas trazendo elementos típicos da nossa região, como a corda sisal com nó de carrasco, chitas, panelas de barro, e muitos quadros em xilogravuras. Com tons terrosos e estampas coloridas, transformamos uma garagem em um aconchegante restaurante.",
         ano: "2022",
         cidade: "Recife",
         outrasFotos: [
@@ -15,9 +15,7 @@ const projetos = [
             "_assets/image/projetos/projeto-marias/images/6.jpg",
             "_assets/image/projetos/projeto-marias/images/7.jpg",
             "_assets/image/projetos/projeto-marias/images/8.jpg",
-            "_assets/image/projetos/projeto-marias/images/9.jpg",
-            "_assets/image/projetos/projeto-marias/images/10.jpg",
-            "_assets/image/projetos/projeto-marias/images/11.jpg"
+            "_assets/image/projetos/projeto-marias/images/9.jpg"
         ]
     },
     {
@@ -26,7 +24,10 @@ const projetos = [
         titulo: "quarto selva",
         descricao: "Esse quarto de criança foi pensado para dois irmãos cheios de personalidade e que amam a natureza! Idealizamos uma arte para o projeto que foi pintada pelos próprios clientes, permitindo criar memórias afetivas desse novo quarto. A família tem planos de mudar para um apê maior, pensando nisso, fizemos uma marcenaria solta, podendo gerar vários layouts que se adequem ao novo espaço.",
         ano: "",
-        cidade: "Recife"
+        cidade: "Recife",
+        outrasFotos: [
+
+        ]
     },
     {
         id: 3,

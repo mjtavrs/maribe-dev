@@ -194,6 +194,24 @@ footer #copyright-info p {
     text-align: right;
   }
 }
+@media only screen and (min-width: 992px) {
+  body footer {
+    padding: 2rem 4rem;
+  }
+  body footer #social-links ul {
+    gap: 1rem;
+  }
+  body footer #social-links ul li a {
+    font-size: 1.4rem;
+  }
+  body footer #social-links ul li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    font-size: 1.4rem;
+    text-align: right;
+  }
+}
 @media only screen and (min-width: 1440px) {
   body main {
     padding: 0 20rem;

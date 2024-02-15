@@ -257,6 +257,37 @@ footer {
     }
 }
 
+@media only screen and (min-width: 992px) {
+    body {
+        footer {
+            padding: 2rem 4rem;
+
+            #social-links {
+                ul {
+                    gap: 1rem;
+
+                    li {
+                        a {
+                            font-size: 1.4rem;
+
+                            i {
+                                padding: 0.6rem 0.8rem;
+                            }
+                        }
+                    }
+                }
+            }
+
+            #copyright-info {
+                p {
+                    font-size: 1.4rem;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (min-width: 1440px) {
     body {
         main {

@@ -45,4 +45,159 @@ body {
   background-color: #FCFCFA;
   font-family: "Source Sans 3", sans-serif;
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
+}
+
+main {
+  position: relative;
+}
+main a i {
+  position: absolute;
+  color: #b7b7b7;
+  font-size: 3rem;
+  top: 3rem;
+  right: 3rem;
+}
+main #project-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 10rem 4.5rem 0;
+  width: 100%;
+}
+main #project-info h1 {
+  color: #C56E51;
+  font-family: "All Round Gothic", sans-serif;
+  font-size: 4.2rem;
+}
+main #project-info h2 {
+  font-family: "Kantumruy Pro", sans-serif;
+  font-size: 1.8rem;
+  font-weight: normal;
+  text-transform: lowercase;
+}
+main #project-info p {
+  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  padding-top: 2rem;
+  text-align: center;
+}
+main #project-pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 3rem 2rem 5rem;
+  row-gap: 1rem;
+  width: 100%;
+}
+main #project-pictures div {
+  height: 22rem;
+  width: 100%;
+}
+main #project-pictures div img {
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+footer {
+  border-top: 1px solid #3C3C3B;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem 3rem;
+}
+footer #social-links ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+}
+footer #social-links ul li a i {
+  border: 1px solid #3C3C3B;
+  border-radius: 0.5rem;
+  color: #3C3C3B;
+  padding: 0.4rem 0.6rem;
+}
+footer #copyright-info {
+  display: flex;
+  flex-direction: column;
+}
+footer #copyright-info p {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  body main #project-info h1 {
+    font-size: 4.5rem;
+  }
+  body main #project-info h2 {
+    font-size: 2.2rem;
+  }
+  body main #project-info p {
+    font-size: 1.8rem;
+    padding: 2rem 4rem 0;
+  }
+  body main #project-pictures {
+    padding: 3rem 4rem 5rem;
+    row-gap: 1.2rem;
+  }
+  body main #project-pictures div {
+    height: 24rem;
+    width: 48%;
+  }
+  body footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+  }
+  body footer #social-links li a {
+    font-size: 1.8rem;
+  }
+  body footer #social-links li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body main #project-info h1 {
+    font-size: 4.6rem;
+  }
+  body main #project-info h2 {
+    font-size: 2rem;
+  }
+  body main #project-info p {
+    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  }
+  body main #project-pictures {
+    padding: 3rem 5rem 5rem;
+    row-gap: 2rem;
+  }
+  body main #project-pictures div {
+    height: 24rem;
+    width: 30%;
+  }
+  body main #project-pictures div img {
+    border-radius: 0.8rem;
+  }
+  body footer {
+    padding: 2rem 4rem;
+  }
+  body footer #social-links ul {
+    gap: 1rem;
+  }
+  body footer #social-links ul li a {
+    font-size: 1.4rem;
+  }
+  body footer #social-links ul li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    font-size: 1.4rem;
+    text-align: right;
+  }
 }/*# sourceMappingURL=project.css.map */

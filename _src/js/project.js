@@ -15,10 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
     const projectPicturesContainer = document.getElementById("project-pictures");
 
     projeto.outrasFotos.forEach(foto => {
+        const imageBox = document.createElement("div");
         const image = document.createElement("img");
         image.src = foto;
         image.alt = "teste";
 
-        projectPicturesContainer.appendChild(image);
+        imageBox.appendChild(image);
+        projectPicturesContainer.appendChild(imageBox);
     })
 })
