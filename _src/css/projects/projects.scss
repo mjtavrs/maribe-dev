@@ -118,9 +118,10 @@ main {
     }
 
     #projects {
+        padding-bottom: 5rem;
+
         article {
             height: 34rem;
-            margin-bottom: 4rem;
             position: relative;
 
             a {
@@ -144,6 +145,7 @@ main {
                         border-bottom: 1px solid $begeDelicado;
                         font-weight: normal;
                         padding: 1rem 0;
+                        text-align: center;
                     }
                 }
 
@@ -217,7 +219,8 @@ footer {
             #projects {
                 display: flex;
                 flex-wrap: wrap;
-                justify-content: space-between;
+                justify-content: space-around;
+                gap: 2rem;
                 width: 100%;
 
                 article {
@@ -258,8 +261,9 @@ footer {
             padding: 0 20rem;
 
             #projects {
+
                 article {
-                    min-width: 32%;
+                    min-width: 30%;
                 }
             }
         }

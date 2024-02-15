@@ -87,9 +87,11 @@ main .page-hero p {
   padding-bottom: 4rem;
   text-align: center;
 }
+main #projects {
+  padding-bottom: 5rem;
+}
 main #projects article {
   height: 34rem;
-  margin-bottom: 4rem;
   position: relative;
 }
 main #projects article a span {
@@ -112,6 +114,7 @@ main #projects article a span h4 {
   border-bottom: 1px solid #FCFCFA;
   font-weight: normal;
   padding: 1rem 0;
+  text-align: center;
 }
 main #projects article a img {
   border-radius: 1rem;
@@ -167,7 +170,8 @@ footer #copyright-info p {
   body main #projects {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
+    gap: 2rem;
     width: 100%;
   }
   body main #projects article {
@@ -193,6 +197,6 @@ footer #copyright-info p {
     padding: 0 20rem;
   }
   body main #projects article {
-    min-width: 32%;
+    min-width: 30%;
   }
 }/*# sourceMappingURL=projects.css.map */
