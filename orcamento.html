@@ -47,7 +47,7 @@
                 pode preencher essas informações no formulário a seguir. esperamos que você ame a jornada na nossa
                 empresa.</p>
         </section>
-        <form class="contact-form" action="_src/php/budgetForm.php" method="post">
+        <form class="contact-form" action="_src/php/budgetForm.php" method="post" enctype="multipart/form-data">
             <label for="nome">
                 nome completo
                 <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
@@ -109,39 +109,34 @@
                 <fieldset>
                     <legend>quando você prevê iniciar o projeto?</legend>
                     <div>
-                        <input type="radio" name="quando-começar-projeto" id="escolhendo-lar" value="escolhendo-lar"
+                        <input type="radio" name="quando-comecar-projeto" id="escolhendo-lar" value="escolhendo-lar"
                             required aria-required="true">
                         <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
                     </div>
                     <div>
-                        <input type="radio" name="quando-começar-projeto" id="esperando-chaves"
+                        <input type="radio" name="quando-comecar-projeto" id="esperando-chaves"
                             value="esperando-chaves">
                         <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
                     </div>
                     <div>
-                        <input type="radio" name="quando-começar-projeto" id="sem-pressa" value="sem-pressa">
+                        <input type="radio" name="quando-comecar-projeto" id="sem-pressa" value="sem-pressa">
                         <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
                     </div>
                     <div>
-                        <input type="radio" name="quando-começar-projeto" id="com-pressa" value="com-pressa">
+                        <input type="radio" name="quando-comecar-projeto" id="com-pressa" value="com-pressa">
                         <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
                     </div>
                 </fieldset>
-                <label for="arquivos">
-                    fique a vontade para compartilhar planta baixa, fotos e vídeos do espaço a ser projetado:
-                    <input type="file" name="arquivos-projeto" id="arquivos" class="file-sender" multiple
-                        accept=".jpg, .jpeg, .png, .pdf, .dwg, video/*">
-                    <span class="extra-info">extensões de arquivos suportados: .jpg, .jpeg, .png, .pdf, .dwg ou
-                        vídeos</span>
+                <label for="objetivo">
+                    qual é o seu objetivo com este projeto? como podemos te ajudar?
+                    <textarea name="objetivo" cols="30" rows="5" id="objetivo"
+                        placeholder="digite as informações aqui..." class="contact-form_input" required
+                        aria-required="true"></textarea>
+                    <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja
+                        construir
+                        e o nível de intervenção necessário, caso haja reformas</span>
                 </label>
             </div>
-            <label for="objetivo">
-                qual é o seu objetivo com este projeto? como podemos te ajudar?
-                <textarea name="objective" cols="30" rows="5" id="objetivo" placeholder="digite as informações aqui..."
-                    class="contact-form_input" required aria-required="true"></textarea>
-                <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja construir
-                    e o nível de intervenção necessário, caso haja reformas</span>
-            </label>
             <button id="submit-form">enviar mensagem</button>
         </form>
     </main>

@@ -229,7 +229,7 @@ footer #copyright-info p {
     border-radius: 0.8rem;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1896px) {
   body main a i {
     font-size: 4rem;
     top: 3rem;

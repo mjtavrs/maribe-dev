@@ -100,6 +100,7 @@ main {
             color: $vermelhoRecife;
             font-family: "All Round Gothic", sans-serif;
             font-size: 4.2rem;
+            text-align: center;
         }
 
         h2 {
@@ -334,7 +335,7 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1896px) {
     body {
         main {
             a {
