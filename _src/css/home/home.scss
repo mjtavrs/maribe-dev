@@ -40,35 +40,139 @@
 
 body {
     background-color: $begeDelicado;
+    display: flex;
     font-family: "Source Sans 3";
     font-size: $standardFontSize;
-}
+    height: 100dvh;
+    justify-content: center;
 
-nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    img {
-        width: clamp(20rem, 100dvw, 30rem);
-    }
-
-    ul {
+    nav {
         align-items: center;
         display: flex;
         flex-direction: column;
-        font-size: $standardSubTitleSize;
-        gap: 2rem;
-        list-style: none;
-        padding: 0 0 5rem;
+        padding-top: 15rem;
 
-        li a {
-            color: $vermelhoRecife;
-            text-decoration: none;
+        .gradient-left,
+        .gradient-right {
+            bottom: 0;
+            display: none;
+            top: 0;
+            position: absolute;
+            width: 50%;
+            z-index: 1;
         }
 
-        // a:hover {
-        //     color: red;
-        // }
+        #logo-maribe {
+            padding-bottom: 3rem;
+            width: 24rem;
+        }
+
+        ul {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            font-size: $standardSubTitleSize;
+            gap: 2rem;
+            list-style: none;
+            padding: 0 0 5rem;
+
+            li a {
+                color: $cinzaElegante;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: $vermelhoRecife;
+            }
+        }
+    }
+
+    #bg-desktop {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        nav {
+            padding-top: 20rem;
+
+            #logo-maribe {
+                width: 30rem;
+            }
+
+            ul {
+                font-size: 2.8rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1276px) {
+
+    html,
+    body,
+    nav {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        nav {
+            box-sizing: border-box;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+
+            #bg-desktop {
+                display: block;
+                height: 100dvh;
+                opacity: 0.8;
+                overflow: hidden;
+            }
+
+            #logo-maribe {
+                display: none;
+                padding: 0;
+            }
+
+            ul {
+                flex-direction: row;
+                font-size: 2.2rem;
+                gap: 6rem;
+                position: absolute;
+                top: 21rem;
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 1896px) {
+    body {
+        nav {
+
+            .gradient-left,
+            .gradient-right {
+                display: block;
+            }
+
+            .gradient-left {
+                left: 0;
+                background: linear-gradient(to right, rgba(252, 252, 250, 0.9), rgba(252, 252, 250, 0) 15%);
+            }
+
+            .gradient-right {
+                right: 0;
+                background: linear-gradient(to left, rgba(252, 252, 250, 0.75), rgba(252, 252, 250, 0) 20%);
+            }
+
+            ul {
+                font-size: 2.5rem;
+                gap: 8rem;
+                top: 25rem;
+                z-index: 2;
+            }
+        }
     }
 }

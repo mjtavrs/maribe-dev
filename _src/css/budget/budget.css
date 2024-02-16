@@ -151,12 +151,17 @@ main form button {
   border: none;
   border-radius: 2rem;
   color: white;
+  cursor: pointer;
   display: inline;
   font-family: "Source Sans 3", sans-serif;
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
   font-weight: bold;
   margin: 4rem auto;
   padding: 1.5rem 2rem;
+  transition: background-color 300ms;
+}
+main form button:hover {
+  background-color: #E2AF58;
 }
 
 footer {

@@ -97,9 +97,20 @@ main {
             font-family: "All Round Gothic", sans-serif;
             font-size: $standardTitleSize;
             font-weight: bolder;
-            padding-bottom: 5rem;
             text-align: center;
             text-transform: lowercase;
+        }
+
+        p {
+            padding: 2rem 2rem 4rem;
+            text-align: center;
+            text-transform: lowercase;
+
+            a {
+                color: $vermelhoRecife;
+                font-weight: bold;
+                text-decoration: none;
+            }
         }
     }
 
@@ -147,12 +158,18 @@ main {
             border: none;
             border-radius: 2rem;
             color: white;
+            cursor: pointer;
             display: inline;
             font-family: "Source Sans 3", sans-serif;
             font-size: $standardFontSize;
             font-weight: bold;
             margin: 4rem auto 6rem;
             padding: 1.5rem 2rem;
+            transition: background-color 300ms;
+        }
+
+        button:hover {
+            background-color: $amareloTarsila;
         }
     }
 }
