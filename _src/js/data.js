@@ -23,10 +23,12 @@ const projetos = [
         url: "_assets/image/projetos/quarto-selva/quarto-selva-cover.png",
         titulo: "quarto selva",
         descricao: "Esse quarto de criança foi pensado para dois irmãos cheios de personalidade e que amam a natureza! Idealizamos uma arte para o projeto que foi pintada pelos próprios clientes, permitindo criar memórias afetivas desse novo quarto. A família tem planos de mudar para um apê maior, pensando nisso, fizemos uma marcenaria solta, podendo gerar vários layouts que se adequem ao novo espaço.",
-        ano: "",
+        ano: "2023",
         cidade: "Recife",
         outrasFotos: [
-
+            "_assets/image/projetos/quarto-selva/images/1.png",
+            "_assets/image/projetos/quarto-selva/images/2.png",
+            "_assets/image/projetos/quarto-selva/images/3.png"
         ]
     },
     {
@@ -34,64 +36,190 @@ const projetos = [
         url: "_assets/image/projetos/ape-eron/ape-eron-cover.png",
         titulo: "apê eron",
         descricao: "Os clientes do apê Eron são um casal jovem bastante extrovertido, que gosta de reunir amigos e confraternizar, mantendo sempre uma energia alta astral. Inspiradas nessa personalidade, o projeto surgiu cheio de cores, vida e originalidade dentro de uma área de 50 m². Trouxemos ladrilho hidráulico, plantas e bastante marcenaria para otimizar todo espaço do apartamento.",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/ape-eron/images/1.png",
+            "_assets/image/projetos/ape-eron/images/2.png",
+            "_assets/image/projetos/ape-eron/images/3.png",
+            "_assets/image/projetos/ape-eron/images/4.png",
+            "_assets/image/projetos/ape-eron/images/5.png",
+            "_assets/image/projetos/ape-eron/images/6.png",
+            "_assets/image/projetos/ape-eron/images/7.png",
+            "_assets/image/projetos/ape-eron/images/8.png",
+            "_assets/image/projetos/ape-eron/images/9.png",
+            "_assets/image/projetos/ape-eron/images/10.png",
+            "_assets/image/projetos/ape-eron/images/11.png",
+            "_assets/image/projetos/ape-eron/images/12.png",
+            "_assets/image/projetos/ape-eron/images/13.png",
+            "_assets/image/projetos/ape-eron/images/14.png",
+            "_assets/image/projetos/ape-eron/images/15.png",
+            "_assets/image/projetos/ape-eron/images/16.png"
+        ]
     },
     {
         id: 4,
         url: "_assets/image/projetos/ape-varandas/ape-varandas-cover.png",
         titulo: "apê varandas",
         descricao: "O apê varandas é habitado por dois moradores, pai e filho, com gostos semelhantes, ambos curtem o contraste entre cores claras e escuras com estilo mais industrial, adoram receber amigos, fazer churrascos e ouvir músicas enquanto jogam cartas. Criamos um projeto com tons mais escuros, através da madeira e bastante cinza, o resultado foi um ambiente aconchegante para horas de descanso e simultaneamente funcional para receber amigos.",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/ape-varandas/images/1.png",
+            "_assets/image/projetos/ape-varandas/images/2.png",
+            "_assets/image/projetos/ape-varandas/images/3.png",
+            "_assets/image/projetos/ape-varandas/images/4.png",
+            "_assets/image/projetos/ape-varandas/images/5.png",
+            "_assets/image/projetos/ape-varandas/images/6.png",
+            "_assets/image/projetos/ape-varandas/images/7.png",
+            "_assets/image/projetos/ape-varandas/images/8.png",
+            "_assets/image/projetos/ape-varandas/images/9.png",
+            "_assets/image/projetos/ape-varandas/images/10.png",
+            "_assets/image/projetos/ape-varandas/images/11.png",
+            "_assets/image/projetos/ape-varandas/images/12.png",
+            "_assets/image/projetos/ape-varandas/images/13.png",
+            "_assets/image/projetos/ape-varandas/images/14.png",
+            "_assets/image/projetos/ape-varandas/images/15.png",
+            "_assets/image/projetos/ape-varandas/images/16.png",
+            "_assets/image/projetos/ape-varandas/images/17.png",
+            "_assets/image/projetos/ape-varandas/images/18.png",
+            "_assets/image/projetos/ape-varandas/images/19.png",
+            "_assets/image/projetos/ape-varandas/images/20.png",
+            "_assets/image/projetos/ape-varandas/images/21.png",
+            "_assets/image/projetos/ape-varandas/images/22.png",
+            "_assets/image/projetos/ape-varandas/images/23.png",
+            "_assets/image/projetos/ape-varandas/images/24.png"
+        ]
     },
     {
         id: 5,
         url: "_assets/image/projetos/agencia-166/agencia-166-cover.jpg",
         titulo: "agência 166",
-        descricao: "O projeto consiste na transformação de um escritório em uma sala coorporativa. O espaço é localizado em um terreno de área residencial, mas possui acesso independente da área íntima dos moradores. O pedido dos clientes era que o espaço contasse com 6 estações de trabalho, uma mini copa e área de armazenamento. Tudo isso com inspirações em áreas de coworks contemporâneos.",
-        ano: "",
-        cidade: "Recife"
+        descricao: "O projeto consiste na transformação de um escritório em uma sala corporativa. O espaço é localizado em um terreno de área residencial, mas possui acesso independente da área íntima dos moradores. O pedido dos clientes era que o espaço contasse com 6 estações de trabalho, uma mini copa e área de armazenamento. Tudo isso com inspirações em áreas de coworks contemporâneos.",
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/agencia-166/images/1.jpg",
+            "_assets/image/projetos/agencia-166/images/2.jpg",
+            "_assets/image/projetos/agencia-166/images/3.jpg"
+        ]
     },
     {
         id: 6,
         url: "_assets/image/projetos/ape-nina/ape-nina-cover.jpg",
         titulo: "apê nina",
         descricao: "No apê nina nós integramos todos os ambientes das áreas sociais: sala de estar, jantar, varanda e cozinha de forma que houvesse equilíbrio, leveza e harmonia. Tudo isso sem quebrar nenhuma parede porque são estruturais e não podem ser alteradas, então toda intervenção foi feita por marcenaria, revestimentos e pintura. Com pouco espaço projetamos bastante marcenaria criativa e otimizada para aproveitar os espaços.",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/ape-nina/images/1.jpg",
+            "_assets/image/projetos/ape-nina/images/2.jpg",
+            "_assets/image/projetos/ape-nina/images/3.jpg",
+            "_assets/image/projetos/ape-nina/images/4.jpg",
+            "_assets/image/projetos/ape-nina/images/5.jpg",
+            "_assets/image/projetos/ape-nina/images/6.jpg",
+            "_assets/image/projetos/ape-nina/images/7.jpg",
+            "_assets/image/projetos/ape-nina/images/8.jpg",
+            "_assets/image/projetos/ape-nina/images/9.jpg",
+            "_assets/image/projetos/ape-nina/images/10.jpg",
+            "_assets/image/projetos/ape-nina/images/11.jpg",
+            "_assets/image/projetos/ape-nina/images/12.jpg",
+            "_assets/image/projetos/ape-nina/images/13.jpg",
+            "_assets/image/projetos/ape-nina/images/14.jpg",
+            "_assets/image/projetos/ape-nina/images/15.jpg",
+            "_assets/image/projetos/ape-nina/images/16.jpg"
+        ]
     },
     {
         id: 7,
         url: "_assets/image/projetos/ape-pilar/ape-pilar-cover.png",
         titulo: "apê pilar",
         descricao: "O apê pilar é um apartamento localizado no centro de Recife, habitado por 5 pessoas, sendo 2 adultos, 2 crianças e 1 adolescente. É uma família alegre e espontânea, que tem a leitura como algo fundamental para eles, inclusive para as crianças. Apreciam cinema alternativo, aprender sobre diferentes culturas e amam uma boa arte e um bom design. Por conta disso, trouxemos bastante móveis com design diferenciado, cor e texturas!",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/ape-pilar/images/1.png",
+            "_assets/image/projetos/ape-pilar/images/2.png",
+            "_assets/image/projetos/ape-pilar/images/3.png",
+            "_assets/image/projetos/ape-pilar/images/4.png",
+            "_assets/image/projetos/ape-pilar/images/5.png",
+            "_assets/image/projetos/ape-pilar/images/6.png",
+            "_assets/image/projetos/ape-pilar/images/7.png",
+            "_assets/image/projetos/ape-pilar/images/8.png",
+            "_assets/image/projetos/ape-pilar/images/9.png",
+            "_assets/image/projetos/ape-pilar/images/10.png",
+            "_assets/image/projetos/ape-pilar/images/11.png",
+            "_assets/image/projetos/ape-pilar/images/12.png",
+            "_assets/image/projetos/ape-pilar/images/13.png",
+            "_assets/image/projetos/ape-pilar/images/14.png",
+            "_assets/image/projetos/ape-pilar/images/15.png",
+            "_assets/image/projetos/ape-pilar/images/16.png",
+            "_assets/image/projetos/ape-pilar/images/17.png",
+            "_assets/image/projetos/ape-pilar/images/18.png",
+            "_assets/image/projetos/ape-pilar/images/19.png",
+            "_assets/image/projetos/ape-pilar/images/20.png",
+            "_assets/image/projetos/ape-pilar/images/21.png",
+            "_assets/image/projetos/ape-pilar/images/22.png",
+            "_assets/image/projetos/ape-pilar/images/23.png"
+        ]
     },
     {
         id: 8,
         url: "_assets/image/projetos/ape-girassol/ape-girassol-cover.jpg",
         titulo: "apê girassol",
         descricao: "Esse apê é de um casal jovem bem bairristas, minimalistas e gente boa! Para eles o significado do lar vem junto com palavras como conforto, refúgio, alegria e relaxamento. O projeto precisou trazer essa tranquilidade com bastante personalidade em um espaço de 50m², por isso trabalhamos com cores suaves, obras de arte coloridas e locais e marcenaria criativa para aproveitar todo espaço!",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/ape-girassol/images/1.png",
+            "_assets/image/projetos/ape-girassol/images/2.png",
+            "_assets/image/projetos/ape-girassol/images/3.png",
+            "_assets/image/projetos/ape-girassol/images/4.png",
+            "_assets/image/projetos/ape-girassol/images/5.png",
+            "_assets/image/projetos/ape-girassol/images/6.png",
+            "_assets/image/projetos/ape-girassol/images/7.png",
+            "_assets/image/projetos/ape-girassol/images/8.png",
+            "_assets/image/projetos/ape-girassol/images/9.png",
+            "_assets/image/projetos/ape-girassol/images/10.png",
+            "_assets/image/projetos/ape-girassol/images/11.png",
+            "_assets/image/projetos/ape-girassol/images/12.png",
+            "_assets/image/projetos/ape-girassol/images/13.png",
+            "_assets/image/projetos/ape-girassol/images/14.png"
+        ]
     },
     {
         id: 9,
         url: "_assets/image/projetos/quarto-tete/quarto-tete-cover.png",
         titulo: "quarto tête",
         descricao: "Esse é um quartinho de bebê desenvolvido com base na filosofia Montessoriana. Buscamos trazer a sensação de refúgio para a bebê, com um projeto que acompanhasse seu crescimento e aumento de autonomia. Apostamos em tons suaves, mobiliário baixo e bastante revestimento natural. A arte na parede foi desenvolvida pela maribe e pintada pela cliente trazendo bastante memória afetiva para o espaço!",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/quarto-tete/images/1.png",
+            "_assets/image/projetos/quarto-tete/images/2.png",
+            "_assets/image/projetos/quarto-tete/images/3.png",
+            "_assets/image/projetos/quarto-tete/images/4.png"
+        ]
     },
     {
         id: 10,
         url: "_assets/image/projetos/ape-amazonita/ape-amazonita-cover.png",
         titulo: "apê amazonita",
         descricao: "Os clientes do apê amazonita são bastante autênticos e criativos! Com bastante obras de arte e uma coleção de vinis, criamos um projeto com a personalidade deles. A parede neutra evidenciou a beleza de suas coleções artísticas, os metais pretos contrastam com as paredes e marcenarias e a pedra amazonita, como a protagonista, trazendo elegância e suavidade pro ambiente.",
-        ano: "",
-        cidade: "Recife"
+        ano: "2023",
+        cidade: "Recife",
+        outrasFotos: [
+            "_assets/image/projetos/ape-amazonita/images/1.png",
+            "_assets/image/projetos/ape-amazonita/images/2.png",
+            "_assets/image/projetos/ape-amazonita/images/3.png",
+            "_assets/image/projetos/ape-amazonita/images/4.png",
+            "_assets/image/projetos/ape-amazonita/images/5.png",
+            "_assets/image/projetos/ape-amazonita/images/6.png",
+            "_assets/image/projetos/ape-amazonita/images/7.png",
+            "_assets/image/projetos/ape-amazonita/images/8.png",
+            "_assets/image/projetos/ape-amazonita/images/9.png",
+            "_assets/image/projetos/ape-amazonita/images/10.png"
+        ]
     }
 ]
 
