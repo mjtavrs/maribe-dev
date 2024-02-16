@@ -205,4 +205,55 @@ footer #copyright-info p {
     font-size: 1.4rem;
     text-align: right;
   }
+}
+@media only screen and (min-width: 1440px) {
+  body main #project-info h1 {
+    font-size: 4rem;
+  }
+  body main #project-info h2 {
+    font-size: 2rem;
+  }
+  body main #project-info p {
+    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+    padding: 2rem 12rem 0;
+  }
+  body main #project-pictures {
+    padding: 3rem 8rem 5rem;
+    row-gap: 4rem;
+  }
+  body main #project-pictures div {
+    height: 24rem;
+    width: 30%;
+  }
+  body main #project-pictures div img {
+    border-radius: 0.8rem;
+  }
+}
+@media only screen and (min-width: 1920px) {
+  body main a i {
+    font-size: 4rem;
+    top: 3rem;
+    right: 4.5rem;
+  }
+  body main #project-info h1 {
+    font-size: 4.4rem;
+  }
+  body main #project-info h2 {
+    font-size: 2.1rem;
+  }
+  body main #project-info p {
+    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+    padding: 2rem 20rem 4rem;
+  }
+  body main #project-pictures {
+    padding: 3rem 8rem 5rem;
+    row-gap: 2rem;
+  }
+  body main #project-pictures div {
+    height: 30rem;
+    width: 24%;
+  }
+  body main #project-pictures div img {
+    border-radius: 0.5rem;
+  }
 }/*# sourceMappingURL=project.css.map */

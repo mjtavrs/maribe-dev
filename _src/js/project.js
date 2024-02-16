@@ -18,7 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const imageBox = document.createElement("div");
         const image = document.createElement("img");
         image.src = foto;
-        image.alt = "teste";
+        image.alt = "Imagem de projeto da Maribe Arquitetura";
+        image.title = `${projeto.titulo}`
 
         imageBox.appendChild(image);
         projectPicturesContainer.appendChild(imageBox);

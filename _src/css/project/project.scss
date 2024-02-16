@@ -264,8 +264,6 @@ footer {
                     img {
                         border-radius: 0.8rem;
                     }
-
-                    //CONTINUAR A PARTIR DAQUI
                 }
             }
         }
@@ -299,17 +297,83 @@ footer {
     }
 }
 
-// @media only screen and (min-width: 1440px) {
-//     body {
-//         main {
-//             padding: 0 20rem;
+@media only screen and (min-width: 1440px) {
+    body {
+        main {
 
-//             #projects {
+            #project-info {
 
-//                 article {
-//                     min-width: 30%;
-//                 }
-//             }
-//         }
-//     }
-// }
+                h1 {
+                    font-size: 4rem;
+                }
+
+                h2 {
+                    font-size: 2rem;
+                }
+
+                p {
+                    font-size: $standardFontSize;
+                    padding: 2rem 12rem 0;
+                }
+            }
+
+            #project-pictures {
+                padding: 3rem 8rem 5rem;
+                row-gap: 4rem;
+
+                div {
+                    height: 24rem;
+                    width: 30%;
+
+                    img {
+                        border-radius: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1920px) {
+    body {
+        main {
+            a {
+                i {
+                    font-size: 4rem;
+                    top: 3rem;
+                    right: 4.5rem;
+                }
+            }
+
+            #project-info {
+
+                h1 {
+                    font-size: 4.4rem;
+                }
+
+                h2 {
+                    font-size: 2.1rem;
+                }
+
+                p {
+                    font-size: $standardFontSize;
+                    padding: 2rem 20rem 4rem;
+                }
+            }
+
+            #project-pictures {
+                padding: 3rem 8rem 5rem;
+                row-gap: 2rem;
+
+                div {
+                    height: 30rem;
+                    width: 24%;
+
+                    img {
+                        border-radius: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
