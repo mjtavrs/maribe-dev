@@ -16,12 +16,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
     projeto.outrasFotos.forEach(foto => {
         const imageBox = document.createElement("div");
+        const lightbox = document.createElement("a");
+        lightbox.href = foto;
+        lightbox.setAttribute("data-lightbox", "fotos");
+        lightbox.setAttribute("data-title", `${projeto.titulo}`);
         const image = document.createElement("img");
         image.src = foto;
         image.alt = "Imagem de projeto da Maribe Arquitetura";
         image.title = `${projeto.titulo}`
 
-        imageBox.appendChild(image);
+        lightbox.appendChild(image);
+        imageBox.appendChild(lightbox);
         projectPicturesContainer.appendChild(imageBox);
     })
 })
