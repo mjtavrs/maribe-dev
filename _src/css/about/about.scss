@@ -291,6 +291,12 @@ footer {
             padding: 0 30rem;
         }
 
+        .page-hero {
+            p {
+                padding: 0 15rem 4rem;
+            }
+        }
+
         .about-logo {
             video {
                 margin: 0 auto;
@@ -303,6 +309,12 @@ footer {
 @media only screen and (min-width: 1920px) {
     body {
         main {
+
+            .page-hero {
+                p {
+                    padding: 0 35rem 4rem;
+                }
+            }
 
             .about-us,
             .about-logo {

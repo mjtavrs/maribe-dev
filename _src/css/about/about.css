@@ -211,12 +211,18 @@ footer #copyright-info p {
   body main {
     padding: 0 30rem;
   }
+  body .page-hero p {
+    padding: 0 15rem 4rem;
+  }
   body .about-logo video {
     margin: 0 auto;
     width: 80%;
   }
 }
 @media only screen and (min-width: 1920px) {
+  body main .page-hero p {
+    padding: 0 35rem 4rem;
+  }
   body main .about-us #test-div,
   body main .about-logo #test-div {
     padding: 15rem 0 5rem;
