@@ -73,6 +73,7 @@ main #project-info h1 {
   color: #C56E51;
   font-family: "All Round Gothic", sans-serif;
   font-size: 4.2rem;
+  text-align: center;
 }
 main #project-info h2 {
   font-family: "Kantumruy Pro", sans-serif;
