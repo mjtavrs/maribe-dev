@@ -86,6 +86,7 @@ main .page-hero h1 {
 main .page-hero p {
   padding-bottom: 4rem;
   text-align: center;
+  text-transform: lowercase;
 }
 main #projects {
   padding-bottom: 3rem;
@@ -170,6 +171,9 @@ footer #copyright-info p {
   body main {
     padding: 0 6rem;
   }
+  body main .page-hero {
+    padding: 0 6rem 0;
+  }
   body main #projects {
     flex-direction: row;
     flex-wrap: wrap;
@@ -216,7 +220,20 @@ footer #copyright-info p {
   body main {
     padding: 0 15rem;
   }
+  body main .page-hero p {
+    padding: 0 8rem 4rem;
+  }
   body main #projects article {
     min-width: 30%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  body main .page-hero p {
+    padding: 0 20rem 4rem;
+  }
+}
+@media only screen and (min-width: 1896px) {
+  body main .page-hero p {
+    padding: 0 38rem 4rem;
   }
 }/*# sourceMappingURL=projects.css.map */

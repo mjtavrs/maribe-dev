@@ -3,7 +3,7 @@ const projetos = [
         id: 1,
         url: "_assets/image/projetos/projeto-marias/projeto-marias-cover.jpg",
         titulo: "projeto marias",
-        descricao: "O projeto Marias é um restaurante com comidas típicas do Nordeste, onde tivemos toda liberdade de criar um espaço temático com referências regionais que dialogam com a apresentação dos pratos. Abusamos de cores e texturas trazendo elementos típicos da nossa região, como a corda sisal com nó de carrasco, chitas, panelas de barro, e muitos quadros em xilogravuras. Com tons terrosos e estampas coloridas, transformamos uma garagem em um aconchegante restaurante.",
+        descricao: "O projeto marias é um restaurante com comidas típicas do Nordeste, onde tivemos toda liberdade de criar um espaço temático com referências regionais que dialogam com a apresentação dos pratos. Abusamos de cores e texturas trazendo elementos típicos da nossa região, como a corda sisal com nó de carrasco, chitas, panelas de barro, e muitos quadros em xilogravuras. Com tons terrosos e estampas coloridas, transformamos uma garagem em um aconchegante restaurante.",
         ano: "2022",
         cidade: "Recife",
         outrasFotos: [
@@ -35,7 +35,7 @@ const projetos = [
         id: 3,
         url: "_assets/image/projetos/ape-eron/ape-eron-cover.png",
         titulo: "apê eron",
-        descricao: "Os clientes do apê Eron são um casal jovem bastante extrovertido, que gosta de reunir amigos e confraternizar, mantendo sempre uma energia alta astral. Inspiradas nessa personalidade, o projeto surgiu cheio de cores, vida e originalidade dentro de uma área de 50 m². Trouxemos ladrilho hidráulico, plantas e bastante marcenaria para otimizar todo espaço do apartamento.",
+        descricao: "Os clientes do apê eron são um casal jovem bastante extrovertido, que gosta de reunir amigos e confraternizar, mantendo sempre uma energia alto astral. Inspiradas nessa personalidade, o projeto surgiu cheio de cores, vida e originalidade dentro de uma área de 50 m². Trouxemos ladrilho hidráulico, plantas e bastante marcenaria para otimizar todo espaço do apartamento.",
         ano: "2023",
         cidade: "Recife",
         outrasFotos: [
@@ -108,7 +108,7 @@ const projetos = [
         id: 6,
         url: "_assets/image/projetos/ape-nina/ape-nina-cover.jpg",
         titulo: "apê nina",
-        descricao: "No apê nina nós integramos todos os ambientes das áreas sociais: sala de estar, jantar, varanda e cozinha de forma que houvesse equilíbrio, leveza e harmonia. Tudo isso sem quebrar nenhuma parede porque são estruturais e não podem ser alteradas, então toda intervenção foi feita por marcenaria, revestimentos e pintura. Com pouco espaço projetamos bastante marcenaria criativa e otimizada para aproveitar os espaços.",
+        descricao: "No apê nina, nós integramos todos os ambientes das áreas sociais: sala de estar, jantar, varanda e cozinha de forma que houvesse equilíbrio, leveza e harmonia. Tudo isso sem quebrar nenhuma parede, porque são estruturais e não podem ser alteradas, então toda intervenção foi feita por marcenaria, revestimentos e pintura. Com pouco espaço projetamos bastante marcenaria criativa e otimizada para aproveitar os espaços.",
         ano: "2023",
         cidade: "Recife",
         outrasFotos: [
@@ -134,7 +134,7 @@ const projetos = [
         id: 7,
         url: "_assets/image/projetos/ape-pilar/ape-pilar-cover.png",
         titulo: "apê pilar",
-        descricao: "O apê pilar é um apartamento localizado no centro de Recife, habitado por 5 pessoas, sendo 2 adultos, 2 crianças e 1 adolescente. É uma família alegre e espontânea, que tem a leitura como algo fundamental para eles, inclusive para as crianças. Apreciam cinema alternativo, aprender sobre diferentes culturas e amam uma boa arte e um bom design. Por conta disso, trouxemos bastante móveis com design diferenciado, cor e texturas!",
+        descricao: "O apê pilar é um apartamento localizado no centro do Recife, habitado por 5 pessoas, sendo 2 adultos, 2 crianças e 1 adolescente. É uma família alegre e espontânea, que tem a leitura como algo fundamental para eles, inclusive para as crianças. Apreciam cinema alternativo, aprender sobre diferentes culturas e amam uma boa arte e um bom design. Por conta disso, trouxemos bastante móveis com design diferenciado, cor e texturas!",
         ano: "2023",
         cidade: "Recife",
         outrasFotos: [
@@ -205,7 +205,7 @@ const projetos = [
         id: 10,
         url: "_assets/image/projetos/ape-amazonita/ape-amazonita-cover.png",
         titulo: "apê amazonita",
-        descricao: "Os clientes do apê amazonita são bastante autênticos e criativos! Com bastante obras de arte e uma coleção de vinis, criamos um projeto com a personalidade deles. A parede neutra evidenciou a beleza de suas coleções artísticas, os metais pretos contrastam com as paredes e marcenarias e a pedra amazonita, como a protagonista, trazendo elegância e suavidade pro ambiente.",
+        descricao: "Os clientes do apê amazonita são bastante autênticos e criativos! Com bastante obras de arte e uma coleção de vinis, criamos um projeto com a personalidade deles. A parede neutra evidenciou a beleza de suas coleções artísticas, os metais pretos contrastam com as paredes, marcenarias e a pedra amazonita, como a protagonista, trazendo elegância e suavidade para o ambiente.",
         ano: "2023",
         cidade: "Recife",
         outrasFotos: [

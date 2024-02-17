@@ -218,6 +218,12 @@ footer {
         main {
             padding: 0 6rem;
 
+            .page-hero {
+                p {
+                    padding: 2rem 6rem 4rem;
+                }
+            }
+
             form {
                 button {
                     font-size: 1.8rem;
@@ -296,6 +302,29 @@ footer {
     body {
         main {
             padding: 0 30rem;
+
+            .page-hero {
+                p {
+                    padding: 2rem 16rem 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1896px) {
+    body {
+        main {
+
+            .page-hero {
+                p {
+                    padding: 2rem 39rem 4rem;
+                }
+            }
+
+            #submit-form {
+                font-size: 2rem;
+            }
         }
     }
 }

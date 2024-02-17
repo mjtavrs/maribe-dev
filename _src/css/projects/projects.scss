@@ -114,6 +114,7 @@ main {
         p {
             padding-bottom: 4rem;
             text-align: center;
+            text-transform: lowercase;
         }
     }
 
@@ -219,6 +220,10 @@ footer {
         main {
             padding: 0 6rem;
 
+            .page-hero {
+                padding: 0 6rem 0;
+            }
+
             #projects {
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -293,10 +298,42 @@ footer {
         main {
             padding: 0 15rem;
 
+            .page-hero {
+                p {
+                    padding: 0 8rem 4rem;
+                }
+            }
+
             #projects {
 
                 article {
                     min-width: 30%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body {
+        main {
+
+            .page-hero {
+                p {
+                    padding: 0 20rem 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1896px) {
+    body {
+        main {
+
+            .page-hero {
+                p {
+                    padding: 0 38rem 4rem;
                 }
             }
         }

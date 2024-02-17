@@ -167,6 +167,9 @@ footer #copyright-info p {
   body main {
     padding: 0 6rem;
   }
+  body main .page-hero p {
+    padding: 2rem 6rem 4rem;
+  }
   body main form button {
     font-size: 1.8rem;
   }
@@ -212,5 +215,16 @@ footer #copyright-info p {
 @media only screen and (min-width: 1440px) {
   body main {
     padding: 0 30rem;
+  }
+  body main .page-hero p {
+    padding: 2rem 16rem 4rem;
+  }
+}
+@media only screen and (min-width: 1896px) {
+  body main .page-hero p {
+    padding: 2rem 39rem 4rem;
+  }
+  body main #submit-form {
+    font-size: 2rem;
   }
 }/*# sourceMappingURL=contact.css.map */

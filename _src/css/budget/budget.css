@@ -260,4 +260,7 @@ footer #copyright-info p {
   body main form .two-col-selector label {
     flex: 1;
   }
+  body main form #submit-form {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=budget.css.map */
