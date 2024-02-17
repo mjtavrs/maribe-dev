@@ -55,8 +55,8 @@
                     telefone / whatsapp
                     <small>apenas números, tá? lembre do seu ddd!</small>
                 </div>
-                <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
+                <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" pattern="[0-9]"
+                    class="contact-form_input" maxlength="11" autocomplete="on" required aria-required="true">
             </label>
             <label for="assunto">
                 assunto
