@@ -1,7 +1,1 @@
-document.addEventListener("DOMContentLoaded", () => {
-    window.addEventListener("error", (e) => {
-        if (e && e.target && e.target.tagName === "img") {
-            window.location.href = "404.html";
-        }
-    });
-})
+document.addEventListener("DOMContentLoaded", (() => { window.addEventListener("error", (e => { e && e.target && "img" === e.target.tagName && (window.location.href = "404.html") })) }));
