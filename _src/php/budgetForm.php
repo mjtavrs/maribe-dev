@@ -64,7 +64,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $headers = "De: $email\r\nReply-To: $email\r\n";
 
     if (mail($to, $assunto, $mensagem_email, $headers)) {
-        header("Location: sucesso.html");
+        header("Location: http://maribe.arq.br/sucesso");
         exit;
     } else {
         $erros[] = 'Erro ao enviar a mensagem.';
