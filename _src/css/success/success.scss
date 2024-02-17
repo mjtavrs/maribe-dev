@@ -100,18 +100,16 @@ main {
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: 1rem;
         padding-top: 8rem;
 
         h1 {
-            background-color: $vermelhoRecife;
-            border-radius: 100%;
-            color: $begeDelicado;
+            color: $vermelhoRecife;
             font-family: "All Round Gothic", sans-serif;
             font-size: 5rem;
             font-weight: bolder;
-            padding: 2.50rem 1.5rem;
             text-align: center;
+            text-transform: lowercase;
         }
 
         p {
@@ -181,7 +179,6 @@ footer {
                 padding-top: 5rem;
 
                 h1 {
-                    padding: 5rem 3.5rem;
                     font-size: 7.5rem;
                 }
 
@@ -227,7 +224,6 @@ footer {
                 gap: 2rem;
 
                 h1 {
-                    padding: 5rem 3.5rem;
                     font-size: 7.5rem;
                 }
 
@@ -273,7 +269,6 @@ footer {
                 gap: 2rem;
 
                 h1 {
-                    padding: 5rem 3.5rem;
                     font-size: 7.5rem;
                 }
 
@@ -319,7 +314,6 @@ footer {
                 gap: 3rem;
 
                 h1 {
-                    padding: 6rem 4rem;
                     font-size: 10rem;
                 }
 
