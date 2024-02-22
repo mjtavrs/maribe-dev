@@ -79,6 +79,7 @@ body {
             li a {
                 color: $cinzaElegante;
                 text-decoration: none;
+                transition: 300ms;
             }
 
             a:hover {
@@ -136,12 +137,29 @@ body {
                 padding: 0;
             }
 
+            .gradient-left,
+            .gradient-right {
+                display: block;
+            }
+
+            .gradient-left {
+                left: 0;
+                background: linear-gradient(to right, rgba(252, 252, 250, 0.9), rgba(252, 252, 250, 0) 30%);
+            }
+
+            .gradient-right {
+                right: 0;
+                background: linear-gradient(to left, rgba(252, 252, 250, 0.75), rgba(252, 252, 250, 0) 30%);
+            }
+
             ul {
                 flex-direction: row;
                 font-size: 2.2rem;
                 gap: 6rem;
                 position: absolute;
-                top: 21rem;
+                top: 27%;
+                transform: translateY(-27%);
+                z-index: 2;
             }
         }
 
@@ -152,26 +170,9 @@ body {
     body {
         nav {
 
-            .gradient-left,
-            .gradient-right {
-                display: block;
-            }
-
-            .gradient-left {
-                left: 0;
-                background: linear-gradient(to right, rgba(252, 252, 250, 0.9), rgba(252, 252, 250, 0) 15%);
-            }
-
-            .gradient-right {
-                right: 0;
-                background: linear-gradient(to left, rgba(252, 252, 250, 0.75), rgba(252, 252, 250, 0) 20%);
-            }
-
             ul {
                 font-size: 2.5rem;
                 gap: 8rem;
-                top: 23rem;
-                z-index: 2;
             }
         }
     }

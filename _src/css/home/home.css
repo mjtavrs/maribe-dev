@@ -55,6 +55,7 @@ body nav ul {
 body nav ul li a {
   color: #3C3C3B;
   text-decoration: none;
+  transition: 300ms;
 }
 body nav ul a:hover {
   color: #C56E51;
@@ -97,31 +98,31 @@ body #bg-desktop {
     display: none;
     padding: 0;
   }
-  body nav ul {
-    flex-direction: row;
-    font-size: 2.2rem;
-    gap: 6rem;
-    position: absolute;
-    top: 21rem;
-  }
-}
-@media only screen and (min-width: 1896px) {
   body nav .gradient-left,
   body nav .gradient-right {
     display: block;
   }
   body nav .gradient-left {
     left: 0;
-    background: linear-gradient(to right, rgba(252, 252, 250, 0.9), rgba(252, 252, 250, 0) 15%);
+    background: linear-gradient(to right, rgba(252, 252, 250, 0.9), rgba(252, 252, 250, 0) 30%);
   }
   body nav .gradient-right {
     right: 0;
-    background: linear-gradient(to left, rgba(252, 252, 250, 0.75), rgba(252, 252, 250, 0) 20%);
+    background: linear-gradient(to left, rgba(252, 252, 250, 0.75), rgba(252, 252, 250, 0) 30%);
   }
+  body nav ul {
+    flex-direction: row;
+    font-size: 2.2rem;
+    gap: 6rem;
+    position: absolute;
+    top: 27%;
+    transform: translateY(-27%);
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 1896px) {
   body nav ul {
     font-size: 2.5rem;
     gap: 8rem;
-    top: 23rem;
-    z-index: 2;
   }
 }/*# sourceMappingURL=home.css.map */
