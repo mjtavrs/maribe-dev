@@ -52,6 +52,10 @@
     visibility: hidden;
 }
 
+.brightnessFilter {
+    filter: brightness(0.5);
+}
+
 #selected {
     font-weight: bold;
 }
@@ -63,6 +67,10 @@ label,
 input,
 textarea {
     color: $cinzaElegante;
+}
+
+a {
+    touch-action: manipulation;
 }
 
 body {
@@ -130,9 +138,9 @@ main {
 
             a {
                 span {
-                    background-color: $cinzaElegante;
+                    background-color: $begeDelicado;
                     border-radius: 1rem;
-                    color: $begeDelicado;
+                    color: $cinzaElegante;
                     filter: opacity(0.90);
                     font-family: "All Round Gothic", sans-serif;
                     left: 50%;
@@ -145,8 +153,8 @@ main {
                     z-index: 2;
 
                     h4 {
-                        border-top: 1px solid $begeDelicado;
-                        border-bottom: 1px solid $begeDelicado;
+                        border-top: 1px solid $cinzaElegante;
+                        border-bottom: 1px solid $cinzaElegante;
                         font-weight: normal;
                         padding: 1rem 0;
                         text-align: center;
@@ -163,15 +171,14 @@ main {
                     z-index: 1;
                 }
 
-                img:hover,
-                img:active {
-                    filter: brightness(0.5);
-                }
+                // img:hover,
+                // img:active {
+                //     filter: brightness(0.5);
+                // }
 
-                img:hover+.visibilityOff,
-                img:active+.visibilityOff {
-                    visibility: visible;
-                }
+                // article:hover .visibilityOff {
+                //     visibility: visible;
+                // }
             }
         }
     }

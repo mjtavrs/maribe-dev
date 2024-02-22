@@ -28,6 +28,10 @@
   visibility: hidden;
 }
 
+.brightnessFilter {
+  filter: brightness(0.5);
+}
+
 #selected {
   font-weight: bold;
 }
@@ -39,6 +43,10 @@ label,
 input,
 textarea {
   color: #3C3C3B;
+}
+
+a {
+  touch-action: manipulation;
 }
 
 body {
@@ -99,9 +107,9 @@ main #projects article {
   position: relative;
 }
 main #projects article a span {
-  background-color: #3C3C3B;
+  background-color: #FCFCFA;
   border-radius: 1rem;
-  color: #FCFCFA;
+  color: #3C3C3B;
   filter: opacity(0.9);
   font-family: "All Round Gothic", sans-serif;
   left: 50%;
@@ -114,8 +122,8 @@ main #projects article a span {
   z-index: 2;
 }
 main #projects article a span h4 {
-  border-top: 1px solid #FCFCFA;
-  border-bottom: 1px solid #FCFCFA;
+  border-top: 1px solid #3C3C3B;
+  border-bottom: 1px solid #3C3C3B;
   font-weight: normal;
   padding: 1rem 0;
   text-align: center;
@@ -129,14 +137,6 @@ main #projects article a img {
   transition: 300ms;
   width: 100%;
   z-index: 1;
-}
-main #projects article a img:hover,
-main #projects article a img:active {
-  filter: brightness(0.5);
-}
-main #projects article a img:hover + .visibilityOff,
-main #projects article a img:active + .visibilityOff {
-  visibility: visible;
 }
 
 footer {
