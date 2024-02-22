@@ -33,24 +33,17 @@
                 <li><a href="index.html">início</a></li>
                 <li><a href="sobre.html">sobre</a></li>
                 <li><a href="projetos.html">projetos</a></li>
-                <li><a href="orcamento.html" id="selected">orçamento</a></li>
+                <li><a href="orcamento.html">orçamento</a></li>
                 <li><a href="contato.html">contato</a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section class="page-hero">
-            <h1>Vamos começar o seu projeto juntos!</h1>
-            <p><strong>bem-vindo(a) ao nosso mundo de possibilidades!</strong><br />
-                estamos ansiosos para criarmos juntos o seu projeto dos sonhos. cada detalhe será pensado de acordo com
-                sua
-                personalidade e memórias afetivas, <strong>transformando casas em lares únicos</strong>, cheios de
-                significado e
-                com muito
-                aconchego. para que isso seja possível precisamos de algumas informações para entender melhor suas
-                necessidades, você
-                pode preencher essas informações no formulário a seguir. esperamos que você ame a jornada na nossa
-                empresa.</p>
+            <h1>Formulário de orçamento</h1>
+            <p>ficamos muito felizes com o seu contato, vai ser um prazer fazer essa parceria contigo! para que possamos
+                te ajudar a tirar esse sonho do papel, que tal responder algumas perguntas para entendermos melhor o que
+                você precisa?</p>
         </section>
         <form class="contact-form" action="_src/php/budgetForm.php" method="post">
             <label for="nome">
@@ -58,88 +51,167 @@
                 <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
                     autocomplete="on" required aria-required="true">
             </label>
-            <label for="email">
-                e-mail
-                <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
+            <label for="mais-importante">
+                o que é mais importante para você nesse processo de orçamento de projeto?
+                <input type="text" name="o-que-e-mais-importante-no-orcamento" id="mais-importante"
+                    placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
+                    aria-required="true">
             </label>
-            <label for="telefone">
-                <div>
-                    telefone / whatsapp
-                    <small>apenas números, tá? lembre do seu ddd!</small>
-                </div>
-                <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
+            <label for="endereco">
+                endereço do imóvel
+                <input type="text" name="address" id="endereco" placeholder="digite seu endereço aqui"
+                    class="contact-form_input" autocomplete="on" required aria-required="true">
             </label>
             <div class="two-col-selector">
                 <fieldset>
-                    <legend>como chegou até nós?</legend>
+                    <legend>no caso de projeto de interiores, o imóvel tem planta?</legend>
                     <div>
-                        <input type="radio" name="de-onde-veio" id="instagram" value="instagram" required>
-                        <label for="instagram">instagram</label>
+                        <input type="radio" name="projeto-de-interiores-tem-planta" id="sim" value="sim" required>
+                        <label for="sim">sim</label>
                     </div>
                     <div>
-                        <input type="radio" name="de-onde-veio" id="indicacao" value="indicacao">
-                        <label for="indicacao">indicação de conhecidos</label>
+                        <input type="radio" name="projeto-de-interiores-tem-planta" id="nao" value="não">
+                        <label for="nao">não</label>
+                    </div>
+                </fieldset>
+                <label for="apartamento-completo">
+                    apartamento completo? se não, quantos e quais ambientes?
+                    <input type="text" name="apartamento-completo" id="apartamento-completo" placeholder="nos diga aqui"
+                        class="contact-form_input" autocomplete="on" required aria-required="true">
+                </label>
+            </div>
+            <div class="two-col-selector">
+                <label for="quantas-pessoas-residem-e-idades">
+                    quantas pessoas residem no imóvel e quais as idades?
+                    <input type="text" name="quantas-pessoas-residem-e-idades" id="quantas-pessoas-residem-e-idades"
+                        placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
+                        aria-required="true">
+                </label>
+                <label for="qual-tamanho-do-projeto">
+                    qual o tamanho (m²)?
+                    <input type="text" name="qual-tamanho-do-projeto" id="qual-tamanho-do-projeto"
+                        placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
+                        aria-required="true">
+                </label>
+            </div>
+            <div class="two-col-selector">
+                <fieldset>
+                    <legend>vai ter demolição/construção de paredes?</legend>
+                    <div>
+                        <input type="radio" name="vai-ter-demolicao-construcao-de-paredes" id="sim" value="sim"
+                            required>
+                        <label for="sim">sim</label>
                     </div>
                     <div>
-                        <input type="radio" name="de-onde-veio" id="visita-a-projetado" value="visita-a-projetado">
-                        <label for="visita-a-projetado">visitei um espaço projetado por vocês</label>
+                        <input type="radio" name="vai-ter-demolicao-construcao-de-paredes" id="nao" value="não">
+                        <label for="nao">não</label>
                     </div>
                 </fieldset>
                 <fieldset>
-                    <legend>o que estaremos projetando?</legend>
+                    <legend>vai modificar elétrica?</legend>
                     <div>
-                        <input type="radio" name="o-que-projetar" id="interior-residencial-completo"
-                            value="interior-residencial-completo" required aria-required="true">
-                        <label for="interior-residencial-completo">projeto de interiores residencial completo</label>
+                        <input type="radio" name="vai-modificar-eletrica" id="sim" value="sim" required>
+                        <label for="sim">sim</label>
                     </div>
                     <div>
-                        <input type="radio" name="o-que-projetar" id="interior-alguns-ambientes"
-                            value="interior-alguns-ambientes">
-                        <label for="interior-alguns-ambientes">projeto de interiores para alguns ambientes</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="o-que-projetar" id="interior-comercial-completo"
-                            value="interior-comercial-completo">
-                        <label for="interior-comercial-completo">projeto de interiores comercial completo</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="o-que-projetar" id="projeto-arquitetura" value="projeto-arquitetura">
-                        <label for="projeto-arquitetura">projeto de arquitetura</label>
+                        <input type="radio" name="vai-modificar-eletrica" id="nao" value="não">
+                        <label for="nao">não</label>
                     </div>
                 </fieldset>
             </div>
             <div class="two-col-selector">
                 <fieldset>
-                    <legend>quando você prevê iniciar o projeto?</legend>
+                    <legend>vai modificar gesso?</legend>
                     <div>
-                        <input type="radio" name="quando-comecar-projeto" id="escolhendo-lar" value="escolhendo-lar"
-                            required aria-required="true">
-                        <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
+                        <input type="radio" name="vai-modificar-gesso" id="sim" value="sim" required>
+                        <label for="sim">sim</label>
                     </div>
                     <div>
-                        <input type="radio" name="quando-comecar-projeto" id="esperando-chaves"
-                            value="esperando-chaves">
-                        <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="quando-comecar-projeto" id="sem-pressa" value="sem-pressa">
-                        <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="quando-comecar-projeto" id="com-pressa" value="com-pressa">
-                        <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
+                        <input type="radio" name="vai-modificar-gesso" id="nao" value="não">
+                        <label for="nao">não</label>
                     </div>
                 </fieldset>
-                <label for="objetivo">
-                    qual é o seu objetivo com este projeto? como podemos te ajudar?
-                    <textarea name="objetivo" cols="30" rows="5" id="objetivo"
-                        placeholder="digite as informações aqui..." class="contact-form_input" required
-                        aria-required="true"></textarea>
-                    <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja
-                        construir
-                        e o nível de intervenção necessário, caso haja reformas</span>
+                <fieldset>
+                    <legend>vai modificar revestimento ou bancadas?</legend>
+                    <div>
+                        <input type="radio" name="vai-modificar-revestimento-ou-bancadas" id="sim" value="sim" required>
+                        <label for="sim">sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="vai-modificar-revestimento-ou-bancadas" id="nao" value="não">
+                        <label for="nao">não</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="two-col-selector">
+                <fieldset>
+                    <legend>vai aproveitar e/ou modificar algum móvel existente?</legend>
+                    <div>
+                        <input type="radio" name="vai-aproveitar-e-ou-modificar-algum-movel-existente" id="sim"
+                            value="sim" required>
+                        <label for="sim">sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="vai-aproveitar-e-ou-modificar-algum-movel-existente" id="nao"
+                            value="não">
+                        <label for="nao">não</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>pensa em fazer móveis com marcenaria ou planejados?</legend>
+                    <div>
+                        <input type="radio" name="pensa-em-fazer-moveis-com-marcenaria-ou-planejados" id="sim"
+                            value="sim" required>
+                        <label for="sim">sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pensa-em-fazer-moveis-com-marcenaria-ou-planejados" id="nao"
+                            value="não">
+                        <label for="nao">não</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="two-col-selector">
+                <fieldset>
+                    <legend>acompanha nosso trabalho pelas redes sociais?</legend>
+                    <div>
+                        <input type="radio" name="acompanha-nosso-trabalho-pelas-redes-sociais" id="sim" value="sim"
+                            required>
+                        <label for="sim">sim</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="acompanha-nosso-trabalho-pelas-redes-sociais" id="nao" value="não">
+                        <label for="nao">não</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>acredita que nossos trabalhos anteriores conseguem atingir a sua expectativa estética?
+                    </legend>
+                    <div>
+                        <input type="radio"
+                            name="acredita-que-nossos-trabalhos-anteriores-atingiram-sua-expectativa-estética" id="sim"
+                            value="sim" required>
+                        <label for="sim">sim</label>
+                    </div>
+                    <div>
+                        <input type="radio"
+                            name="acredita-que-nossos-trabalhos-anteriores-atingiram-sua-expectativa-estética" id="nao"
+                            value="não">
+                        <label for="nao">não</label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="two-col-selector">
+                <label for="porque-acredita-que-somos-o-escritorio-ideal-para-voce">
+                    porque você acredita que somos o escritório ideal para ajudá-los?
+                    <input type="text" name="porque-acredita-que-somos-o-escritorio-ideal-para-voce"
+                        id="porque-acredita-que-somos-o-escritorio-ideal-para-voce" placeholder="nos diga aqui"
+                        class="contact-form_input" autocomplete="on" required aria-required="true">
+                </label>
+                <label for="outras-duvidas">
+                    se houver alguma dúvida ou informação à acrescentar, comente!
+                    <input type="text" name="outras-duvidas" id="outras-duvidas" placeholder="nos diga aqui"
+                        class="contact-form_input" autocomplete="on" required aria-required="true">
                 </label>
             </div>
             <button id="submit-form">enviar mensagem</button>
