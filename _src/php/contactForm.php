@@ -45,7 +45,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mensagem_email .= "E-mail: $email\n";
     $mensagem_email .= "Telefone: $telefone\n";
     $mensagem_email .= "Assunto: $assunto\n";
-    $mensagem_email .= "Mensagem: \n$mensagem\n";
+    $mensagem_email .= "Mensagem: $mensagem\n";
 
     $headers = "De: $email\r\nReply-To: $email\r\n";
 
