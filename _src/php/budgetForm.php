@@ -51,7 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $objetivo = $_POST["objetivo"];
     }
 
-    $to = "mjtdes.md@gmail.com";
+    $to = "formulariomaribe@gmail.com";
     $assunto = "Novo pedido de orçamento";
     $mensagem_email = "Nome: $nome\n";
     $mensagem_email .= "E-mail: $email\n";

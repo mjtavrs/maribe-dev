@@ -39,7 +39,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensagem = $_POST["message"];
     }
 
-    $to = "mjtdes.md@gmail.com";
+    $to = "formulariomaribe@gmail.com";
     $assunto = "Novo contato";
     $mensagem_email = "Nome: $nome\n";
     $mensagem_email .= "E-mail: $email\n";
