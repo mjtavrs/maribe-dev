@@ -40,7 +40,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $to = "formulariomaribe@gmail.com";
-    $assunto = "Novo contato";
+    $subject = "Novo contato";
     $mensagem_email = "Nome: $nome\n";
     $mensagem_email .= "E-mail: $email\n";
     $mensagem_email .= "Telefone: $telefone\n";
@@ -49,7 +49,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $headers = "De: $email\r\nReply-To: $email\r\n";
 
-    if (mail($to, $assunto, $mensagem_email, $headers)) {
+    if (mail($to, $subject, $mensagem_email, $headers)) {
         header("Location: http://maribe.arq.br/sucesso");
         exit;
     } else {
