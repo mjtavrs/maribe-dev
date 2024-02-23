@@ -27,22 +27,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     }
 
-    if (empty($_POST["como-chegou-ate-nos"])) {
+    if (empty($_POST["de-onde-veio"])) {
         $erros[] = "Por favor, selecione de onde você veio.";
     } else {
-        $de_onde_veio = $_POST["como-chegou-ate-nos"];
+        $de_onde_veio = $_POST["de-onde-veio"];
     }
 
-    if (empty($_POST["o-que-estaremos-projetando"])) {
+    if (empty($_POST["o-que-projetar"])) {
         $erros[] = "Por favor, selecione o que será projetado.";
     } else {
-        $o_que_projetar = $_POST["o-que-estaremos-projetando"];
+        $o_que_projetar = $_POST["o-que-projetar"];
     }
 
-    if (empty($_POST["quando-voce-preve-iniciar-o-projeto"])) {
+    if (empty($_POST["quando-comecar-projeto"])) {
         $erros[] = "Por favor, indique quando pretende iniciar o projeto.";
     } else {
-        $quando_comecar_projeto = $_POST["quando-voce-preve-iniciar-o-projeto"];
+        $quando_comecar_projeto = $_POST["quando-comecar-projeto"];
     }
 
     if (empty($_POST["objetivo"])) {
