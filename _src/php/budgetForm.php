@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     $to = "formulariomaribe@gmail.com";
-    $assunto = "Novo pedido de orçamento";
+    $assunto = "Pedido inicial de orcamento";
     $mensagem_email = "Nome: $nome\n";
     $mensagem_email .= "E-mail: $email\n";
     $mensagem_email .= "Telefone: $telefone\n";
