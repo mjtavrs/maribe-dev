@@ -92,7 +92,7 @@ main .page-hero p {
   padding: 0 2rem;
   text-align: center;
 }
-main .page-hero p #return-home {
+main .page-hero p .anchor-link {
   color: #C56E51;
   font-weight: bold;
   text-decoration: none;
