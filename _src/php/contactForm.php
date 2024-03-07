@@ -39,15 +39,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mensagem = $_POST["message"];
     }
 
+    $hora_envio = date("d/m/Y \à\s H:i:s");
+
     $to = "formulariomaribe@gmail.com";
     $subject = "Novo contato";
-    $mensagem_email = "Nome: $nome\n";
-    $mensagem_email .= "E-mail: $email\n";
-    $mensagem_email .= "Telefone: $telefone\n";
-    $mensagem_email .= "Assunto: $assunto\n";
-    $mensagem_email .= "Mensagem: $mensagem\n";
 
-    $headers = "De: $email\r\nReply-To: $email\r\n";
+    $mensagem_email = "
+    <html>
+    <head>
+        <title>Novo contato</title>
+        <link rel='stylesheet' type='text/css' href='styles.css'>
+    </head>
+    <body>
+        <h2>Novo contato recebido</h2>
+        <p><strong>nome:</strong> $nome</p>
+        <p><strong>e-mail:</strong> $email</p>
+        <p><strong>telefone:</strong> $telefone</p>
+        <p><strong>assunto:</strong> $assunto</p>
+        <p><strong>mensagem:</strong> $mensagem</p>
+        <br />
+        <p id='data_envio'>este formulário foi enviado no dia $hora_envio</p>
+        </body>
+    </html>
+    ";
+
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "De: $email\r\nReply-To: $email\r\n";
 
     if (mail($to, $subject, $mensagem_email, $headers)) {
         header("Location: http://maribe.arq.br/sucesso");
