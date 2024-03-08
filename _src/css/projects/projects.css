@@ -8,7 +8,8 @@
 }
 @font-face {
   font-family: "All Round Gothic";
-  src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype");
+  src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
+  font-style: normal;
 }
 @keyframes slow-show {
   0% {
