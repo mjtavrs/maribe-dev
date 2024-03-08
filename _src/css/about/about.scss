@@ -41,6 +41,15 @@
     }
 }
 
+#interacao-ios {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
 .slow-show {
     -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;

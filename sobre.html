@@ -20,10 +20,12 @@
     <link rel="stylesheet" href="_src/css/about/about.css">
 
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
+    <script src="_src/js/playVideoInIOS.js" defer></script>
     <script src="_src/js/app.js" defer></script>
 </head>
 
 <body class="slow-show">
+    <div id="interacao-ios"></div>
     <header>
         <nav id="nav-menu">
             <a href="index.html">
@@ -97,7 +99,7 @@
                 </p>
             </div>
             <div class="video">
-                <video src="_assets/video/logoHistorySquared.MOV" autoplay loop muted></video>
+                <video src="_assets/video/logoHistorySquared.MOV" autoplay loop muted id="video_logo"></video>
             </div>
         </section>
     </main>
