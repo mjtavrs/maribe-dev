@@ -48,7 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <html>
     <head>
         <title>Novo contato</title>
-        <link rel='stylesheet' type='text/css' href='styles.css'>
     </head>
     <body>
         <img src='https://i.ibb.co/dmx7wnv/formulario-De-Contato.png' alt='Formulário de Contato'>

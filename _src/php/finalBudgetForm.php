@@ -102,32 +102,50 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($_POST["outras-duvidas"])) {
-        $outras_duvidas = "Sem outras duvidas";
+        $outras_duvidas = "Sem outras dúvidas";
     } else {
         $outras_duvidas = $_POST["outras-duvidas"];
     }
 
-    $to = "formulariomaribe@gmail.com";
-    $assunto = "Formulario de proposta";
-    $mensagem_email = "Nome: $nome\n";
-    $mensagem_email .= "O que e mais importante para voce nesse processo de orçamento de projeto? $o_que_e_mais_importante_no_orcamento\n";
-    $mensagem_email .= "Endereco do imovel: $endereco\n\n";
-    $mensagem_email .= "No caso de projeto de interiores, o imóvel tem planta? $projeto_tem_planta\n";
-    $mensagem_email .= "Apartamento completo? Se nao, quantos e quais ambientes? $apartamento_completo_ou_ambientes\n";
-    $mensagem_email .= "Quantas pessoas residem no imovel e quais as idades? $quantas_pessoas_vivem_no_apartamento\n";
-    $mensagem_email .= "Tamanho do projeto (m²): $tamanho_projeto\n";
-    $mensagem_email .= "Vai ter demolicao/construcao de paredes? $demolicao_ou_construcao_paredes\n";
-    $mensagem_email .= "Vai modificar eletrica? $modificar_eletrica\n";
-    $mensagem_email .= "Vai modificar gesso? $modificar_gesso\n";
-    $mensagem_email .= "Vai modificar revestimento ou bancadas? $modificar_revestimento_ou_bancada\n";
-    $mensagem_email .= "Vai aproveitar e/ou modificar algum movel ja existente? $vai_aproveitar_e_ou_modificar_movel_existente\n";
-    $mensagem_email .= "Pensa em fazer moveis com marcenaria ou planejados? $pensa_em_fazer_moveis_com_marcenaria_ou_planejados\n";
-    $mensagem_email .= "Acompanha nosso trabalho nas redes sociais? $acompanha_nas_redes_sociais\n";
-    $mensagem_email .= "Acredita que nossos trabalhos anteriores conseguem atingir a sua expectativa estética? $acredita_que_trabalhos_anteriores_antigiram_expectativa\n\n";
-    $mensagem_email .= "Porque voce acredita que somos o escritorio ideal para ajuda-los? $porque_acredita_que_somos_o_ideal\n";
-    $mensagem_email .= "Se houver alguma duvida ou informacao a acrescentar, comente: $outras_duvidas\n\n";
+    $hora_envio = date("d/m/Y \à\s H:i:s");
 
-    $headers = "De: $email\r\nReply-To: $email\r\n";
+    $to = "formulariomaribe@gmail.com";
+    $assunto = "Formulario de proposta preenchido";
+
+    $mensagem_email = "
+    <html>
+    <head>
+        <title>Formulário de proposta</title>
+    </head>
+    <body>
+        <img src='https://i.ibb.co/yVPy89p/formulario-De-Proposta.png' alt='Formulário de Proposta'>
+        <br />
+        <p><strong>nome:</strong> $nome</p>        
+        <p><strong>o que é o mais importante para você nesse processo de orçamento de projeto?</strong> $o_que_e_mais_importante_no_orcamento</p>
+        <p><strong>endereço:</strong> $endereco</p>
+        <p><strong>no caso de projeto de interiores, o imóvel tem planta?</strong> $projeto_tem_planta</p>
+        <p><strong>apartamento completo? se não, quantos e quais ambientes?</strong> $apartamento_completo_ou_ambientes</p>
+        <p><strong>quantas pessoas residem no imóvel e quais as idades?</strong> $quantas_pessoas_vivem_no_apartamento</p>
+        <p><strong>tamanho do projeto (m²):</strong> $tamanho_projeto</p>
+        <p><strong>vai ter demolição/construção de paredes?</strong> $demolicao_ou_construcao_paredes</p>
+        <p><strong>vai modificar elétrica?</strong> $modificar_eletrica</p>
+        <p><strong>vai modificar gesso?</strong> $modificar_gesso</p>
+        <p><strong>vai modificar revestimento ou bancadas?</strong> $modificar_revestimento_ou_bancada</p>
+        <p><strong>vai aproveitar e/ou modificar algum móvel já existente?</strong> $vai_aproveitar_e_ou_modificar_movel_existente</p>
+        <p><strong>pensa em fazer móveis com marcenaria ou planejados?</strong> $pensa_em_fazer_moveis_com_marcenaria_ou_planejados</p>
+        <p><strong>acompanha nossos trabalhos nas redes sociais?</strong> $acompanha_nas_redes_sociais</p>
+        <p><strong>acredita que nossos trabalhos anteriores conseguem atingir a sua expectativa estética?</strong> $acredita_que_trabalhos_anteriores_antigiram_expectativa</p>
+        <p><strong>porque você acredita que somos o escritório ideal para ajudá-los?</strong> $porque_acredita_que_somos_o_ideal</p>
+        <p><strong>se houver alguma dúvida ou informação a acrescentar, comente:</strong> $outras_duvidas</p>
+        <br />
+        <small><p id='data_envio'>este formulário foi enviado no dia $hora_envio</p></small>
+    </body>
+    </html>
+    ";
+
+    $headers = "MIME-Version: 1.0" . "\r\n";
+    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+    $headers .= "De: $email\r\nReply-To: $email\r\n";
 
     if (mail($to, $assunto, $mensagem_email, $headers)) {
         header("Location: http://maribe.arq.br/sucesso");
