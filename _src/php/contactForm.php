@@ -51,14 +51,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <link rel='stylesheet' type='text/css' href='styles.css'>
     </head>
     <body>
-        <h2>Novo contato recebido</h2>
+        <img src='https://i.ibb.co/dmx7wnv/formulario-De-Contato.png' alt='Formulário de Contato'>
+        <br />
         <p><strong>nome:</strong> $nome</p>
         <p><strong>e-mail:</strong> $email</p>
         <p><strong>telefone:</strong> $telefone</p>
         <p><strong>assunto:</strong> $assunto</p>
         <p><strong>mensagem:</strong> $mensagem</p>
         <br />
-        <p id='data_envio'>este formulário foi enviado no dia $hora_envio</p>
+        <small><p id='data_envio'>este formulário foi enviado no dia $hora_envio</p></small>
         </body>
     </html>
     ";
