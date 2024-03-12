@@ -134,36 +134,20 @@ body {
         background-image: none;
 
         nav {
-            box-sizing: border-box;
             padding: 0;
             position: relative;
             overflow: hidden;
+            width: 100%;
 
             #bg-desktop {
                 display: block;
-                height: 100dvh;
+                height: 120%;
                 opacity: 0.8;
-                overflow: hidden;
             }
 
             #logo-maribe {
                 display: none;
                 padding: 0;
-            }
-
-            .gradient-left,
-            .gradient-right {
-                display: block;
-            }
-
-            .gradient-left {
-                left: 0;
-                background: linear-gradient(to right, rgba(252, 252, 250, 0.9), rgba(252, 252, 250, 0) 30%);
-            }
-
-            .gradient-right {
-                right: 0;
-                background: linear-gradient(to left, rgba(252, 252, 250, 0.75), rgba(252, 252, 250, 0) 30%);
             }
 
             ul {
