@@ -41,6 +41,24 @@
     }
 }
 
+::-webkit-scrollbar {
+    padding-top: 1rem;
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $vermelhoRecife;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: $begeDelicado;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 .slow-show {
     -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
