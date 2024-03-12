@@ -18,11 +18,15 @@
 
 body {
   background-color: #FCFCFA;
+  background-image: url("../../../_assets/svg/bg-mobile.svg");
+  background-size: auto;
+  background-repeat: repeat;
   display: flex;
   font-family: "Source Sans 3";
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
   height: 100dvh;
   justify-content: center;
+  position: relative;
 }
 body nav {
   align-items: center;
@@ -63,6 +67,13 @@ body nav ul a:hover {
 body #bg-desktop {
   display: none;
 }
+body #bg-mobile {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  width: 120%;
+  z-index: -1;
+}
 
 @media only screen and (min-width: 768px) {
   body nav {
@@ -81,6 +92,9 @@ body #bg-desktop {
   nav {
     margin: 0;
     padding: 0;
+  }
+  body {
+    background-image: none;
   }
   body nav {
     box-sizing: border-box;

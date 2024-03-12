@@ -40,11 +40,15 @@
 
 body {
     background-color: $begeDelicado;
+    background-image: url("../../../_assets/svg/bg-mobile.svg");
+    background-size: auto;
+    background-repeat: repeat;
     display: flex;
     font-family: "Source Sans 3";
     font-size: $standardFontSize;
     height: 100dvh;
     justify-content: center;
+    position: relative;
 
     nav {
         align-items: center;
@@ -91,6 +95,14 @@ body {
     #bg-desktop {
         display: none;
     }
+
+    #bg-mobile {
+        position: fixed;
+        margin: 0;
+        padding: 0;
+        width: 120%;
+        z-index: -1;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -119,6 +131,8 @@ body {
     }
 
     body {
+        background-image: none;
+
         nav {
             box-sizing: border-box;
             padding: 0;
