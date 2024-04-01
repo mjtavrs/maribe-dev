@@ -72,6 +72,7 @@ body {
   background-color: #FCFCFA;
   font-family: "Source Sans 3", sans-serif;
   font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  overflow-x: hidden;
 }
 
 nav {

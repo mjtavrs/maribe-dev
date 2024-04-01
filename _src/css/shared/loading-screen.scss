@@ -1,0 +1,27 @@
+@import "../shared/variables";
+
+#loading-gif {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $begeDelicado;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out, visibility 0s linear 0.5s;
+    visibility: hidden;
+}
+
+#loading-gif.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+#loading-gif img {
+    height: 100px;
+    /* Ajuste conforme necessário */
+}
