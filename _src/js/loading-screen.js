@@ -4,9 +4,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Exibe o GIF de carregamento
     loadingGif.classList.add("active");
+    document.querySelectorAll('*').forEach(element => {
+        element.classList.add('no_x_scroll');
+    });
 
     // Oculta o GIF de carregamento após o tempo mínimo de exibição
     setTimeout(() => {
         loadingGif.classList.remove("active");
+        document.querySelectorAll('*').forEach(element => {
+            element.classList.remove('no_x_scroll');
+        });
     }, minDisplayTime);
 });

@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.no_x_scroll {
+  overflow-y: hidden;
+}
+
 #loading-gif {
   position: fixed;
   top: 0;

@@ -55,6 +55,10 @@
     background-color: $begeDelicado;
 }
 
+* {
+    overflow-x: hidden;
+}
+
 html {
     scroll-behavior: smooth;
 }

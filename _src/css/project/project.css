@@ -58,6 +58,7 @@ label,
 input,
 textarea {
   color: #3C3C3B;
+  overflow-x: hidden;
 }
 
 body {

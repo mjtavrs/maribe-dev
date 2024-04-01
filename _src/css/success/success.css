@@ -119,7 +119,6 @@ main .page-hero p .anchor-link {
 
 footer {
   border-top: 1px solid #3C3C3B;
-  bottom: 0;
   display: flex;
   flex-direction: column;
   flex-shrink: 0;
@@ -192,17 +191,19 @@ footer #copyright-info p {
     padding: 0 20rem;
   }
   body footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 6rem;
+    padding: 2rem 4rem;
   }
-  body footer #social-links li a {
-    font-size: 1.8rem;
+  body footer #social-links ul {
+    gap: 1rem;
   }
-  body footer #social-links li a i {
+  body footer #social-links ul li a {
+    font-size: 1.4rem;
+  }
+  body footer #social-links ul li a i {
     padding: 0.6rem 0.8rem;
   }
   body footer #copyright-info p {
+    font-size: 1.4rem;
     text-align: right;
   }
 }
@@ -220,20 +221,6 @@ footer #copyright-info p {
     font-size: 2rem;
     padding: 0 45rem;
   }
-  body footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 6rem;
-  }
-  body footer #social-links li a {
-    font-size: 1.8rem;
-  }
-  body footer #social-links li a i {
-    padding: 0.6rem 0.8rem;
-  }
-  body footer #copyright-info p {
-    text-align: right;
-  }
 }
 @media only screen and (min-width: 1920px) {
   body main {
@@ -249,19 +236,5 @@ footer #copyright-info p {
     line-height: 3rem;
     font-size: 2.2rem;
     padding: 0 60rem;
-  }
-  body footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 6rem;
-  }
-  body footer #social-links li a {
-    font-size: 1.8rem;
-  }
-  body footer #social-links li a i {
-    padding: 0.6rem 0.8rem;
-  }
-  body footer #copyright-info p {
-    text-align: right;
   }
 }/*# sourceMappingURL=success.css.map */

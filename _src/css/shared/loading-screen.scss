@@ -1,5 +1,9 @@
 @import "../shared/variables";
 
+.no_x_scroll {
+    overflow-y: hidden;
+}
+
 #loading-gif {
     position: fixed;
     top: 0;
