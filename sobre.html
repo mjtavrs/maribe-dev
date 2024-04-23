@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/about/about.css">
     <link rel="stylesheet" href="_src/css/shared/loading-screen.css">
+    <link rel="stylesheet" href="_src/css/shared/hamburguer_menu.css">
 
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
     <script src="_src/js/loading-screen.js" type="module" defer></script>
+    <script src="_src/js/hamburguer-menu.js" type="module" defer></script>
     <script src="_src/js/app.js" defer></script>
 </head>
 
@@ -34,13 +36,30 @@
             <a href="index.html">
                 <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
             </a>
-            <ul>
+            <ul id="full-menu" style="display: none;">
                 <li><a href="index.html">início</a></li>
                 <li><a href="sobre.html" id="selected">sobre</a></li>
                 <li><a href="projetos.html">projetos</a></li>
                 <li><a href="orcamento.html">orçamento</a></li>
                 <li><a href="contato.html">contato</a></li>
             </ul>
+            <div class="hamburguer-menu_container">
+                <div class="lines-container">
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <div class="menu_line"></div>
+                    <i class="fa-solid fa-xmark close-menu toggle-visibility"></i>
+                </div>
+                <div class="hamburguer-menu toggle-visibility">
+                    <ul>
+                        <li><a href="index.html">início</a></li>
+                        <li><a href="sobre.html" id="selected">sobre</a></li>
+                        <li><a href="projetos.html">projetos</a></li>
+                        <li><a href="orcamento.html">orçamento</a></li>
+                        <li><a href="contato.html">contato</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>

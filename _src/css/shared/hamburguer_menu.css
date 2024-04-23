@@ -1,0 +1,94 @@
+.hamburguer-menu_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+.hamburguer-menu_container .lines-container {
+  background-color: #FCFCFA;
+  border: 2px solid #C56E51;
+  border-radius: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 1.2rem 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.hamburguer-menu_container .lines-container .menu_line {
+  background-color: #C56E51;
+  height: 3px;
+  width: 30px;
+}
+.hamburguer-menu_container .lines-container .close-menu {
+  color: #C56E51;
+  font-size: 3rem;
+  text-align: center;
+}
+.hamburguer-menu_container .hamburguer-menu {
+  border: 2px solid #C56E51;
+  border-radius: 0.5rem;
+  padding: 0 1.5rem;
+  margin-top: 1rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 33%;
+}
+.hamburguer-menu_container .hamburguer-menu > ul {
+  display: flex;
+  gap: 0;
+  flex-direction: column;
+  padding: 0;
+}
+.hamburguer-menu_container .hamburguer-menu > ul li {
+  padding: 1.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+.hamburguer-menu_container .hamburguer-menu > ul li:nth-child(even) {
+  border-top: 1px solid #C56E51;
+  border-bottom: 1px solid #C56E51;
+}
+.hamburguer-menu_container .menu-opened {
+  background-color: #C56E51;
+}
+.hamburguer-menu_container .menu-opened .menu_line {
+  background-color: #FCFCFA;
+}
+.hamburguer-menu_container .toggle-visibility {
+  display: none;
+}
+.hamburguer-menu_container .show-close-button {
+  color: #FCFCFA;
+  font-size: 3rem;
+  text-align: center;
+}
+
+.scale-in-center {
+  animation: scale-in-center 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.scale-out-center {
+  animation: scale-out-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes scale-in-center {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-out-center {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}/*# sourceMappingURL=hamburguer_menu.css.map */
