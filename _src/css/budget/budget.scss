@@ -88,6 +88,7 @@ body {
     font-family: "Source Sans 3", sans-serif;
     font-size: $standardFontSize;
     min-height: 100dvh;
+    z-index: 1;
 }
 
 nav {
@@ -101,10 +102,10 @@ nav {
 
     ul {
         display: flex;
-        gap: 2rem;
+        gap: 2.5rem;
         list-style: none;
         justify-content: center;
-        padding: 0 0 5rem;
+        padding: 5rem 0;
 
         li a {
             text-decoration: none;

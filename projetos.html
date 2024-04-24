@@ -18,79 +18,91 @@
 
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/projects/projects.css">
+    <link rel="stylesheet" href="_src/css/shared/whatsapp-cta.css">
     <link rel="stylesheet" href="_src/css/shared/loading-screen.css">
 
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
     <script src="_src/js/loading-screen.js" type="module" defer></script>
     <script src="_src/js/projects.js" type="module" defer></script>
+    <script src="_src/js/whatsapp-cta.js" type="module" defer></script>
     <script src="_src/js/app.js" defer></script>
 </head>
 
-<body class="slow-show">
-    <div id="loading-gif">
-        <img src="_assets/image/gif/maribe-loading_colorido.gif" alt="Carregando...">
+<body>
+    <div class="whatsapp-cta" aria-label="Converse conosco no WhatsApp">
+        <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
+            <p class="hidden" id="ctaText">Vamos conversar no WhatsApp?</p>
+            <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"></i>
+        </a>
     </div>
-    <header>
-        <nav id="nav-menu">
-            <a href="index.html">
-                <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
-            </a>
-            <ul>
-                <li><a href="index.html">início</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li><a href="projetos.html" id="selected">projetos</a></li>
-                <li><a href="orcamento.html">orçamento</a></li>
-                <li><a href="contato.html">contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="page-hero">
-            <h1>nossos projetos</h1>
-            <p>Aqui você encontra alguns dos nossos projetos, esperamos que você goste e que possamos incluir um espaço
-                aqui para o seu projeto no futuro!</p>
-        </section>
-        <div id="projects"></div>
-    </main>
-    <footer>
-        <div id="social-links">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/maribe.arquitetura" target="_blank">
-                        <i class="fa-brands fa-instagram" role="img" aria-hidden="true"
-                            title="Acesse nosso Instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank">
-                        <i class="fa-brands fa-facebook-f" role="img" aria-hidden="true"
-                            title="Acesse nosso Facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
-                        <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"
-                            title="Converse conosco no WhatsApp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank">
-                        <i class="fa-brands fa-tiktok" role="img" aria-hidden="true" title="Acesse nosso TikTok"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://br.pinterest.com/maribearquitetura/" target="_blank">
-                        <i class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"
-                            title="Acesse nosso Pinterest"></i>
-                    </a>
-                </li>
-            </ul>
+    <div class="slow-show">
+        <div id="loading-gif">
+            <img src="_assets/image/gif/maribe-loading_colorido.gif" alt="Carregando...">
         </div>
-        <div id="copyright-info">
-            <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
-            <p>feito com 🧡 por <b>marcos tavares</b></p>
-        </div>
-    </footer>
+        <header>
+            <nav id="nav-menu">
+                <a href="index.html">
+                    <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
+                </a>
+                <ul>
+                    <li><a href="index.html">início</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="projetos.html" id="selected">projetos</a></li>
+                    <li><a href="orcamento.html">orçamento</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="page-hero">
+                <h1>nossos projetos</h1>
+                <p>Aqui você encontra alguns dos nossos projetos, esperamos que você goste e que possamos incluir um
+                    espaço
+                    aqui para o seu projeto no futuro!</p>
+            </section>
+            <div id="projects"></div>
+        </main>
+        <footer>
+            <div id="social-links">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/maribe.arquitetura" target="_blank">
+                            <i class="fa-brands fa-instagram" role="img" aria-hidden="true"
+                                title="Acesse nosso Instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank">
+                            <i class="fa-brands fa-facebook-f" role="img" aria-hidden="true"
+                                title="Acesse nosso Facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
+                            <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"
+                                title="Converse conosco no WhatsApp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank">
+                            <i class="fa-brands fa-tiktok" role="img" aria-hidden="true"
+                                title="Acesse nosso TikTok"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://br.pinterest.com/maribearquitetura/" target="_blank">
+                            <i class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"
+                                title="Acesse nosso Pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div id="copyright-info">
+                <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
+                <p>feito com 🧡 por <b>marcos tavares</b></p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

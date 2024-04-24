@@ -18,248 +18,263 @@
 
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/budget/budget.css">
+    <link rel="stylesheet" href="_src/css/shared/whatsapp-cta.css">
     <link rel="stylesheet" href="_src/css/shared/loading-screen.css">
 
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
     <script src="_src/js/loading-screen.js" type="module" defer></script>
+    <script src="_src/js/whatsapp-cta.js" type="module" defer></script>
     <script src="_src/js/app.js" defer></script>
 </head>
 
-<body class="slow-show">
-    <div id="loading-gif">
-        <img src="_assets/image/gif/maribe-loading_colorido.gif" alt="Carregando...">
+<body>
+    <div class="whatsapp-cta" aria-label="Converse conosco no WhatsApp">
+        <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
+            <p class="hidden" id="ctaText">Vamos conversar no WhatsApp?</p>
+            <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"></i>
+        </a>
     </div>
-    <header>
-        <nav id="nav-menu">
-            <a href="index.html">
-                <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
-            </a>
-            <ul>
-                <li><a href="index.html">início</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li><a href="projetos.html">projetos</a></li>
-                <li><a href="orcamento.html">orçamento</a></li>
-                <li><a href="contato.html">contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="page-hero">
-            <p>ficamos muito felizes com o seu contato, vai ser um prazer fazer essa parceria contigo! para que possamos
-                te ajudar a tirar esse sonho do papel, que tal responder algumas perguntas para entendermos melhor o que
-                você precisa?</p>
-        </section>
-        <form class="contact-form" action="_src/php/finalBudgetForm.php" method="post">
-            <label for="nome">
-                nome completo
-                <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
-            </label>
-            <label for="mais-importante">
-                o que é mais importante para você nesse processo de orçamento de projeto?
-                <input type="text" name="o-que-e-mais-importante-no-orcamento" id="mais-importante"
-                    placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
-                    aria-required="true">
-            </label>
-            <label for="endereco">
-                endereço do imóvel
-                <input type="text" name="address" id="endereco" placeholder="digite seu endereço aqui"
-                    class="contact-form_input" autocomplete="on" required aria-required="true">
-            </label>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>no caso de projeto de interiores, o imóvel tem planta?</legend>
-                    <div>
-                        <input type="radio" name="projeto-de-interiores-tem-planta" id="sim" value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="projeto-de-interiores-tem-planta" id="nao" value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-                <label for="apartamento-completo">
-                    apartamento completo? se não, quantos e quais ambientes?
-                    <input type="text" name="apartamento-completo" id="apartamento-completo-ou-apenas-ambientes"
+    <div class="slow-show">
+        <div id="loading-gif">
+            <img src="_assets/image/gif/maribe-loading_colorido.gif" alt="Carregando...">
+        </div>
+        <header>
+            <nav id="nav-menu">
+                <a href="index.html">
+                    <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
+                </a>
+                <ul>
+                    <li><a href="index.html">início</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="projetos.html">projetos</a></li>
+                    <li><a href="orcamento.html">orçamento</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="page-hero">
+                <p>ficamos muito felizes com o seu contato, vai ser um prazer fazer essa parceria contigo! para que
+                    possamos
+                    te ajudar a tirar esse sonho do papel, que tal responder algumas perguntas para entendermos melhor o
+                    que
+                    você precisa?</p>
+            </section>
+            <form class="contact-form" action="_src/php/finalBudgetForm.php" method="post">
+                <label for="nome">
+                    nome completo
+                    <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
+                        autocomplete="on" required aria-required="true">
+                </label>
+                <label for="mais-importante">
+                    o que é mais importante para você nesse processo de orçamento de projeto?
+                    <input type="text" name="o-que-e-mais-importante-no-orcamento" id="mais-importante"
                         placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
                         aria-required="true">
                 </label>
-            </div>
-            <div class="two-col-selector">
-                <label for="quantas-pessoas-residem-e-idades">
-                    quantas pessoas residem no imóvel e quais as idades?
-                    <input type="text" name="quantas-pessoas-residem-e-idades" id="quantas-pessoas-residem-e-idades"
-                        placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
-                        aria-required="true">
-                </label>
-                <label for="qual-tamanho-do-projeto">
-                    qual o tamanho (m²)?
-                    <input type="text" name="qual-tamanho-do-projeto" id="qual-tamanho-do-projeto"
-                        placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
-                        aria-required="true">
-                </label>
-            </div>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>vai ter demolição/construção de paredes?</legend>
-                    <div>
-                        <input type="radio" name="vai-ter-demolicao-ou-construcao-de-paredes" id="sim" value="sim"
-                            required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="vai-ter-demolicao-ou-construcao-de-paredes" id="nao" value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>vai modificar elétrica?</legend>
-                    <div>
-                        <input type="radio" name="vai-modificar-eletrica" id="sim" value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="vai-modificar-eletrica" id="nao" value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>vai modificar gesso?</legend>
-                    <div>
-                        <input type="radio" name="vai-modificar-gesso" id="sim" value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="vai-modificar-gesso" id="nao" value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>vai modificar revestimento ou bancadas?</legend>
-                    <div>
-                        <input type="radio" name="vai-modificar-revestimento-ou-bancadas" id="sim" value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="vai-modificar-revestimento-ou-bancadas" id="nao" value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>vai aproveitar e/ou modificar algum móvel existente?</legend>
-                    <div>
-                        <input type="radio" name="vai-aproveitar-e-ou-modificar-algum-movel-existente" id="sim"
-                            value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="vai-aproveitar-e-ou-modificar-algum-movel-existente" id="nao"
-                            value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>pensa em fazer móveis com marcenaria ou planejados?</legend>
-                    <div>
-                        <input type="radio" name="pensa-em-fazer-moveis-com-marcenaria-ou-planejados" id="sim"
-                            value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="pensa-em-fazer-moveis-com-marcenaria-ou-planejados" id="nao"
-                            value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>acompanha nosso trabalho pelas redes sociais?</legend>
-                    <div>
-                        <input type="radio" name="acompanha-nosso-trabalho-pelas-redes-sociais" id="sim" value="sim"
-                            required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="acompanha-nosso-trabalho-pelas-redes-sociais" id="nao" value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>acredita que nossos trabalhos anteriores conseguem atingir a sua expectativa estética?
-                    </legend>
-                    <div>
-                        <input type="radio"
-                            name="acredita-que-nossos-trabalhos-anteriores-atingiram-sua-expectativa-estetica" id="sim"
-                            value="sim" required>
-                        <label for="sim">sim</label>
-                    </div>
-                    <div>
-                        <input type="radio"
-                            name="acredita-que-nossos-trabalhos-anteriores-atingiram-sua-expectativa-estetica" id="nao"
-                            value="não">
-                        <label for="nao">não</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="two-col-selector">
-                <label for="porque-acredita-que-somos-o-escritorio-ideal-para-voce">
-                    porque você acredita que somos o escritório ideal para ajudá-los?
-                    <input type="text" name="porque-acredita-que-somos-o-escritorio-ideal-para-voce"
-                        id="porque-acredita-que-somos-o-escritorio-ideal-para-voce" placeholder="nos diga aqui"
+                <label for="endereco">
+                    endereço do imóvel
+                    <input type="text" name="address" id="endereco" placeholder="digite seu endereço aqui"
                         class="contact-form_input" autocomplete="on" required aria-required="true">
                 </label>
-                <label for="outras-duvidas">
-                    se houver alguma dúvida ou informação à acrescentar, comente!
-                    <input type="text" name="outras-duvidas" id="outras-duvidas" placeholder="nos diga aqui"
-                        class="contact-form_input" autocomplete="on" </label>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>no caso de projeto de interiores, o imóvel tem planta?</legend>
+                        <div>
+                            <input type="radio" name="projeto-de-interiores-tem-planta" id="sim" value="sim" required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="projeto-de-interiores-tem-planta" id="nao" value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                    <label for="apartamento-completo">
+                        apartamento completo? se não, quantos e quais ambientes?
+                        <input type="text" name="apartamento-completo" id="apartamento-completo-ou-apenas-ambientes"
+                            placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
+                            aria-required="true">
+                    </label>
+                </div>
+                <div class="two-col-selector">
+                    <label for="quantas-pessoas-residem-e-idades">
+                        quantas pessoas residem no imóvel e quais as idades?
+                        <input type="text" name="quantas-pessoas-residem-e-idades" id="quantas-pessoas-residem-e-idades"
+                            placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
+                            aria-required="true">
+                    </label>
+                    <label for="qual-tamanho-do-projeto">
+                        qual o tamanho (m²)?
+                        <input type="text" name="qual-tamanho-do-projeto" id="qual-tamanho-do-projeto"
+                            placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
+                            aria-required="true">
+                    </label>
+                </div>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>vai ter demolição/construção de paredes?</legend>
+                        <div>
+                            <input type="radio" name="vai-ter-demolicao-ou-construcao-de-paredes" id="sim" value="sim"
+                                required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vai-ter-demolicao-ou-construcao-de-paredes" id="nao" value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>vai modificar elétrica?</legend>
+                        <div>
+                            <input type="radio" name="vai-modificar-eletrica" id="sim" value="sim" required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vai-modificar-eletrica" id="nao" value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>vai modificar gesso?</legend>
+                        <div>
+                            <input type="radio" name="vai-modificar-gesso" id="sim" value="sim" required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vai-modificar-gesso" id="nao" value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>vai modificar revestimento ou bancadas?</legend>
+                        <div>
+                            <input type="radio" name="vai-modificar-revestimento-ou-bancadas" id="sim" value="sim"
+                                required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vai-modificar-revestimento-ou-bancadas" id="nao" value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>vai aproveitar e/ou modificar algum móvel existente?</legend>
+                        <div>
+                            <input type="radio" name="vai-aproveitar-e-ou-modificar-algum-movel-existente" id="sim"
+                                value="sim" required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="vai-aproveitar-e-ou-modificar-algum-movel-existente" id="nao"
+                                value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>pensa em fazer móveis com marcenaria ou planejados?</legend>
+                        <div>
+                            <input type="radio" name="pensa-em-fazer-moveis-com-marcenaria-ou-planejados" id="sim"
+                                value="sim" required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="pensa-em-fazer-moveis-com-marcenaria-ou-planejados" id="nao"
+                                value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>acompanha nosso trabalho pelas redes sociais?</legend>
+                        <div>
+                            <input type="radio" name="acompanha-nosso-trabalho-pelas-redes-sociais" id="sim" value="sim"
+                                required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="acompanha-nosso-trabalho-pelas-redes-sociais" id="nao"
+                                value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>acredita que nossos trabalhos anteriores conseguem atingir a sua expectativa estética?
+                        </legend>
+                        <div>
+                            <input type="radio"
+                                name="acredita-que-nossos-trabalhos-anteriores-atingiram-sua-expectativa-estetica"
+                                id="sim" value="sim" required>
+                            <label for="sim">sim</label>
+                        </div>
+                        <div>
+                            <input type="radio"
+                                name="acredita-que-nossos-trabalhos-anteriores-atingiram-sua-expectativa-estetica"
+                                id="nao" value="não">
+                            <label for="nao">não</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="two-col-selector">
+                    <label for="porque-acredita-que-somos-o-escritorio-ideal-para-voce">
+                        porque você acredita que somos o escritório ideal para ajudá-los?
+                        <input type="text" name="porque-acredita-que-somos-o-escritorio-ideal-para-voce"
+                            id="porque-acredita-que-somos-o-escritorio-ideal-para-voce" placeholder="nos diga aqui"
+                            class="contact-form_input" autocomplete="on" required aria-required="true">
+                    </label>
+                    <label for="outras-duvidas">
+                        se houver alguma dúvida ou informação à acrescentar, comente!
+                        <input type="text" name="outras-duvidas" id="outras-duvidas" placeholder="nos diga aqui"
+                            class="contact-form_input" autocomplete="on" </label>
+                </div>
+                <button id="submit-form">enviar mensagem</button>
+            </form>
+        </main>
+        <footer>
+            <div id="social-links">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/maribe.arquitetura" target="_blank">
+                            <i class="fa-brands fa-instagram" role="img" aria-hidden="true"
+                                title="Acesse nosso Instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank">
+                            <i class="fa-brands fa-facebook-f" role="img" aria-hidden="true"
+                                title="Acesse nosso Facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
+                            <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"
+                                title="Converse conosco no WhatsApp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank">
+                            <i class="fa-brands fa-tiktok" role="img" aria-hidden="true"
+                                title="Acesse nosso TikTok"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://br.pinterest.com/maribearquitetura/" target="_blank">
+                            <i class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"
+                                title="Acesse nosso Pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <button id="submit-form">enviar mensagem</button>
-        </form>
-    </main>
-    <footer>
-        <div id="social-links">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/maribe.arquitetura" target="_blank">
-                        <i class="fa-brands fa-instagram" role="img" aria-hidden="true"
-                            title="Acesse nosso Instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank">
-                        <i class="fa-brands fa-facebook-f" role="img" aria-hidden="true"
-                            title="Acesse nosso Facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
-                        <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"
-                            title="Converse conosco no WhatsApp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank">
-                        <i class="fa-brands fa-tiktok" role="img" aria-hidden="true" title="Acesse nosso TikTok"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://br.pinterest.com/maribearquitetura/" target="_blank">
-                        <i class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"
-                            title="Acesse nosso Pinterest"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="copyright-info">
-            <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
-            <p>feito com 🧡 por <b>marcos tavares</b></p>
-        </div>
-    </footer>
+            <div id="copyright-info">
+                <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
+                <p>feito com 🧡 por <b>marcos tavares</b></p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>

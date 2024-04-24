@@ -18,182 +18,197 @@
 
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/budget/budget.css">
+    <link rel="stylesheet" href="_src/css/shared/whatsapp-cta.css">
     <link rel="stylesheet" href="_src/css/shared/loading-screen.css">
 
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
     <script src="_src/js/loading-screen.js" type="module" defer></script>
+    <script src="_src/js/whatsapp-cta.js" type="module" defer></script>
     <script src="_src/js/app.js" defer></script>
 </head>
 
-<body class="slow-show">
-    <div id="loading-gif">
-        <img src="_assets/image/gif/maribe-loading_colorido.gif" alt="Carregando...">
+<body>
+    <div class="whatsapp-cta" aria-label="Converse conosco no WhatsApp">
+        <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
+            <p class="hidden" id="ctaText">Vamos conversar no WhatsApp?</p>
+            <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"></i>
+        </a>
     </div>
-    <header>
-        <nav id="nav-menu">
-            <a href="index.html">
-                <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
-            </a>
-            <ul>
-                <li><a href="index.html">início</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li><a href="projetos.html">projetos</a></li>
-                <li><a href="orcamento.html" id="selected">orçamento</a></li>
-                <li><a href="contato.html">contato</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="page-hero">
-            <h1>Vamos começar o seu projeto juntos!</h1>
-            <p><strong>bem-vindo(a) ao nosso mundo de possibilidades!</strong><br />
-                estamos ansiosos para criarmos juntos o seu projeto dos sonhos. cada detalhe será pensado de acordo com
-                sua
-                personalidade e memórias afetivas, <strong>transformando casas em lares únicos</strong>, cheios de
-                significado e
-                com muito
-                aconchego. para que isso seja possível precisamos de algumas informações para entender melhor suas
-                necessidades, você
-                pode preencher essas informações no formulário a seguir. esperamos que você ame a jornada na nossa
-                empresa.</p>
-        </section>
-        <form class="contact-form" action="_src/php/budgetForm.php" method="post">
-            <label for="nome">
-                nome completo
-                <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
-            </label>
-            <label for="email">
-                e-mail
-                <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
-            </label>
-            <label for="telefone">
-                <div>
-                    telefone / whatsapp
-                    <small>apenas números, tá? lembre do seu ddd!</small>
-                </div>
-                <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999" class="contact-form_input"
-                    autocomplete="on" required aria-required="true">
-            </label>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>como chegou até nós?</legend>
-                    <div>
-                        <input type="radio" name="como-chegou-ate-nos" id="instagram" value="Instagram" required>
-                        <label for="instagram">instagram</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="como-chegou-ate-nos" id="indicacao" value="Indicação de conhecidos">
-                        <label for="indicacao">indicação de conhecidos</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="como-chegou-ate-nos" id="visita-a-projetado"
-                            value="Visitei um espaço projetado por vocês">
-                        <label for="visita-a-projetado">visitei um espaço projetado por vocês</label>
-                    </div>
-                </fieldset>
-                <fieldset>
-                    <legend>o que estaremos projetando?</legend>
-                    <div>
-                        <input type="radio" name="o-que-estaremos-projetando" id="interiores-residencial-completo"
-                            value="Projeto de Interiores Residencial Completo" required aria-required="true">
-                        <label for="interiores-residencial-completo">projeto de interiores residencial completo</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="o-que-estaremos-projetando" id="interiores-para-alguns-ambientes"
-                            value="Projeto de Interiores para alguns ambientes">
-                        <label for="interiores-para-alguns-ambientes">projeto de interiores para alguns
-                            ambientes</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="o-que-estaremos-projetando" id="interiores-comercial-completo"
-                            value="Projeto de Interiores Comercial Completo">
-                        <label for="interiores-comercial-completo">projeto de interiores comercial completo</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="o-que-estaremos-projetando" id="projeto-de-arquitetura"
-                            value="Projeto de Arquitetura">
-                        <label for="projeto-de-arquitetura">projeto de arquitetura</label>
-                    </div>
-                </fieldset>
-            </div>
-            <div class="two-col-selector">
-                <fieldset>
-                    <legend>quando você prevê iniciar o projeto?</legend>
-                    <div>
-                        <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="escolhendo-lar"
-                            value="Estou escolhendo meu novo lar" required aria-required="true">
-                        <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="esperando-chaves"
-                            value="Estou aguardando as chaves, mal posso esperar">
-                        <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="sem-pressa"
-                            value="Estou sem pressa, vamos seguir o ritmo natural">
-                        <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="com-pressa"
-                            value="Estou com um pouco de pressa, gostaria de agilizar as coisas">
-                        <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as coisas</label>
-                    </div>
-                </fieldset>
-                <label for="objetivo">
-                    qual é o seu objetivo com este projeto? como podemos te ajudar?
-                    <textarea name="objetivo" cols="30" rows="5" id="objetivo"
-                        placeholder="digite as informações aqui..." class="contact-form_input" required
-                        aria-required="true"></textarea>
-                    <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja
-                        construir
-                        e o nível de intervenção necessário, caso haja reformas</span>
+    <div class="slow-show">
+        <div id="loading-gif">
+            <img src="_assets/image/gif/maribe-loading_colorido.gif" alt="Carregando...">
+        </div>
+        <header>
+            <nav id="nav-menu">
+                <a href="index.html">
+                    <img src="_assets/image/logo/logo_menu.webp" alt="Logo da Maribe Arquitetura">
+                </a>
+                <ul>
+                    <li><a href="index.html">início</a></li>
+                    <li><a href="sobre.html">sobre</a></li>
+                    <li><a href="projetos.html">projetos</a></li>
+                    <li><a href="orcamento.html" id="selected">orçamento</a></li>
+                    <li><a href="contato.html">contato</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="page-hero">
+                <h1>Vamos começar o seu projeto juntos!</h1>
+                <p><strong>bem-vindo(a) ao nosso mundo de possibilidades!</strong><br />
+                    estamos ansiosos para criarmos juntos o seu projeto dos sonhos. cada detalhe será pensado de acordo
+                    com
+                    sua
+                    personalidade e memórias afetivas, <strong>transformando casas em lares únicos</strong>, cheios de
+                    significado e
+                    com muito
+                    aconchego. para que isso seja possível precisamos de algumas informações para entender melhor suas
+                    necessidades, você
+                    pode preencher essas informações no formulário a seguir. esperamos que você ame a jornada na nossa
+                    empresa.</p>
+            </section>
+            <form class="contact-form" action="_src/php/budgetForm.php" method="post">
+                <label for="nome">
+                    nome completo
+                    <input type="text" name="name" id="nome" placeholder="seu nome aqui" class="contact-form_input"
+                        autocomplete="on" required aria-required="true">
                 </label>
+                <label for="email">
+                    e-mail
+                    <input type="email" name="email" id="email" placeholder="exemplo@exemplo.com"
+                        class="contact-form_input" autocomplete="on" required aria-required="true">
+                </label>
+                <label for="telefone">
+                    <div>
+                        telefone / whatsapp
+                        <small>apenas números, tá? lembre do seu ddd!</small>
+                    </div>
+                    <input type="tel" name="phone" id="telefone" placeholder="(00) 99999-9999"
+                        class="contact-form_input" autocomplete="on" required aria-required="true">
+                </label>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>como chegou até nós?</legend>
+                        <div>
+                            <input type="radio" name="como-chegou-ate-nos" id="instagram" value="Instagram" required>
+                            <label for="instagram">instagram</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="como-chegou-ate-nos" id="indicacao"
+                                value="Indicação de conhecidos">
+                            <label for="indicacao">indicação de conhecidos</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="como-chegou-ate-nos" id="visita-a-projetado"
+                                value="Visitei um espaço projetado por vocês">
+                            <label for="visita-a-projetado">visitei um espaço projetado por vocês</label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>o que estaremos projetando?</legend>
+                        <div>
+                            <input type="radio" name="o-que-estaremos-projetando" id="interiores-residencial-completo"
+                                value="Projeto de Interiores Residencial Completo" required aria-required="true">
+                            <label for="interiores-residencial-completo">projeto de interiores residencial
+                                completo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="o-que-estaremos-projetando" id="interiores-para-alguns-ambientes"
+                                value="Projeto de Interiores para alguns ambientes">
+                            <label for="interiores-para-alguns-ambientes">projeto de interiores para alguns
+                                ambientes</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="o-que-estaremos-projetando" id="interiores-comercial-completo"
+                                value="Projeto de Interiores Comercial Completo">
+                            <label for="interiores-comercial-completo">projeto de interiores comercial completo</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="o-que-estaremos-projetando" id="projeto-de-arquitetura"
+                                value="Projeto de Arquitetura">
+                            <label for="projeto-de-arquitetura">projeto de arquitetura</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="two-col-selector">
+                    <fieldset>
+                        <legend>quando você prevê iniciar o projeto?</legend>
+                        <div>
+                            <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="escolhendo-lar"
+                                value="Estou escolhendo meu novo lar" required aria-required="true">
+                            <label for="escolhendo-lar">estou no processo de escolher meu novo lar</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="esperando-chaves"
+                                value="Estou aguardando as chaves, mal posso esperar">
+                            <label for="esperando-chaves">estou aguardando as chaves, mal posso esperar!</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="sem-pressa"
+                                value="Estou sem pressa, vamos seguir o ritmo natural">
+                            <label for="sem-pressa">não estou com pressa. vamos seguir o ritmo natural</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="quando-voce-preve-iniciar-o-projeto" id="com-pressa"
+                                value="Estou com um pouco de pressa, gostaria de agilizar as coisas">
+                            <label for="com-pressa">estou um pouquinho apressado(a) e gostaria de agilizar as
+                                coisas</label>
+                        </div>
+                    </fieldset>
+                    <label for="objetivo">
+                        qual é o seu objetivo com este projeto? como podemos te ajudar?
+                        <textarea name="objetivo" cols="30" rows="5" id="objetivo"
+                            placeholder="digite as informações aqui..." class="contact-form_input" required
+                            aria-required="true"></textarea>
+                        <span class="extra-info">descreva as mudanças que pretende fazer em seu espaço, o que planeja
+                            construir
+                            e o nível de intervenção necessário, caso haja reformas</span>
+                    </label>
+                </div>
+                <button id="submit-form">enviar mensagem</button>
+            </form>
+        </main>
+        <footer>
+            <div id="social-links">
+                <ul>
+                    <li>
+                        <a href="https://www.instagram.com/maribe.arquitetura" target="_blank">
+                            <i class="fa-brands fa-instagram" role="img" aria-hidden="true"
+                                title="Acesse nosso Instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank">
+                            <i class="fa-brands fa-facebook-f" role="img" aria-hidden="true"
+                                title="Acesse nosso Facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
+                            <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"
+                                title="Converse conosco no WhatsApp"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank">
+                            <i class="fa-brands fa-tiktok" role="img" aria-hidden="true"
+                                title="Acesse nosso TikTok"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://br.pinterest.com/maribearquitetura/" target="_blank">
+                            <i class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"
+                                title="Acesse nosso Pinterest"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <button id="submit-form">enviar mensagem</button>
-        </form>
-    </main>
-    <footer>
-        <div id="social-links">
-            <ul>
-                <li>
-                    <a href="https://www.instagram.com/maribe.arquitetura" target="_blank">
-                        <i class="fa-brands fa-instagram" role="img" aria-hidden="true"
-                            title="Acesse nosso Instagram"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://web.facebook.com/people/Maribe-Arquitetura/100089975852864/" target="_blank">
-                        <i class="fa-brands fa-facebook-f" role="img" aria-hidden="true"
-                            title="Acesse nosso Facebook"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://api.whatsapp.com/send?phone=5581994083257" target="_blank">
-                        <i class="fa-brands fa-whatsapp" role="img" aria-hidden="true"
-                            title="Converse conosco no WhatsApp"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.tiktok.com/@maribe.arquitetura" target="_blank">
-                        <i class="fa-brands fa-tiktok" role="img" aria-hidden="true" title="Acesse nosso TikTok"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://br.pinterest.com/maribearquitetura/" target="_blank">
-                        <i class="fa-brands fa-pinterest-p" role="img" aria-hidden="true"
-                            title="Acesse nosso Pinterest"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div id="copyright-info">
-            <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
-            <p>feito com 🧡 por <b>marcos tavares</b></p>
-        </div>
-    </footer>
+            <div id="copyright-info">
+                <p><b>maribe arquitetura</b> • todos os direitos reservados © 2024</p>
+                <p>feito com 🧡 por <b>marcos tavares</b></p>
+            </div>
+        </footer>
+    </div>
 </body>
 
 </html>
