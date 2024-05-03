@@ -2,34 +2,60 @@
   display: none;
 }
 
-.whatsapp-cta {
-  background-color: #C56E51;
-  bottom: 14rem;
-  right: -10rem;
-  position: fixed;
-  padding: 1.25rem 1.5rem;
-  z-index: 1;
-  border: 2px solid #FCFCFA;
-  border-radius: 9999px;
-  width: -moz-max-content;
-  width: max-content;
-  transform-origin: bottom right;
-  box-shadow: 0px 0px 20px -7px rgb(156, 153, 156);
-}
-.whatsapp-cta a {
-  display: flex;
+.shown {
   align-items: center;
-  gap: 1rem;
+  display: flex;
+}
+
+.whatsapp-cta {
+  border: 1px transparent;
+  background-color: none;
+  border-radius: 9999px;
+  bottom: 14rem;
+  height: 55px;
+  position: fixed;
+  right: -10rem;
+  z-index: 9999;
+  display: flex;
+}
+.whatsapp-cta .text-container {
+  background-color: #C56E51;
+  border: 2px solid #FCFCFA;
+  border-right: 0;
+  border-radius: 9999px 0 0 9999px;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: inherit;
+  padding: 0 2rem;
+  padding-right: 1rem;
+  box-shadow: 0px 0px 20px -7px rgba(156, 153, 156, 0.8);
+}
+.whatsapp-cta .text-container a {
   text-decoration: none;
 }
-.whatsapp-cta a p {
+.whatsapp-cta .text-container a p {
   color: #FCFCFA;
-  font-size: 14px;
-  font-weight: normal;
+  font-size: 16px;
 }
-.whatsapp-cta a i {
+.whatsapp-cta .icon-container {
+  background-color: #C56E51;
+  border: 2px solid #FCFCFA;
+  border-left: 0;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  height: inherit;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0 1.4rem;
+  padding-left: 1.4rem;
+  box-shadow: 0px 0px 20px -7px rgba(156, 153, 156, 0.8);
+}
+.whatsapp-cta .icon-container a {
+  text-decoration: none;
+}
+.whatsapp-cta .icon-container a i {
   color: #FCFCFA;
-  font-size: 2.75rem;
 }
 .whatsapp-cta.mostrar {
   animation: mostrar 0.8s forwards;
@@ -37,69 +63,80 @@
 .whatsapp-cta.esconder {
   animation: esconder 0.8s forwards;
 }
-.whatsapp-cta.aumentar {
-  animation: aumentar 1.2s forwards;
-}
-.whatsapp-cta.diminuir {
-  animation: diminuir 1.2s forwards;
-}
 
 @keyframes mostrar {
   from {
-    display: none;
     bottom: 14rem;
     right: -10rem;
   }
   to {
-    display: block;
     bottom: 14rem;
     right: 3rem;
   }
 }
 @keyframes esconder {
   from {
-    display: block;
     bottom: 14rem;
     right: 3rem;
   }
   to {
-    display: none;
     bottom: 14rem;
     right: -10rem;
   }
 }
-@keyframes aumentar {
-  from {
-    transform: scale(1);
-    right: 3rem;
-    width: -moz-max-content;
-    width: max-content;
+.slow-border-radius {
+  animation: slow-border-radius 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slow-border-radius {
+  0% {
+    border-radius: 9999px;
   }
-  to {
-    transform: scale(1.02);
-    right: 3rem;
-    width: -moz-fit-content;
-    width: fit-content;
+  100% {
+    border-radius: 0 9999px 9999px 0;
   }
 }
-@keyframes diminuir {
-  from {
-    transform: scale(1.02);
-    right: 3rem;
-    width: -moz-fit-content;
-    width: fit-content;
+.slow-remove-border-radius {
+  animation: slow-remove-border-radius 100ms cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes slow-remove-border-radius {
+  0% {
+    border-radius: 0 9999px 9999px 0;
   }
-  to {
-    transform: scale(1);
-    right: 3rem;
-    width: -moz-max-content;
-    width: max-content;
+  100% {
+    border-radius: 9999px;
+  }
+}
+.scale-in-right {
+  animation: scale-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes scale-in-right {
+  0% {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+    opacity: 1;
+  }
+}
+.unscale-in-right {
+  animation: unscale-in-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+@keyframes unscale-in-right {
+  0% {
+    transform: scaleX(1);
+    transform-origin: 100% 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(0);
+    transform-origin: 100% 50%;
+    opacity: 1;
   }
 }
 @media only screen and (min-width: 768px) {
-  .whatsapp-cta {
-    padding: 1.5rem 1.75rem;
-  }
   .whatsapp-cta a i {
     font-size: 3rem;
   }
