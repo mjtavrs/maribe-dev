@@ -11,6 +11,9 @@
   src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
   font-style: normal;
 }
+.slow-show {
+  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @keyframes slow-show {
   0% {
     transform: translateZ(-1400px);
@@ -21,42 +24,8 @@
     opacity: 1;
   }
 }
-::-webkit-scrollbar {
-  padding-top: 1rem;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #C56E51;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #FCFCFA;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.slow-show {
-  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-.visibilityOff {
-  visibility: hidden;
-}
-
-#selected {
-  font-weight: bold;
-}
-
 a,
-body,
-button,
-label,
-input,
-textarea {
+body {
   color: #3C3C3B;
   overflow-x: hidden;
 }
@@ -66,7 +35,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Source Sans 3", sans-serif;
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-size: 1.6rem;
   min-height: 100dvh;
 }
 
@@ -102,7 +71,7 @@ main #project-info h2 {
   text-transform: lowercase;
 }
 main #project-info p {
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-size: 1.6rem;
   padding-top: 2rem;
   text-align: center;
 }
@@ -168,7 +137,7 @@ footer #copyright-info p {
   }
   body main #project-pictures {
     padding: 3rem 4rem 5rem;
-    row-gap: 1.2rem;
+    row-gap: 1.5rem;
   }
   body main #project-pictures div {
     height: 24rem;
@@ -197,11 +166,11 @@ footer #copyright-info p {
     font-size: 2rem;
   }
   body main #project-info p {
-    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+    font-size: 1.6rem;
   }
   body main #project-pictures {
     padding: 3rem 5rem 5rem;
-    row-gap: 2rem;
+    row-gap: 2.2rem;
   }
   body main #project-pictures div {
     height: 24rem;
@@ -235,16 +204,16 @@ footer #copyright-info p {
     font-size: 2rem;
   }
   body main #project-info p {
-    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+    font-size: 1.6rem;
     padding: 2rem 12rem 0;
   }
   body main #project-pictures {
     padding: 3rem 8rem 5rem;
-    row-gap: 4rem;
+    row-gap: 2rem;
   }
   body main #project-pictures div {
     height: 24rem;
-    width: 30%;
+    width: 32%;
   }
   body main #project-pictures div img {
     border-radius: 0.8rem;
@@ -263,11 +232,11 @@ footer #copyright-info p {
     font-size: 2.1rem;
   }
   body main #project-info p {
-    font-size: clamp(1.4rem, 100dvw, 1.6rem);
+    font-size: 1.6rem;
     padding: 2rem 20rem 4rem;
   }
   body main #project-pictures {
-    padding: 3rem 8rem 5rem;
+    padding: 2rem 8rem 5rem;
     row-gap: 2rem;
   }
   body main #project-pictures div {

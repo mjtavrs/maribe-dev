@@ -1,8 +1,16 @@
+// Import the font sizes and the colors into the file
 @import "../shared/variables";
 
+// Fonts to be used in this page
 @font-face {
     font-family: "Source Sans 3";
     src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
+}
+
+// Slow-show animation to make the page appear in a more smooth way
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slow-show {
@@ -33,14 +41,10 @@
     }
 }
 
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
+// Mobile version of the project
 body {
     background-color: $begeDelicado;
-    background-image: url("../../../_assets/svg/bg-mobile.svg");
+    background-image: url("../../../_assets/svg/bg-mobile.svg"); // Used in mobile versions only
     background-size: auto;
     background-repeat: repeat;
     display: flex;
@@ -55,16 +59,6 @@ body {
         display: flex;
         flex-direction: column;
         padding-top: 15rem;
-
-        .gradient-left,
-        .gradient-right {
-            bottom: 0;
-            display: none;
-            top: 0;
-            position: absolute;
-            width: 50%;
-            z-index: 1;
-        }
 
         #logo-maribe {
             padding-bottom: 3rem;
@@ -92,23 +86,30 @@ body {
         }
     }
 
-    #bg-desktop {
-        display: none;
-    }
-
     #bg-mobile {
         position: fixed;
         margin: 0;
         padding: 0;
+        // Since the size of the SVG is incompatible with the design, the size has to be bigger than the device width
         width: 120%;
         z-index: -1;
     }
+
+    // Makes the desktop background disappear while in mobile versions
+    #bg-desktop {
+        display: none;
+    }
+
 }
 
+// Tablet version of the project
 @media only screen and (min-width: 768px) {
+
     body {
         nav {
-            padding-top: 20rem;
+            // Reset the padding-top value to zero and began the usage of the justify-content property, making the nav appear in the middle of the page.
+            padding-top: 0;
+            justify-content: center;
 
             #logo-maribe {
                 width: 30rem;
@@ -121,6 +122,7 @@ body {
     }
 }
 
+// Laptop version of the project
 @media only screen and (min-width: 1276px) {
 
     html,
@@ -131,43 +133,44 @@ body {
     }
 
     body {
+        // Delete the background image given in the mobile version of the project
         background-image: none;
 
         nav {
-            padding: 0;
             position: relative;
-            overflow: hidden;
             width: 100%;
-
-            #bg-desktop {
-                display: block;
-                height: 120%;
-                opacity: 0.8;
-            }
 
             #logo-maribe {
                 display: none;
-                padding: 0;
+            }
+
+            #bg-desktop {
+                // Make it reappear
+                display: block;
+                height: 120%;
+                // Make the desktop version of the background-image disappear a little bit
+                opacity: 0.8;
             }
 
             ul {
                 flex-direction: row;
                 font-size: 2.2rem;
                 gap: 6rem;
+                // The next three properties make the list stick in the same position, regardless of screen size from now on
                 position: absolute;
                 top: 27%;
                 transform: translateY(-27%);
-                z-index: 2;
+                z-index: 1;
             }
         }
-
     }
 }
 
+// Desktop version of the project
 @media only screen and (min-width: 1896px) {
+
     body {
         nav {
-
             ul {
                 font-size: 2.5rem;
                 gap: 8rem;

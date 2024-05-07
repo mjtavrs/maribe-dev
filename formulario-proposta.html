@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, nofollow">
 
+    <!-- SEO Meta Tags only -->
     <meta name="author" content="Marcos Tavares">
     <meta name="description"
         content="Maribe Arquitetura é um escritório de arquitetura e urbanismo baseado em Recife, Pernambuco, com foco em arquitetura residencial, comercial e consultorias.">
@@ -19,8 +20,10 @@
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/budget/budget.css">
     <link rel="stylesheet" href="_src/css/shared/whatsapp-cta.css">
+    <link rel="stylesheet" href="_src/css/shared/scrollbar.css">
     <link rel="stylesheet" href="_src/css/shared/loading-screen.css">
 
+    <!-- JavaScript scripts here -->
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
     <script src="_src/js/loading-screen.js" type="module" defer></script>
     <script src="_src/js/whatsapp-cta.js" type="module" defer></script>
@@ -60,9 +63,11 @@
         </header>
         <main>
             <section class="page-hero">
+                <h1>formulário de proposta</h1>
                 <p>ficamos muito felizes com o seu contato, vai ser um prazer fazer essa parceria contigo! para que
                     possamos
-                    te ajudar a tirar esse sonho do papel, que tal responder algumas perguntas para entendermos melhor o
+                    te ajudar a tirar esse sonho do papel, que tal responder a algumas perguntas para entendermos melhor
+                    do
                     que
                     você precisa?</p>
             </section>
@@ -96,7 +101,7 @@
                         </div>
                     </fieldset>
                     <label for="apartamento-completo">
-                        apartamento completo? se não, quantos e quais ambientes?
+                        apartamento completo? se não, quantos e quais são os ambientes?
                         <input type="text" name="apartamento-completo" id="apartamento-completo-ou-apenas-ambientes"
                             placeholder="nos diga aqui" class="contact-form_input" autocomplete="on" required
                             aria-required="true">
@@ -228,16 +233,17 @@
                 <div class="two-col-selector">
                     <label for="porque-acredita-que-somos-o-escritorio-ideal-para-voce">
                         porque você acredita que somos o escritório ideal para ajudá-los?
-                        <input type="text" name="porque-acredita-que-somos-o-escritorio-ideal-para-voce"
+                        <textarea name="porque-acredita-que-somos-o-escritorio-ideal-para-voce" cols="30" rows="5"
                             id="porque-acredita-que-somos-o-escritorio-ideal-para-voce" placeholder="nos diga aqui"
-                            class="contact-form_input" autocomplete="on" required aria-required="true">
+                            class="contact-form_input" required aria-required="true"></textarea>
                     </label>
                     <label for="outras-duvidas">
                         se houver alguma dúvida ou informação à acrescentar, comente!
-                        <input type="text" name="outras-duvidas" id="outras-duvidas" placeholder="nos diga aqui"
-                            class="contact-form_input" autocomplete="on" </label>
+                        <textarea name="outras-duvidas" cols="30" rows="5" id="outras-duvidas"
+                            placeholder="dúvidas e outras informações aqui :)" class="contact-form_input"></textarea>
+                    </label>
                 </div>
-                <button id="submit-form">enviar mensagem</button>
+                <button id="submit-form">enviar informações para proposta</button>
             </form>
         </main>
         <footer>

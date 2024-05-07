@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex, follow">
 
+    <!-- SEO Meta Tags only -->
     <meta name="author" content="Marcos Tavares">
     <meta name="description"
         content="Maribe Arquitetura é um escritório de arquitetura e urbanismo baseado em Recife, Pernambuco, com foco em arquitetura residencial, comercial e consultorias.">
@@ -16,7 +17,9 @@
 
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/404/404.css">
+    <link rel="stylesheet" href="_src/css/shared/scrollbar.css">
 
+    <!-- JavaScript scripts here -->
     <script src="https://kit.fontawesome.com/b6d6bebc72.js" crossorigin="anonymous" defer></script>
     <script src="_src/js/app.js" defer></script>
 </head>
@@ -40,8 +43,8 @@
         <section class="page-hero">
             <h1>404</h1>
             <div>
-                <p>desculpe, mas não conseguimos encontrar a página. que tal recomeçar na nossa <a href="index.html"
-                        id="return-home">página inicial</a>?</p>
+                <p>desculpe, mas não conseguimos encontrar a página. você pode recomeçar na nossa <a href="index.html"
+                        id="return-home">página inicial</a>.</p>
             </div>
         </section>
     </main>

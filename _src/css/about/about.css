@@ -7,6 +7,9 @@
   src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
   font-style: normal;
 }
+.slow-show {
+  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @keyframes slow-show {
   0% {
     transform: translateZ(-1400px);
@@ -17,38 +20,8 @@
     opacity: 1;
   }
 }
-::-webkit-scrollbar {
-  padding-top: 1rem;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #C56E51;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #FCFCFA;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.slow-show {
-  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#selected {
-  font-weight: bold;
-}
-
 a,
-body,
-button,
-label,
-input,
-textarea {
+body {
   color: #3C3C3B;
   overflow-x: hidden;
 }
@@ -58,81 +31,78 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Source Sans 3", sans-serif;
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-size: 1.6rem;
   min-height: 100dvh;
   z-index: 1;
 }
-
-nav {
+body header nav {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-nav img {
-  width: clamp(20rem, 100dvw, 30rem);
+body header nav img {
+  width: 30rem;
 }
-nav ul {
+body header nav ul {
   display: flex;
   gap: 2.5rem;
   list-style: none;
   justify-content: center;
   padding: 5rem 0;
 }
-nav ul li a {
+body header nav ul li a {
   text-decoration: none;
 }
-
-main {
+body header nav ul #selected {
+  font-weight: bold;
+}
+body main {
   flex: 1 0 auto;
   padding: 0 4.5rem;
 }
-main .page-hero {
+body main .page-hero {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 3rem;
 }
-main .page-hero h1 {
+body main .page-hero h1 {
   color: #C56E51;
   font-family: "All Round Gothic", sans-serif;
-  font-size: clamp(4.5rem, 100dvw, 5.5rem);
+  font-size: 5.5rem;
   font-weight: bolder;
   text-align: center;
   text-transform: lowercase;
 }
-main .page-hero p {
+body main .page-hero p {
   padding-bottom: 4rem;
   text-align: center;
 }
-main .about-us,
-main .about-logo {
+body main .about-us,
+body main .about-logo {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-main .about-us h2,
-main .about-logo h2 {
+body main .about-us h2,
+body main .about-logo h2 {
   color: #C56E51;
   font-size: 2.4rem;
 }
-main .about-us div p,
-main .about-logo div p {
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
-}
-main .about-us #test-div,
-main .about-logo #test-div {
+body main .about-us #maribe-team-image-container,
+body main .about-logo #maribe-team-image-container {
   padding: 10rem 0 3rem;
 }
-main .about-us #test-div #test-box,
-main .about-logo #test-div #test-box {
+body main .about-us #maribe-team-image-container #orange-box,
+body main .about-logo #maribe-team-image-container #orange-box {
   background-color: #C56E51;
   border-radius: 1rem;
   height: 25rem;
   position: relative;
   width: 100%;
 }
-main .about-us #test-div img,
-main .about-logo #test-div img {
+body main .about-us #maribe-team-image-container #orange-box img,
+body main .about-logo #maribe-team-image-container #orange-box img {
   left: 50%;
   padding-bottom: 10rem;
   position: absolute;
@@ -140,16 +110,15 @@ main .about-logo #test-div img {
   transform: translate(-50%, -50%);
   width: 35rem;
 }
-main .about-logo div {
+body main .about-logo div {
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
-main .about-logo div video {
+body main .about-logo div video {
   padding: 2rem 0 4rem;
 }
-
-footer {
+body footer {
   border-top: 1px solid #3C3C3B;
   display: flex;
   flex-direction: column;
@@ -157,23 +126,23 @@ footer {
   gap: 2rem;
   padding: 2rem 3rem;
 }
-footer #social-links ul {
+body footer #social-links ul {
   display: flex;
   gap: 2rem;
   justify-content: center;
   list-style: none;
 }
-footer #social-links ul li a i {
+body footer #social-links ul li a i {
   border: 1px solid #3C3C3B;
   border-radius: 0.5rem;
   color: #3C3C3B;
   padding: 0.4rem 0.6rem;
 }
-footer #copyright-info {
+body footer #copyright-info {
   display: flex;
   flex-direction: column;
 }
-footer #copyright-info p {
+body footer #copyright-info p {
   font-size: 1.4rem;
   text-align: center;
 }
@@ -182,8 +151,8 @@ footer #copyright-info p {
   body main {
     padding: 0 6rem;
   }
-  body main .about-us #test-box,
-  body main .about-logo #test-box {
+  body main .about-us #orange-box,
+  body main .about-logo #orange-box {
     margin: 0 auto;
     max-width: 60%;
   }
@@ -209,7 +178,10 @@ footer #copyright-info p {
 }
 @media only screen and (min-width: 992px) {
   body main {
-    padding: 0 15rem;
+    padding: 0 10rem;
+  }
+  body main .page-hero p {
+    padding: 0 15rem 4rem;
   }
   body footer {
     padding: 2rem 4rem;
@@ -232,36 +204,28 @@ footer #copyright-info p {
   body main {
     padding: 0 30rem;
   }
-  body .page-hero p {
-    padding: 0 15rem 4rem;
-  }
-  body .about-logo video {
+  body main .about-logo video {
     margin: 0 auto;
-    width: 80%;
+    width: 50%;
   }
 }
 @media only screen and (min-width: 1896px) {
   body main .page-hero p {
     padding: 0 35rem 4rem;
   }
-  body main .about-us #test-div,
-  body main .about-logo #test-div {
+  body main .about-us #maribe-team-image-container,
+  body main .about-logo #maribe-team-image-container {
     padding: 15rem 0 5rem;
   }
-  body main .about-us #test-div #test-box,
-  body main .about-logo #test-div #test-box {
+  body main .about-us #maribe-team-image-container #orange-box,
+  body main .about-logo #maribe-team-image-container #orange-box {
     margin: 0 auto;
     min-height: 30rem;
     min-width: 65%;
   }
-  body main .about-us #test-div #test-box img,
-  body main .about-logo #test-div #test-box img {
+  body main .about-us #maribe-team-image-container #orange-box img,
+  body main .about-logo #maribe-team-image-container #orange-box img {
     padding-bottom: 15rem;
     min-width: 45rem;
-  }
-  body main .about-us .video,
-  body main .about-logo .video {
-    margin: 0 auto;
-    width: 70%;
   }
 }/*# sourceMappingURL=about.css.map */

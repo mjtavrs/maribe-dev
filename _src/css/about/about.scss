@@ -1,5 +1,7 @@
+// Import the font sizes and the colors into the file
 @import "../shared/variables";
 
+// Fonts to be used in this page
 @font-face {
     font-family: "Source Sans 3";
     src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
@@ -11,6 +13,12 @@
         url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"),
         url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
     font-style: normal;
+}
+
+// Slow-show animation to make the page appear in a more smooth way
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slow-show {
@@ -41,39 +49,9 @@
     }
 }
 
-::-webkit-scrollbar {
-    padding-top: 1rem;
-    width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $vermelhoRecife;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: $begeDelicado;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-#selected {
-    font-weight: bold;
-}
-
+// Mobile version of the project
 a,
-body,
-button,
-label,
-input,
-textarea {
+body {
     color: $cinzaElegante;
     overflow-x: hidden;
 }
@@ -86,148 +64,154 @@ body {
     font-size: $standardFontSize;
     min-height: 100dvh;
     z-index: 1;
-}
 
-nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    img {
-        width: clamp(20rem, 100dvw, 30rem);
-    }
-
-    ul {
-        display: flex;
-        gap: 2.5rem;
-        list-style: none;
-        justify-content: center;
-        padding: 5rem 0;
-
-        li a {
-            text-decoration: none;
-        }
-    }
-}
-
-main {
-    flex: 1 0 auto;
-    padding: 0 4.5rem;
-
-    .page-hero {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-
-        h1 {
-            color: $vermelhoRecife;
-            font-family: "All Round Gothic", sans-serif;
-            font-size: $standardTitleSize;
-            font-weight: bolder;
-            text-align: center;
-            text-transform: lowercase;
-        }
-
-        p {
-            padding-bottom: 4rem;
-            text-align: center;
-        }
-    }
-
-    .about-us,
-    .about-logo {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        h2 {
-            color: $vermelhoRecife;
-            font-size: 2.4rem;
-        }
-
-        div {
-            p {
-                font-size: $standardFontSize;
-            }
-        }
-
-        #test-div {
-            padding: 10rem 0 3rem;
-
-            #test-box {
-                background-color: $vermelhoRecife;
-                border-radius: 1rem;
-                height: 25rem;
-                position: relative;
-                width: 100%;
-            }
-
-            img {
-                left: 50%;
-                padding-bottom: 10rem;
-                position: absolute;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: 35rem;
-            }
-        }
-
-    }
-
-    .about-logo {
-        div {
+    header {
+        nav {
+            align-items: center;
             display: flex;
             flex-direction: column;
-            gap: 2rem;
 
-            video {
-                padding: 2rem 0 4rem;
+            img {
+                width: 30rem;
             }
-        }
 
-    }
-}
+            ul {
+                display: flex;
+                gap: 2.5rem;
+                list-style: none;
+                justify-content: center;
+                padding: 5rem 0;
 
-footer {
-    border-top: 1px solid $cinzaElegante;
-    display: flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    gap: 2rem;
-    padding: 2rem 3rem;
+                li a {
+                    text-decoration: none;
+                }
 
-    #social-links {
-        ul {
-            display: flex;
-            gap: 2rem;
-            justify-content: center;
-            list-style: none;
-
-            li {
-                a {
-                    i {
-                        border: 1px solid $cinzaElegante;
-                        border-radius: 0.5rem;
-                        color: $cinzaElegante;
-                        padding: 0.4rem 0.6rem;
-                    }
+                #selected {
+                    font-weight: bold;
                 }
             }
         }
     }
 
-    #copyright-info {
+    main {
+        flex: 1 0 auto;
+        padding: 0 4.5rem;
+
+        // The page hero holds the information that the pages is set to talk about
+        .page-hero {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            // Using the text-align property cause the align-items from the page-hero centers the children but not the content inside of it
+            h1 {
+                color: $vermelhoRecife;
+                font-family: "All Round Gothic", sans-serif;
+                font-size: $standardTitleSize;
+                font-weight: bolder;
+                text-align: center;
+                text-transform: lowercase;
+            }
+
+            p {
+                padding-bottom: 4rem;
+                text-align: center;
+            }
+        }
+
+        // Both sections to hold the information about the Maribe team and the Maribe logo
+        .about-us,
+        .about-logo {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            h2 {
+                color: $vermelhoRecife;
+                font-size: 2.4rem;
+            }
+
+            // This div holds the picture and the orange box behind it
+            #maribe-team-image-container {
+                padding: 10rem 0 3rem;
+
+                #orange-box {
+                    background-color: $vermelhoRecife;
+                    border-radius: 1rem;
+                    height: 25rem;
+                    position: relative;
+                    width: 100%;
+
+                    img {
+                        left: 50%;
+                        padding-bottom: 10rem;
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 35rem;
+                    }
+                }
+            }
+        }
+
+        .about-logo {
+
+            // This is being applied to both about-logo_text and video divs, but for style purposes I have to keep it like this
+            div {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                video {
+                    padding: 2rem 0 4rem;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        border-top: 1px solid $cinzaElegante;
         display: flex;
         flex-direction: column;
+        flex-shrink: 0;
+        gap: 2rem;
+        padding: 2rem 3rem;
 
-        p {
-            font-size: 1.4rem;
-            text-align: center;
+        #social-links {
+            ul {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                list-style: none;
+
+                li {
+                    a {
+                        i {
+                            border: 1px solid $cinzaElegante;
+                            border-radius: 0.5rem;
+                            color: $cinzaElegante;
+                            padding: 0.4rem 0.6rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        #copyright-info {
+            display: flex;
+            flex-direction: column;
+
+            p {
+                font-size: 1.4rem;
+                text-align: center;
+            }
         }
     }
 }
 
+// Tablet versions of the project
 @media only screen and (min-width: 768px) {
     body {
         main {
@@ -235,7 +219,7 @@ footer {
 
             .about-us,
             .about-logo {
-                #test-box {
+                #orange-box {
                     margin: 0 auto;
                     max-width: 60%;
                 }
@@ -270,13 +254,20 @@ footer {
                 }
             }
         }
+
     }
 }
 
 @media only screen and (min-width: 992px) {
     body {
         main {
-            padding: 0 15rem;
+            padding: 0 10rem;
+
+            .page-hero {
+                p {
+                    padding: 0 15rem 4rem;
+                }
+            }
         }
 
         footer {
@@ -308,31 +299,26 @@ footer {
     }
 }
 
+// Laptop version of the project
 @media only screen and (min-width: 1440px) {
     body {
         main {
             padding: 0 30rem;
-        }
 
-        .page-hero {
-            p {
-                padding: 0 15rem 4rem;
-            }
-        }
-
-        .about-logo {
-            video {
-                margin: 0 auto;
-                width: 80%;
+            .about-logo {
+                video {
+                    margin: 0 auto;
+                    width: 50%;
+                }
             }
         }
     }
 }
 
+// Desktop version of the project
 @media only screen and (min-width: 1896px) {
     body {
         main {
-
             .page-hero {
                 p {
                     padding: 0 35rem 4rem;
@@ -341,10 +327,10 @@ footer {
 
             .about-us,
             .about-logo {
-                #test-div {
+                #maribe-team-image-container {
                     padding: 15rem 0 5rem;
 
-                    #test-box {
+                    #orange-box {
                         margin: 0 auto;
                         min-height: 30rem;
                         min-width: 65%;
@@ -354,11 +340,6 @@ footer {
                             min-width: 45rem;
                         }
                     }
-                }
-
-                .video {
-                    margin: 0 auto;
-                    width: 70%;
                 }
             }
         }

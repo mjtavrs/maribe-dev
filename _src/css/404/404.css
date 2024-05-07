@@ -10,6 +10,9 @@
   font-family: "Kantumruy Pro";
   src: url("../../../public/font/subtitle/KantumruyPro-Regular.ttf") format("truetype");
 }
+.slow-show {
+  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @keyframes slow-show {
   0% {
     transform: translateZ(-1400px);
@@ -20,38 +23,8 @@
     opacity: 1;
   }
 }
-::-webkit-scrollbar {
-  padding-top: 1rem;
-  width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: #C56E51;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #FCFCFA;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.slow-show {
-  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-#selected {
-  font-weight: bold;
-}
-
 a,
-body,
-button,
-label,
-input,
-textarea {
+body {
   color: #3C3C3B;
 }
 
@@ -60,42 +33,40 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Source Sans 3", sans-serif;
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-size: 1.6rem;
   min-height: 100dvh;
   z-index: 1;
 }
-
-nav {
+body header nav {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
-nav img {
+body header nav img {
   width: clamp(15rem, 90dvw, 25rem);
 }
-nav ul {
+body header nav ul {
   display: flex;
   gap: 2.5rem;
   list-style: none;
   justify-content: center;
   padding: 5rem 0;
 }
-nav ul li a {
+body header nav ul li a {
   text-decoration: none;
 }
-
-main {
+body main {
   flex: 1 0 auto;
   padding: 0 4.5rem;
 }
-main .page-hero {
+body main .page-hero {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 2rem;
   padding-top: 8rem;
 }
-main .page-hero h1 {
+body main .page-hero h1 {
   background-color: #C56E51;
   border-radius: 100%;
   color: #FCFCFA;
@@ -105,21 +76,20 @@ main .page-hero h1 {
   padding: 2.5rem 1.5rem;
   text-align: center;
 }
-main .page-hero p {
+body main .page-hero p {
   color: #3C3C3B;
   font-family: "Kantumruy Pro", sans-serif;
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-size: 1.6rem;
   line-height: 2.2rem;
   padding: 0 2rem;
   text-align: center;
 }
-main .page-hero p #return-home {
+body main .page-hero p #return-home {
   color: #C56E51;
   font-weight: bold;
   text-decoration: none;
 }
-
-footer {
+body footer {
   border-top: 1px solid #3C3C3B;
   bottom: 0;
   display: flex;
@@ -128,23 +98,23 @@ footer {
   gap: 2rem;
   padding: 2rem 3rem;
 }
-footer #social-links ul {
+body footer #social-links ul {
   display: flex;
   gap: 2rem;
   justify-content: center;
   list-style: none;
 }
-footer #social-links ul li a i {
+body footer #social-links ul li a i {
   border: 1px solid #3C3C3B;
   border-radius: 0.5rem;
   color: #3C3C3B;
   padding: 0.4rem 0.6rem;
 }
-footer #copyright-info {
+body footer #copyright-info {
   display: flex;
   flex-direction: column;
 }
-footer #copyright-info p {
+body footer #copyright-info p {
   font-size: 1.4rem;
   text-align: center;
 }
@@ -182,7 +152,7 @@ footer #copyright-info p {
 }
 @media only screen and (min-width: 992px) {
   body main {
-    padding: 4rem 0 6rem;
+    padding: 15rem 0 6rem;
   }
   body main .page-hero {
     gap: 2rem;
@@ -240,9 +210,9 @@ footer #copyright-info p {
     text-align: right;
   }
 }
-@media only screen and (min-width: 1920px) {
+@media only screen and (min-width: 1896px) {
   body main {
-    padding: 4rem 0 6rem;
+    padding: 6rem 0 6rem;
   }
   body main .page-hero {
     gap: 3rem;

@@ -47,8 +47,8 @@
   height: inherit;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 0 1.4rem;
-  padding-left: 1.4rem;
+  padding: 0 1.6rem;
+  padding-left: 1.6rem;
   box-shadow: 0px 0px 20px -7px rgba(156, 153, 156, 0.8);
 }
 .whatsapp-cta .icon-container a {
@@ -56,6 +56,7 @@
 }
 .whatsapp-cta .icon-container a i {
   color: #FCFCFA;
+  font-size: 2.4rem;
 }
 .whatsapp-cta.mostrar {
   animation: mostrar 0.8s forwards;

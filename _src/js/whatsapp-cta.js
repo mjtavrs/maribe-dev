@@ -21,10 +21,12 @@ function handleScroll() {
 whatsAppCta.addEventListener("mouseover", () => {
     iconContainer.classList.contains("slow-remove-border-radius") ? iconContainer.classList.remove("slow-remove-border-radius") : "";
     textContainer.classList.contains("unscale-in-right") ? textContainer.classList.remove("unscale-in-right") : "";
-    textContainer.classList.remove("hidden");
-    textContainer.classList.add("scale-in-right");
-    iconContainer.classList.add("slow-border-radius");
-    textContainer.classList.add("shown");
+    window.innerWidth < 450 ? "" : (
+        textContainer.classList.remove("hidden"),
+        textContainer.classList.add("scale-in-right"),
+        iconContainer.classList.add("slow-border-radius"),
+        textContainer.classList.add("shown")
+    )
 });
 
 whatsAppCta.addEventListener("mouseout", () => {

@@ -1,5 +1,7 @@
+// Import the font sizes and the colors into the file
 @import "../shared/variables";
 
+// Fonts to be used in this page
 @font-face {
     font-family: "Source Sans 3";
     src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
@@ -16,6 +18,12 @@
 @font-face {
     font-family: "Kantumruy Pro";
     src: url("../../../public/font/subtitle/KantumruyPro-Regular.ttf") format("truetype");
+}
+
+// Slow-show animation to make the page appear in a more smooth way
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slow-show {
@@ -46,39 +54,9 @@
     }
 }
 
-::-webkit-scrollbar {
-    padding-top: 1rem;
-    width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $vermelhoRecife;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: $begeDelicado;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-#selected {
-    font-weight: bold;
-}
-
+// Mobile version of the project
 a,
-body,
-button,
-label,
-input,
-textarea {
+body {
     color: $cinzaElegante;
 }
 
@@ -92,24 +70,26 @@ body {
     z-index: 1;
 }
 
-nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    img {
-        width: clamp(15rem, 90dvw, 25rem);
-    }
-
-    ul {
+header {
+    nav {
+        align-items: center;
         display: flex;
-        gap: 2.5rem;
-        list-style: none;
-        justify-content: center;
-        padding: 5rem 0;
+        flex-direction: column;
 
-        li a {
-            text-decoration: none;
+        img {
+            width: 30rem;
+        }
+
+        ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            justify-content: center;
+            padding: 5rem 0;
+
+            li a {
+                text-decoration: none;
+            }
         }
     }
 }
@@ -118,6 +98,7 @@ main {
     flex: 1 0 auto;
     padding: 0 4.5rem;
 
+    // The page hero holds the information that the pages is set to talk about
     .page-hero {
         align-items: center;
         display: flex;
@@ -125,6 +106,7 @@ main {
         gap: 1rem;
         padding-top: 8rem;
 
+        // Using the text-align property cause the align-items from the page-hero centers the children but not the content inside of it
         h1 {
             color: $vermelhoRecife;
             font-family: "All Round Gothic", sans-serif;
@@ -190,10 +172,12 @@ footer {
     }
 }
 
+// Tablet versions of the project
 @media only screen and (min-width: 768px) {
     body {
         main {
-            padding: 15rem 0 6rem;
+            // Change the top padding to 10rem to make the .page-hero go a little bit up
+            padding: 10rem 0 6rem;
 
             .page-hero {
                 gap: 2rem;
@@ -205,7 +189,7 @@ footer {
 
                 p {
                     font-size: 2rem;
-                    padding: 0 20rem;
+                    padding: 0 16rem;
                 }
             }
         }
@@ -239,7 +223,7 @@ footer {
 @media only screen and (min-width: 992px) {
     body {
         main {
-            padding: 4rem 0 6rem;
+            padding: 18rem 0 6rem;
 
             .page-hero {
                 gap: 2rem;
@@ -284,6 +268,7 @@ footer {
     }
 }
 
+// Laptop version of the project
 @media only screen and (min-width: 1440px) {
     body {
         main {
@@ -305,10 +290,11 @@ footer {
     }
 }
 
-@media only screen and (min-width: 1920px) {
+// Desktop version of the project
+@media only screen and (min-width: 1896px) {
     body {
         main {
-            padding: 4rem 0 6rem;
+            padding: 5rem 0 6rem;
 
             .page-hero {
                 gap: 3rem;

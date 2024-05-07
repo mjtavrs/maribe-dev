@@ -1,5 +1,7 @@
+// Import the font sizes and the colors into the file
 @import "../shared/variables";
 
+// Fonts to be used in this page
 @font-face {
     font-family: "Source Sans 3";
     src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
@@ -16,6 +18,12 @@
         url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"),
         url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
     font-style: normal;
+}
+
+// Slow-show animation to make the page appear in a more smooth way
+.slow-show {
+    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 @-webkit-keyframes slow-show {
@@ -46,29 +54,6 @@
     }
 }
 
-::-webkit-scrollbar {
-    padding-top: 1rem;
-    width: 7px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: $vermelhoRecife;
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background-color: $begeDelicado;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
 .visibilityOff {
     visibility: hidden;
 }
@@ -77,16 +62,10 @@ html {
     filter: brightness(0.5);
 }
 
-#selected {
-    font-weight: bold;
-}
 
+// Mobile version of the project
 a,
-body,
-button,
-label,
-input,
-textarea {
+body {
     color: $cinzaElegante;
 }
 
@@ -100,151 +79,152 @@ body {
     font-size: $standardFontSize;
     overflow-x: hidden;
     z-index: 1;
-}
 
-nav {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-
-    img {
-        width: clamp(20rem, 100dvw, 30rem);
-    }
-
-    ul {
-        display: flex;
-        gap: 2.5rem;
-        list-style: none;
-        justify-content: center;
-        padding: 5rem 0;
-
-        li a {
-            text-decoration: none;
-        }
-    }
-}
-
-main {
-    padding: 0 4.5rem;
-
-    .page-hero {
+    nav {
         align-items: center;
         display: flex;
         flex-direction: column;
-        gap: 3rem;
 
-        h1 {
-            color: $vermelhoRecife;
-            font-family: "All Round Gothic", sans-serif;
-            font-size: $standardTitleSize;
-            font-weight: bolder;
-            text-align: center;
-            text-transform: lowercase;
+        img {
+            width: 30rem;
         }
 
-        p {
-            padding-bottom: 4rem;
-            text-align: center;
-            text-transform: lowercase;
+        ul {
+            display: flex;
+            gap: 2.5rem;
+            list-style: none;
+            justify-content: center;
+            padding: 5rem 0;
+
+            li a {
+                text-decoration: none;
+            }
+
+            #selected {
+                font-weight: bold;
+            }
         }
     }
 
-    #projects {
-        padding-bottom: 3rem;
+    main {
+        padding: 0 4.5rem;
+
+        // The page hero holds the information that the pages is set to talk about
+        .page-hero {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            // Using the text-align property cause the align-items from the page-hero centers the children but not the content inside of it
+            h1 {
+                color: $vermelhoRecife;
+                font-family: "All Round Gothic", sans-serif;
+                font-size: $standardTitleSize;
+                font-weight: bolder;
+                text-align: center;
+                text-transform: lowercase;
+            }
+
+            p {
+                padding-bottom: 4rem;
+                text-align: center;
+                text-transform: lowercase;
+            }
+        }
+
+        // This section holds the project gallery, which will lead to the project page
+        #projects {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding-bottom: 3rem;
+
+            // Style for each project box, which are created as articles and have some kind of black mask when hovered or held in mobile devices
+            article {
+                height: 34rem;
+                position: relative;
+
+                a {
+                    span {
+                        background-color: $begeDelicado;
+                        border-radius: 1rem;
+                        color: $cinzaElegante;
+                        filter: opacity(0.90);
+                        font-family: "All Round Gothic", sans-serif;
+                        left: 50%;
+                        margin: 0;
+                        padding: 4rem 3rem;
+                        position: absolute;
+                        text-transform: lowercase;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        z-index: 2;
+
+                        h4 {
+                            border-top: 1px solid $cinzaElegante;
+                            border-bottom: 1px solid $cinzaElegante;
+                            font-weight: normal;
+                            padding: 1rem 0;
+                            text-align: center;
+                        }
+                    }
+
+                    // This image represents the project cover that will also be loaded in the projects script
+                    img {
+                        border-radius: 1rem;
+                        height: 34rem;
+                        object-fit: cover;
+                        position: absolute;
+                        transition: 300ms;
+                        width: 100%;
+                        z-index: 1;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        border-top: 1px solid $cinzaElegante;
         display: flex;
         flex-direction: column;
         gap: 2rem;
+        padding: 2rem 3rem;
 
-        article {
-            height: 34rem;
-            position: relative;
+        #social-links {
+            ul {
+                display: flex;
+                gap: 2rem;
+                justify-content: center;
+                list-style: none;
 
-            a {
-                span {
-                    background-color: $begeDelicado;
-                    border-radius: 1rem;
-                    color: $cinzaElegante;
-                    filter: opacity(0.90);
-                    font-family: "All Round Gothic", sans-serif;
-                    left: 50%;
-                    margin: 0;
-                    padding: 4rem 3rem;
-                    position: absolute;
-                    text-transform: lowercase;
-                    top: 50%;
-                    transform: translate(-50%, -50%);
-                    z-index: 2;
-
-                    h4 {
-                        border-top: 1px solid $cinzaElegante;
-                        border-bottom: 1px solid $cinzaElegante;
-                        font-weight: normal;
-                        padding: 1rem 0;
-                        text-align: center;
+                li {
+                    a {
+                        i {
+                            border: 1px solid $cinzaElegante;
+                            border-radius: 0.5rem;
+                            color: $cinzaElegante;
+                            padding: 0.4rem 0.6rem;
+                        }
                     }
                 }
-
-                img {
-                    border-radius: 1rem;
-                    height: 34rem;
-                    object-fit: cover;
-                    position: absolute;
-                    transition: 300ms;
-                    width: 100%;
-                    z-index: 1;
-                }
-
-                // img:hover,
-                // img:active {
-                //     filter: brightness(0.5);
-                // }
-
-                // article:hover .visibilityOff {
-                //     visibility: visible;
-                // }
             }
         }
-    }
-}
 
-footer {
-    border-top: 1px solid $cinzaElegante;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    padding: 2rem 3rem;
-
-    #social-links {
-        ul {
+        #copyright-info {
             display: flex;
-            gap: 2rem;
-            justify-content: center;
-            list-style: none;
+            flex-direction: column;
 
-            li {
-                a {
-                    i {
-                        border: 1px solid $cinzaElegante;
-                        border-radius: 0.5rem;
-                        color: $cinzaElegante;
-                        padding: 0.4rem 0.6rem;
-                    }
-                }
+            p {
+                font-size: 1.4rem;
+                text-align: center;
             }
-        }
-    }
-
-    #copyright-info {
-        display: flex;
-        flex-direction: column;
-
-        p {
-            font-size: 1.4rem;
-            text-align: center;
         }
     }
 }
 
+// Tablet versions of the project
 @media only screen and (min-width: 768px) {
     body {
         main {
@@ -260,6 +240,7 @@ footer {
                 justify-content: space-around;
                 width: 100%;
 
+                // Defines the article with 48% of the #projects div from now on
                 article {
                     min-width: 48%;
                 }
@@ -294,6 +275,10 @@ footer {
 
 @media only screen and (min-width: 992px) {
     body {
+        main {
+            padding: 0 8rem;
+        }
+
         footer {
             padding: 2rem 4rem;
 
@@ -336,6 +321,7 @@ footer {
 
             #projects {
 
+                // From now on, each project article has 30% of the #projects div width. An important remind is that, this can change in next updates from a flex style to a grid style, which may be best solution here.
                 article {
                     min-width: 30%;
                 }

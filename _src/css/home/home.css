@@ -2,6 +2,9 @@
   font-family: "Source Sans 3";
   src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
 }
+.slow-show {
+  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
 @keyframes slow-show {
   0% {
     transform: translateZ(-1400px);
@@ -12,10 +15,6 @@
     opacity: 1;
   }
 }
-.slow-show {
-  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
 body {
   background-color: #FCFCFA;
   background-image: url("../../../_assets/svg/bg-mobile.svg");
@@ -23,7 +22,7 @@ body {
   background-repeat: repeat;
   display: flex;
   font-family: "Source Sans 3";
-  font-size: clamp(1.4rem, 100dvw, 1.6rem);
+  font-size: 1.6rem;
   height: 100dvh;
   justify-content: center;
   position: relative;
@@ -34,15 +33,6 @@ body nav {
   flex-direction: column;
   padding-top: 15rem;
 }
-body nav .gradient-left,
-body nav .gradient-right {
-  bottom: 0;
-  display: none;
-  top: 0;
-  position: absolute;
-  width: 50%;
-  z-index: 1;
-}
 body nav #logo-maribe {
   padding-bottom: 3rem;
   width: 24rem;
@@ -51,7 +41,7 @@ body nav ul {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: clamp(1.8rem, 100dvw, 2.2rem);
+  font-size: 2.2rem;
   gap: 2rem;
   list-style: none;
   padding: 0 0 5rem;
@@ -64,9 +54,6 @@ body nav ul li a {
 body nav ul a:hover {
   color: #C56E51;
 }
-body #bg-desktop {
-  display: none;
-}
 body #bg-mobile {
   position: fixed;
   margin: 0;
@@ -74,10 +61,14 @@ body #bg-mobile {
   width: 120%;
   z-index: -1;
 }
+body #bg-desktop {
+  display: none;
+}
 
 @media only screen and (min-width: 768px) {
   body nav {
-    padding-top: 20rem;
+    padding-top: 0;
+    justify-content: center;
   }
   body nav #logo-maribe {
     width: 30rem;
@@ -97,19 +88,16 @@ body #bg-mobile {
     background-image: none;
   }
   body nav {
-    padding: 0;
     position: relative;
-    overflow: hidden;
     width: 100%;
+  }
+  body nav #logo-maribe {
+    display: none;
   }
   body nav #bg-desktop {
     display: block;
     height: 120%;
     opacity: 0.8;
-  }
-  body nav #logo-maribe {
-    display: none;
-    padding: 0;
   }
   body nav ul {
     flex-direction: row;
@@ -118,7 +106,7 @@ body #bg-mobile {
     position: absolute;
     top: 27%;
     transform: translateY(-27%);
-    z-index: 2;
+    z-index: 1;
   }
 }
 @media only screen and (min-width: 1896px) {
