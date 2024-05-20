@@ -5,23 +5,35 @@
 </div>
 <h1 align="center">Maribe Arquitetura</h1>
 <p align="justify">
-    Maribe Arquitetura é um escritório de arquitetura e urbanismo criado em Recife, Pernambuco. Diante do desafio de aumentar o alcance dos seus trabalhos, as sócias do escritório aceitaram me dar a possibilidade de criar o site da sua empresa.
+    Maribe Arquitetura é um escritório de arquitetura e urbanismo criado em Recife, Pernambuco. Para aumentar ainda mais o seu alcance e posicionamento nos mecanismos de busca, as sócias do escritório optaram pela criação do site da sua empresa.
     <br />
-    Esse projeto tem um cunho especial para mim, haja vista que eu também, por 9 períodos, cursei a faculdade de arquitetura e urbanismo e também sou amigo de longa data de uma das sócias da empresa, o que me permitiu não só ter uma pessoa próxima e conhecida como meu primeiro projeto real, mas alguém que me apoiou durante o processo de criação.
+    Esse projeto tem um cunho especial para mim, haja vista que eu também, por 9 períodos, cursei a faculdade de arquitetura e urbanismo antes de decidir me dedicar em tempo integral apenas ao setor de tecnologia.
 </p>
-## Stack utilizada
-
-**Front-end:** Sass, JavaScript
-
-**Back-end:** PHP
-
-
-## Funcionalidades
-
-- Multiplataforma
-- Validação dos formulários no front e back-end
-
-## Documentação de cores
+<h2>O que utilizei nesse projeto</h2>
+<b>Front-end:</b>
+<ul>
+    <li>Sass</li>
+    <li>JavaScript</li>
+    <li>jQuery</li>
+</ul>
+<br />
+<b>Back-end:</b>
+<ul>
+    <li>PHP</li>
+</ul>
+<b>Bibliotecas</b>
+<ul>
+    <li>Lightbox2</li>
+</ul>
+<h2>Funcionalidades do site</h2>
+<ul>
+    <li>Multiplataforma</li>
+    <li>Validação dos formulários no front e back-end</li>
+</ul>
+<h2>Documentação de cores</h2>
+<p>
+    Seguindo o manual da marca, algumas cores foram adicionadas e nomeadas de acordo com o manual:
+</p>
 
 | Cor               | Hexadecimal                                                |
 | ----------------- | ---------------------------------------------------------------- |
@@ -30,8 +42,6 @@
 | Cinza Elegante       | ![#3C3C3B](https://via.placeholder.com/10/3C3C3B?text=+) #00b48a |
 | Vermelho Recife       | ![#C56E51](https://via.placeholder.com/10/C56E51?text=+) #00d1a0 |
 
-
-## Usado por
-
-Esse projeto é feito unicamente para ser usado pela Maribe Arquitetura.
-
+<h2>Deploy</h2>
+<p>
+    Ficou curioso(a) para saber como ficou esse projeto? <a href="https://maribe.arq.br">Clique aqui</a> e visite o site 😄</p>
