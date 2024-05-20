@@ -59,4 +59,4 @@
 </div>
 <h2>Deploy</h2>
 <p>
-    Ficou curioso(a) para saber como ficou esse projeto? <a href="https://maribe.arq.br">Clique aqui</a> e visite o site 😄</p>
+    Ficou curioso(a) para saber como ficou esse projeto? <a href="https://maribe.arq.br" target="_blank">Clique aqui</a> e visite o site 😄</p>
