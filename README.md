@@ -1,7 +1,7 @@
 🇧🇷 Portuguese version
 
 <div align="center">
-    <img src="https://i.ibb.co/BwkNWKw/favicon.png">
+    <img src="https://i.ibb.co/Np2W5xM/68747470733a2f2f692e6962622e636f2f42776b4e574b772f66617669636f6e2e706e67.png">
 </div>
 <h1 align="center">Maribe Arquitetura</h1>
 <p align="justify">
