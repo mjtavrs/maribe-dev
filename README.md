@@ -20,7 +20,7 @@
 <ul>
     <li>PHP</li>
 </ul>
-<b>Bibliotecas</b>
+<b>Bibliotecas:</b>
 <ul>
     <li>Lightbox2</li>
 </ul>
@@ -29,18 +29,19 @@
     <li>Multiplataforma</li>
     <li>Validação dos formulários no front e back-end</li>
 </ul>
-<h2>Documentação de cores</h2>
+<h2>Documentação das cores</h2>
 <p>
     Seguindo o manual da marca, algumas cores foram adicionadas e nomeadas de acordo com o manual:
 </p>
 <div align="center">
-| Cor               | Hexadecimal                                                |
-| ----------------- | ---------------------------------------------------------------- |
-| Amarelo Tarsila       | ![#E2AF58](https://via.placeholder.com/10/E2AF58?text=+) #0a192f |
-| Bege Delicado       | ![#FCFCFA](https://via.placeholder.com/10/FCFCFA?text=+) #f8f8f8 |
-| Cinza Elegante       | ![#3C3C3B](https://via.placeholder.com/10/3C3C3B?text=+) #00b48a |
-| Vermelho Recife       | ![#C56E51](https://via.placeholder.com/10/C56E51?text=+) #00d1a0 |
+    | Cor               | Hexadecimal                                                      |
+    | ----------------- | ---------------------------------------------------------------- |
+    | Amarelo Tarsila   | <img src="https://via.placeholder.com/10/E2AF58?text=+"> #E2AF58 |
+    | Bege Delicado     | <img src="https://via.placeholder.com/10/FCFCFA?text=+"> #FCFCFC |
+    | Cinza Elegante    | <img src="https://via.placeholder.com/10/3C3C3B?text=+"> #3C3C3B |
+    | Vermelho Recife   | <img src="https://via.placeholder.com/10/C56E51?text=+"> #C56E51 |
 </div>
+
 <h2>Deploy</h2>
 <p>
     Ficou curioso(a) para saber como ficou esse projeto? <a href="https://maribe.arq.br">Clique aqui</a> e visite o site 😄</p>
