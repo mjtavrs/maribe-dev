@@ -1,14 +1,14 @@
 🇧🇷 Portuguese version
-    
-![Logo da Maribe Arquitetura](https://i.ibb.co/BwkNWKw/favicon.png)
 
-
-# Maribe Arquitetura
-
-Maribe Arquitetura é um escritório de arquitetura e urbanismo criado em Recife, Pernambuco. Diante do desafio de aumentar o alcance dos seus trabalhos, as sócias do escritório aceitaram me dar a possibilidade de criar o site da sua empresa.
-
-Esse projeto tem um cunho especial para mim, haja vista que eu também, por 9 períodos, cursei a faculdade de arquitetura e urbanismo e também sou amigo de longa data de uma das sócias da empresa, o que me permitiu não só ter uma pessoa próxima e conhecida como meu primeiro projeto real, mas alguém que me apoiou durante o processo de criação.
-
+<div align="center">
+    <img src="https://i.ibb.co/BwkNWKw/favicon.png">
+</div>
+<h1 align="center">Maribe Arquitetura</h1>
+<p align="justify">
+    Maribe Arquitetura é um escritório de arquitetura e urbanismo criado em Recife, Pernambuco. Diante do desafio de aumentar o alcance dos seus trabalhos, as sócias do escritório aceitaram me dar a possibilidade de criar o site da sua empresa.
+    <br />
+    Esse projeto tem um cunho especial para mim, haja vista que eu também, por 9 períodos, cursei a faculdade de arquitetura e urbanismo e também sou amigo de longa data de uma das sócias da empresa, o que me permitiu não só ter uma pessoa próxima e conhecida como meu primeiro projeto real, mas alguém que me apoiou durante o processo de criação.
+</p>
 ## Stack utilizada
 
 **Front-end:** Sass, JavaScript
