@@ -1,0 +1,31 @@
+// Header styles only
+
+body {
+    header {
+        nav {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+
+            img {
+                width: 30rem;
+            }
+
+            ul {
+                display: flex;
+                gap: 2.5rem;
+                list-style: none;
+                justify-content: center;
+                padding: 5rem 0;
+
+                li a {
+                    text-decoration: none;
+                }
+
+                #selected {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}

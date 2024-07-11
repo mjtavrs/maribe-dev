@@ -15,40 +15,6 @@
     font-style: normal;
 }
 
-// Slow-show animation to make the page appear in a more smooth way
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slow-show {
-    0% {
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slow-show {
-    0% {
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
 // Mobile version of the project
 a,
 body {
@@ -65,60 +31,9 @@ body {
     min-height: 100dvh;
     z-index: 1;
 
-    header {
-        nav {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-
-            img {
-                width: 30rem;
-            }
-
-            ul {
-                display: flex;
-                gap: 2.5rem;
-                list-style: none;
-                justify-content: center;
-                padding: 5rem 0;
-
-                li a {
-                    text-decoration: none;
-                }
-
-                #selected {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-
     main {
         flex: 1 0 auto;
         padding: 0 4.5rem;
-
-        // The page hero holds the information that the pages is set to talk about
-        .page-hero {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-            gap: 3rem;
-
-            // Using the text-align property cause the align-items from the page-hero centers the children but not the content inside of it
-            h1 {
-                color: $vermelhoRecife;
-                font-family: "All Round Gothic", sans-serif;
-                font-size: $standardTitleSize;
-                font-weight: bolder;
-                text-align: center;
-                text-transform: lowercase;
-            }
-
-            p {
-                padding-bottom: 4rem;
-                text-align: center;
-            }
-        }
 
         // Both sections to hold the information about the Maribe team and the Maribe logo
         .about-us,
@@ -170,45 +85,6 @@ body {
 
         }
     }
-
-    footer {
-        border-top: 1px solid $cinzaElegante;
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        gap: 2rem;
-        padding: 2rem 3rem;
-
-        #social-links {
-            ul {
-                display: flex;
-                gap: 2rem;
-                justify-content: center;
-                list-style: none;
-
-                li {
-                    a {
-                        i {
-                            border: 1px solid $cinzaElegante;
-                            border-radius: 0.5rem;
-                            color: $cinzaElegante;
-                            padding: 0.4rem 0.6rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        #copyright-info {
-            display: flex;
-            flex-direction: column;
-
-            p {
-                font-size: 1.4rem;
-                text-align: center;
-            }
-        }
-    }
 }
 
 // Tablet versions of the project
@@ -231,30 +107,6 @@ body {
             }
         }
 
-        footer {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 2rem 6rem;
-
-            #social-links {
-                li {
-                    a {
-                        font-size: 1.8rem;
-
-                        i {
-                            padding: 0.6rem 0.8rem;
-                        }
-                    }
-                }
-            }
-
-            #copyright-info {
-                p {
-                    text-align: right;
-                }
-            }
-        }
-
     }
 }
 
@@ -262,39 +114,6 @@ body {
     body {
         main {
             padding: 0 10rem;
-
-            .page-hero {
-                p {
-                    padding: 0 15rem 4rem;
-                }
-            }
-        }
-
-        footer {
-            padding: 2rem 4rem;
-
-            #social-links {
-                ul {
-                    gap: 1rem;
-
-                    li {
-                        a {
-                            font-size: 1.4rem;
-
-                            i {
-                                padding: 0.6rem 0.8rem;
-                            }
-                        }
-                    }
-                }
-            }
-
-            #copyright-info {
-                p {
-                    font-size: 1.4rem;
-                    text-align: right;
-                }
-            }
         }
     }
 }
@@ -319,12 +138,6 @@ body {
 @media only screen and (min-width: 1896px) {
     body {
         main {
-            .page-hero {
-                p {
-                    padding: 0 35rem 4rem;
-                }
-            }
-
             .about-us,
             .about-logo {
                 #maribe-team-image-container {

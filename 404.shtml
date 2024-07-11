@@ -17,6 +17,7 @@
 
     <link rel="stylesheet" href="_src/css/shared/reset.css">
     <link rel="stylesheet" href="_src/css/404/404.css">
+    <link rel="stylesheet" href="_src/css/shared/page-title.css">
     <link rel="stylesheet" href="_src/css/shared/scrollbar.css">
 
     <!-- JavaScript scripts here -->
@@ -40,7 +41,7 @@
         </nav>
     </header>
     <main>
-        <section class="page-hero">
+        <section class="page-title">
             <h1>404</h1>
             <div>
                 <p>desculpe, mas não conseguimos encontrar a página. você pode recomeçar na nossa <a href="index.html"

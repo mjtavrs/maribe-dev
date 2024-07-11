@@ -1,0 +1,1 @@
+{"version":3,"sources":["page-title.scss","page-title.css","colors.scss","variables.scss"],"names":[],"mappings":"AAKQ;EACI,mBAAA;EACA,aAAA;EACA,sBAAA;EACA,SAAA;ACJZ;ADMY;EACI,cETC;EFUD,2CAAA;EACA,iBGXI;EHYJ,mBAAA;EACA,kBAAA;EACA,yBAAA;ACJhB;ADOY;EACI,oBAAA;EACA,kBAAA;ACLhB;;ADWA;EAIgB;IACI,qBAAA;ECXlB;AACF;ADiBA;EAIgB;IACI,qBAAA;EClBlB;AACF","file":"page-title.css"}

@@ -15,40 +15,6 @@
     font-style: normal;
 }
 
-// Slow-show animation to make the page appear in a more smooth way
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slow-show {
-    0% {
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slow-show {
-    0% {
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
 body {
     overflow-x: hidden;
 }
@@ -104,29 +70,11 @@ body {
         flex: 1 0 auto;
         padding: 0 4.5rem;
 
-        // The page hero holds the information that the pages is set to talk about
-        .page-hero {
-
-            // Using the text-align property cause the align-items from the page-hero centers the children but not the content inside of it
-            h1 {
+        .page-title {
+            a {
                 color: $vermelhoRecife;
-                font-family: "All Round Gothic", sans-serif;
-                font-size: $standardTitleSize;
-                font-weight: bolder;
-                text-align: center;
-                text-transform: lowercase;
-            }
-
-            p {
-                padding: 2rem 2rem 4rem;
-                text-align: center;
-                text-transform: lowercase;
-
-                a {
-                    color: $vermelhoRecife;
-                    font-weight: bold;
-                    text-decoration: none;
-                }
+                font-weight: bold;
+                text-decoration: none;
             }
         }
 
@@ -241,12 +189,6 @@ body {
         main {
             padding: 0 6rem;
 
-            .page-hero {
-                p {
-                    padding: 2rem 6rem 4rem;
-                }
-            }
-
             form {
                 button {
                     font-size: 1.8rem;
@@ -326,12 +268,6 @@ body {
     body {
         main {
             padding: 0 30rem;
-
-            .page-hero {
-                p {
-                    padding: 2rem 16rem 4rem;
-                }
-            }
         }
     }
 }
@@ -339,13 +275,6 @@ body {
 @media only screen and (min-width: 1896px) {
     body {
         main {
-
-            .page-hero {
-                p {
-                    padding: 2rem 39rem 4rem;
-                }
-            }
-
             #submit-form {
                 font-size: 2rem;
             }

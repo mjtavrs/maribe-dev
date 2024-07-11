@@ -1,0 +1,21 @@
+body header nav {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+body header nav img {
+  width: 30rem;
+}
+body header nav ul {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+  justify-content: center;
+  padding: 5rem 0;
+}
+body header nav ul li a {
+  text-decoration: none;
+}
+body header nav ul #selected {
+  font-weight: bold;
+}/*# sourceMappingURL=header.css.map */

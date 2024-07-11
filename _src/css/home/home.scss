@@ -7,40 +7,6 @@
     src: url("../../../public/font/page/SourceSans3-Regular.ttf") format("truetype");
 }
 
-// Slow-show animation to make the page appear in a more smooth way
-.slow-show {
-    -webkit-animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slow-show 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-@-webkit-keyframes slow-show {
-    0% {
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
-@keyframes slow-show {
-    0% {
-        -webkit-transform: translateZ(-1400px);
-        transform: translateZ(-1400px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateZ(0);
-        transform: translateZ(0);
-        opacity: 1;
-    }
-}
-
 // Mobile version of the project
 body {
     background-color: $begeDelicado;
@@ -53,6 +19,7 @@ body {
     height: 100dvh;
     justify-content: center;
     position: relative;
+    overflow: hidden;
 
     nav {
         align-items: center;

@@ -1,0 +1,29 @@
+body main .page-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+body main .page-title h1 {
+  color: #C56E51;
+  font-family: "All Round Gothic", sans-serif;
+  font-size: 5.5rem;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: lowercase;
+}
+body main .page-title p {
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+@media only screen and (min-width: 992px) {
+  body main .page-title p {
+    padding: 0 15rem 4rem;
+  }
+}
+@media only screen and (min-width: 1896px) {
+  body main .page-title p {
+    padding: 0 35rem 4rem;
+  }
+}/*# sourceMappingURL=page-title.css.map */

@@ -1,0 +1,51 @@
+// Import the font sizes and the colors into the file
+@import "../shared/variables";
+
+body {
+    main {
+        .page-title {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            h1 {
+                color: $vermelhoRecife;
+                font-family: "All Round Gothic", sans-serif;
+                font-size: $standardTitleSize;
+                font-weight: bolder;
+                text-align: center;
+                text-transform: lowercase;
+            }
+
+            p {
+                padding-bottom: 4rem;
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    body {
+        main {
+            .page-title {
+                p {
+                    padding: 0 15rem 4rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1896px) {
+    body {
+        main {
+            .page-title {
+                p {
+                    padding: 0 35rem 4rem;
+                }
+            }
+        }
+    }
+}

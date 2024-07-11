@@ -7,19 +7,6 @@
   src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
   font-style: normal;
 }
-.slow-show {
-  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes slow-show {
-  0% {
-    transform: translateZ(-1400px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
 body {
   overflow-x: hidden;
 }
@@ -66,24 +53,6 @@ body header nav ul #selected {
 body main {
   flex: 1 0 auto;
   padding: 0 4.5rem;
-}
-body main .page-hero {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-body main .page-hero h1 {
-  color: #C56E51;
-  font-family: "All Round Gothic", sans-serif;
-  font-size: 5.5rem;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: lowercase;
-}
-body main .page-hero p {
-  padding: 0 2rem 4rem;
-  text-align: center;
 }
 body main form {
   display: flex;
@@ -195,9 +164,6 @@ body footer #copyright-info p {
   body main {
     padding: 0 6rem;
   }
-  body main .page-hero p {
-    padding: 0 0 4rem;
-  }
   body main form button {
     font-size: 1.8rem;
   }
@@ -246,9 +212,6 @@ body footer #copyright-info p {
   }
 }
 @media only screen and (min-width: 1896px) {
-  body main .page-hero p {
-    padding: 0 25rem 6rem;
-  }
   body main form .two-col-selector {
     flex-direction: row;
     gap: 5rem;

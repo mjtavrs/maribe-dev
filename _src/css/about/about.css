@@ -7,19 +7,6 @@
   src: url("../../../public/font/title/AllRoundGothic-Lig.otf") format("opentype"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff"), url("../../../public/font/title/AllRoundGothic-Lig.otf") format("woff2");
   font-style: normal;
 }
-.slow-show {
-  animation: slow-show 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-@keyframes slow-show {
-  0% {
-    transform: translateZ(-1400px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
-}
 a,
 body {
   color: #3C3C3B;
@@ -35,48 +22,9 @@ body {
   min-height: 100dvh;
   z-index: 1;
 }
-body header nav {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-body header nav img {
-  width: 30rem;
-}
-body header nav ul {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-  justify-content: center;
-  padding: 5rem 0;
-}
-body header nav ul li a {
-  text-decoration: none;
-}
-body header nav ul #selected {
-  font-weight: bold;
-}
 body main {
   flex: 1 0 auto;
   padding: 0 4.5rem;
-}
-body main .page-hero {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-}
-body main .page-hero h1 {
-  color: #C56E51;
-  font-family: "All Round Gothic", sans-serif;
-  font-size: 5.5rem;
-  font-weight: bolder;
-  text-align: center;
-  text-transform: lowercase;
-}
-body main .page-hero p {
-  padding-bottom: 4rem;
-  text-align: center;
 }
 body main .about-us,
 body main .about-logo {
@@ -118,34 +66,6 @@ body main .about-logo div {
 body main .about-logo div video {
   padding: 2rem 0 4rem;
 }
-body footer {
-  border-top: 1px solid #3C3C3B;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  gap: 2rem;
-  padding: 2rem 3rem;
-}
-body footer #social-links ul {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  list-style: none;
-}
-body footer #social-links ul li a i {
-  border: 1px solid #3C3C3B;
-  border-radius: 0.5rem;
-  color: #3C3C3B;
-  padding: 0.4rem 0.6rem;
-}
-body footer #copyright-info {
-  display: flex;
-  flex-direction: column;
-}
-body footer #copyright-info p {
-  font-size: 1.4rem;
-  text-align: center;
-}
 
 @media only screen and (min-width: 768px) {
   body main {
@@ -161,43 +81,10 @@ body footer #copyright-info p {
     margin: 0 auto;
     width: 70%;
   }
-  body footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 6rem;
-  }
-  body footer #social-links li a {
-    font-size: 1.8rem;
-  }
-  body footer #social-links li a i {
-    padding: 0.6rem 0.8rem;
-  }
-  body footer #copyright-info p {
-    text-align: right;
-  }
 }
 @media only screen and (min-width: 992px) {
   body main {
     padding: 0 10rem;
-  }
-  body main .page-hero p {
-    padding: 0 15rem 4rem;
-  }
-  body footer {
-    padding: 2rem 4rem;
-  }
-  body footer #social-links ul {
-    gap: 1rem;
-  }
-  body footer #social-links ul li a {
-    font-size: 1.4rem;
-  }
-  body footer #social-links ul li a i {
-    padding: 0.6rem 0.8rem;
-  }
-  body footer #copyright-info p {
-    font-size: 1.4rem;
-    text-align: right;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -210,9 +97,6 @@ body footer #copyright-info p {
   }
 }
 @media only screen and (min-width: 1896px) {
-  body main .page-hero p {
-    padding: 0 35rem 4rem;
-  }
   body main .about-us #maribe-team-image-container,
   body main .about-logo #maribe-team-image-container {
     padding: 15rem 0 5rem;
