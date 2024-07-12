@@ -38,34 +38,6 @@ body {
     min-height: 100dvh;
     z-index: 1;
 
-    header {
-        nav {
-            align-items: center;
-            display: flex;
-            flex-direction: column;
-
-            img {
-                width: 30rem;
-            }
-
-            ul {
-                display: flex;
-                gap: 2.5rem;
-                list-style: none;
-                justify-content: center;
-                padding: 5rem 0;
-
-                li a {
-                    text-decoration: none;
-                }
-
-                #selected {
-                    font-weight: bold;
-                }
-            }
-        }
-    }
-
     main {
         flex: 1 0 auto;
         padding: 0 4.5rem;
@@ -142,45 +114,6 @@ body {
             }
         }
     }
-
-    footer {
-        border-top: 1px solid $cinzaElegante;
-        display: flex;
-        flex-direction: column;
-        flex-shrink: 0;
-        gap: 2rem;
-        padding: 2rem 3rem;
-
-        #social-links {
-            ul {
-                display: flex;
-                gap: 2rem;
-                justify-content: center;
-                list-style: none;
-
-                li {
-                    a {
-                        i {
-                            border: 1px solid $cinzaElegante;
-                            border-radius: 0.5rem;
-                            color: $cinzaElegante;
-                            padding: 0.4rem 0.6rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        #copyright-info {
-            display: flex;
-            flex-direction: column;
-
-            p {
-                font-size: 1.4rem;
-                text-align: center;
-            }
-        }
-    }
 }
 
 // Tablet versions of the project
@@ -192,30 +125,6 @@ body {
             form {
                 button {
                     font-size: 1.8rem;
-                }
-            }
-        }
-
-        footer {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 2rem 6rem;
-
-            #social-links {
-                li {
-                    a {
-                        font-size: 1.8rem;
-
-                        i {
-                            padding: 0.6rem 0.8rem;
-                        }
-                    }
-                }
-            }
-
-            #copyright-info {
-                p {
-                    text-align: right;
                 }
             }
         }
@@ -233,33 +142,6 @@ body {
                 }
             }
         }
-
-        footer {
-            padding: 2rem 4rem;
-
-            #social-links {
-                ul {
-                    gap: 1rem;
-
-                    li {
-                        a {
-                            font-size: 1.4rem;
-
-                            i {
-                                padding: 0.6rem 0.8rem;
-                            }
-                        }
-                    }
-                }
-            }
-
-            #copyright-info {
-                p {
-                    font-size: 1.4rem;
-                    text-align: right;
-                }
-            }
-        }
     }
 }
 
@@ -267,7 +149,7 @@ body {
 @media only screen and (min-width: 1440px) {
     body {
         main {
-            padding: 0 30rem;
+            padding: 0 20rem;
         }
     }
 }

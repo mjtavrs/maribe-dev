@@ -46,32 +46,6 @@ body {
     overflow-x: hidden;
     z-index: 1;
 
-    nav {
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-
-        img {
-            width: 30rem;
-        }
-
-        ul {
-            display: flex;
-            gap: 2.5rem;
-            list-style: none;
-            justify-content: center;
-            padding: 5rem 0;
-
-            li a {
-                text-decoration: none;
-            }
-
-            #selected {
-                font-weight: bold;
-            }
-        }
-    }
-
     main {
         padding: 0 4.5rem;
 
@@ -126,44 +100,6 @@ body {
             }
         }
     }
-
-    footer {
-        border-top: 1px solid $cinzaElegante;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        padding: 2rem 3rem;
-
-        #social-links {
-            ul {
-                display: flex;
-                gap: 2rem;
-                justify-content: center;
-                list-style: none;
-
-                li {
-                    a {
-                        i {
-                            border: 1px solid $cinzaElegante;
-                            border-radius: 0.5rem;
-                            color: $cinzaElegante;
-                            padding: 0.4rem 0.6rem;
-                        }
-                    }
-                }
-            }
-        }
-
-        #copyright-info {
-            display: flex;
-            flex-direction: column;
-
-            p {
-                font-size: 1.4rem;
-                text-align: center;
-            }
-        }
-    }
 }
 
 // Tablet versions of the project
@@ -184,30 +120,6 @@ body {
                 }
             }
         }
-
-        footer {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 2rem 6rem;
-
-            #social-links {
-                li {
-                    a {
-                        font-size: 1.8rem;
-
-                        i {
-                            padding: 0.6rem 0.8rem;
-                        }
-                    }
-                }
-            }
-
-            #copyright-info {
-                p {
-                    text-align: right;
-                }
-            }
-        }
     }
 }
 
@@ -216,49 +128,15 @@ body {
         main {
             padding: 0 8rem;
         }
-
-        footer {
-            padding: 2rem 4rem;
-
-            #social-links {
-                ul {
-                    gap: 1rem;
-
-                    li {
-                        a {
-                            font-size: 1.4rem;
-
-                            i {
-                                padding: 0.6rem 0.8rem;
-                            }
-                        }
-                    }
-                }
-            }
-
-            #copyright-info {
-                p {
-                    font-size: 1.4rem;
-                    text-align: right;
-                }
-            }
-        }
     }
 }
 
 @media only screen and (min-width: 1440px) {
     body {
         main {
-            padding: 0 15rem;
-
-            .page-hero {
-                p {
-                    padding: 0 8rem 4rem;
-                }
-            }
+            padding: 0 20rem;
 
             #projects {
-
                 // From now on, each project article has 30% of the #projects div width. An important remind is that, this can change in next updates from a flex style to a grid style, which may be best solution here.
                 article {
                     min-width: 30%;
@@ -267,29 +145,3 @@ body {
         }
     }
 }
-
-// @media only screen and (min-width: 1440px) {
-//     body {
-//         main {
-
-//             .page-hero {
-//                 p {
-//                     padding: 0 20rem 4rem;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// @media only screen and (min-width: 1896px) {
-//     body {
-//         main {
-
-//             .page-hero {
-//                 p {
-//                     padding: 0 38rem 4rem;
-//                 }
-//             }
-//         }
-//     }
-// }

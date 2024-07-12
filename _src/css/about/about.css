@@ -89,7 +89,7 @@ body main .about-logo div video {
 }
 @media only screen and (min-width: 1440px) {
   body main {
-    padding: 0 30rem;
+    padding: 0 20rem;
   }
   body main .about-logo video {
     margin: 0 auto;

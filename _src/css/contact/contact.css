@@ -29,27 +29,6 @@ body {
   min-height: 100dvh;
   z-index: 1;
 }
-body header nav {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
-body header nav img {
-  width: 30rem;
-}
-body header nav ul {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
-  justify-content: center;
-  padding: 5rem 0;
-}
-body header nav ul li a {
-  text-decoration: none;
-}
-body header nav ul #selected {
-  font-weight: bold;
-}
 body main {
   flex: 1 0 auto;
   padding: 0 4.5rem;
@@ -110,34 +89,6 @@ body main form button {
 body main form button:hover {
   background-color: #E2AF58;
 }
-body footer {
-  border-top: 1px solid #3C3C3B;
-  display: flex;
-  flex-direction: column;
-  flex-shrink: 0;
-  gap: 2rem;
-  padding: 2rem 3rem;
-}
-body footer #social-links ul {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  list-style: none;
-}
-body footer #social-links ul li a i {
-  border: 1px solid #3C3C3B;
-  border-radius: 0.5rem;
-  color: #3C3C3B;
-  padding: 0.4rem 0.6rem;
-}
-body footer #copyright-info {
-  display: flex;
-  flex-direction: column;
-}
-body footer #copyright-info p {
-  font-size: 1.4rem;
-  text-align: center;
-}
 
 @media only screen and (min-width: 768px) {
   body main {
@@ -145,20 +96,6 @@ body footer #copyright-info p {
   }
   body main form button {
     font-size: 1.8rem;
-  }
-  body footer {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 2rem 6rem;
-  }
-  body footer #social-links li a {
-    font-size: 1.8rem;
-  }
-  body footer #social-links li a i {
-    padding: 0.6rem 0.8rem;
-  }
-  body footer #copyright-info p {
-    text-align: right;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -168,26 +105,10 @@ body footer #copyright-info p {
   body main form button {
     font-size: 1.6rem;
   }
-  body footer {
-    padding: 2rem 4rem;
-  }
-  body footer #social-links ul {
-    gap: 1rem;
-  }
-  body footer #social-links ul li a {
-    font-size: 1.4rem;
-  }
-  body footer #social-links ul li a i {
-    padding: 0.6rem 0.8rem;
-  }
-  body footer #copyright-info p {
-    font-size: 1.4rem;
-    text-align: right;
-  }
 }
 @media only screen and (min-width: 1440px) {
   body main {
-    padding: 0 30rem;
+    padding: 0 20rem;
   }
 }
 @media only screen and (min-width: 1896px) {

@@ -2,7 +2,6 @@ footer {
   border-top: 1px solid #3C3C3B;
   display: flex;
   flex-direction: column;
-  flex-shrink: 0;
   gap: 2rem;
   padding: 2rem 3rem;
 }
@@ -12,34 +11,52 @@ footer #social-links ul {
   justify-content: center;
   list-style: none;
 }
-footer #social-links ul li a {
+footer #social-links ul li a i {
   border: 1px solid #3C3C3B;
   border-radius: 0.5rem;
-  padding: 0.4rem 0.6rem;
-}
-footer #social-links ul li a i {
   color: #3C3C3B;
+  padding: 0.4rem 0.6rem;
 }
 footer #copyright-info {
   display: flex;
   flex-direction: column;
-  text-align: center;
 }
 footer #copyright-info p {
   font-size: 1.4rem;
+  text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
-  footer {
+  body footer {
     flex-direction: row;
     justify-content: space-between;
     padding: 2rem 6rem;
   }
-  footer #social-links li a {
+  body footer #social-links li a {
     font-size: 1.8rem;
+  }
+  body footer #social-links li a i {
     padding: 0.6rem 0.8rem;
   }
-  footer #copyright-info p {
+  body footer #copyright-info p {
+    text-align: right;
+  }
+}
+@media only screen and (min-width: 992px) {
+  body footer {
+    padding: 2rem 4rem;
+  }
+  body footer #social-links ul {
+    gap: 1rem;
+  }
+  body footer #social-links ul li a {
+    font-size: 1.4rem;
+  }
+  body footer #social-links ul li a i {
+    padding: 0.6rem 0.8rem;
+  }
+  body footer #copyright-info p {
+    font-size: 1.4rem;
     text-align: right;
   }
 }/*# sourceMappingURL=footer.css.map */
