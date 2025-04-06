@@ -1,3 +1,5 @@
+*This repository is deprecated!*
+
 🇧🇷 Portuguese version
 
 <div align="center">
@@ -41,19 +43,19 @@
         </tr>
         <tr>
             <td>Amarelo Tarsila</td>
-            <td><img src="https://via.placeholder.com/10/E2AF58?text=+"> #E2AF58</td>
+            <td>#E2AF58</td>
         </tr>
         <tr>
             <td>Bege Delicado</td>
-            <td><img src="https://via.placeholder.com/10/FCFCFA?text=+"> #FCFCFC</td>
+            <td>#FCFCFC</td>
         </tr>
         <tr>
             <td>Cinza Elegante</td>
-            <td><img src="https://via.placeholder.com/10/3C3C3B?text=+"> #3C3C3B</td>
+            <td>#3C3C3B</td>
         </tr>
         <tr>
             <td>Vermelho Recife</td>
-            <td><img src="https://via.placeholder.com/10/C56E51?text=+"> #C56E51</td>
+            <td>#C56E51</td>
         </tr>
     </table>
 </div>
